@@ -1,0 +1,469 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\almon\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@9.8.0
+2 info using node@v25.1.0
+3 timing npm:load:whichnode Completed in 2ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:C:\Users\almon\AppData\Roaming\npm\node_modules\npm\npmrc Completed in 2ms
+6 timing config:load:builtin Completed in 2ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:F:\BOP\AML\Projects\biapp\biapp\mkdir cache-maker\.npmrc Completed in 1ms
+10 timing config:load:project Completed in 5ms
+11 timing config:load:file:C:\Users\almon\.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:C:\Users\almon\AppData\Roaming\npm\etc\npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 11ms
+17 timing npm:load:configload Completed in 11ms
+18 timing config:load:flatten Completed in 1ms
+19 timing npm:load:mkdirpcache Completed in 1ms
+20 timing npm:load:mkdirplogs Completed in 1ms
+21 verbose title npm i grunt-cli
+22 verbose argv "i" "grunt-cli"
+23 timing npm:load:setTitle Completed in 0ms
+24 timing npm:load:display Completed in 0ms
+25 verbose logfile logs-max:10 dir:C:\Users\almon\AppData\Local\npm-cache\_logs\2026-02-13T21_07_44_292Z-
+26 verbose logfile C:\Users\almon\AppData\Local\npm-cache\_logs\2026-02-13T21_07_44_292Z-debug-0.log
+27 timing npm:load:logFile Completed in 6ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 28ms
+31 timing arborist:ctor Completed in 0ms
+32 timing arborist:ctor Completed in 0ms
+33 silly logfile start cleaning logs, removing 1 files
+34 silly logfile done cleaning log files
+35 timing idealTree:init Completed in 8ms
+36 timing idealTree:userRequests Completed in 2ms
+37 silly idealTree buildDeps
+38 silly fetch manifest grunt-cli@*
+39 http fetch GET 200 https://registry.npmjs.org/grunt-cli 590ms (cache revalidated)
+40 silly placeDep ROOT grunt-cli@1.5.0 OK for: mkdir-cache-maker@1.0.0 want: *
+41 silly fetch manifest nopt@~5.0.0
+42 silly fetch manifest liftup@~3.0.1
+43 silly fetch manifest v8flags@^4.0.1
+44 silly fetch manifest interpret@~1.1.0
+45 silly fetch manifest grunt-known-options@~2.0.0
+46 http fetch GET 200 https://registry.npmjs.org/nopt 13ms (cache hit)
+47 http fetch GET 200 https://registry.npmjs.org/v8flags 14ms (cache hit)
+48 http fetch GET 200 https://registry.npmjs.org/interpret 13ms (cache hit)
+49 http fetch GET 200 https://registry.npmjs.org/grunt-known-options 14ms (cache hit)
+50 http fetch GET 200 https://registry.npmjs.org/liftup 272ms (cache revalidated)
+51 timing idealTree:#root Completed in 867ms
+52 silly placeDep ROOT grunt-known-options@2.0.0 OK for: grunt-cli@1.5.0 want: ~2.0.0
+53 silly placeDep ROOT interpret@1.1.0 OK for: grunt-cli@1.5.0 want: ~1.1.0
+54 silly placeDep ROOT liftup@3.0.1 OK for: grunt-cli@1.5.0 want: ~3.0.1
+55 silly fetch manifest extend@^3.0.2
+56 silly fetch manifest findup-sync@^4.0.0
+57 silly fetch manifest fined@^1.2.0
+58 silly fetch manifest flagged-respawn@^1.0.1
+59 silly fetch manifest is-plain-object@^2.0.4
+60 silly fetch manifest object.map@^1.0.1
+61 silly fetch manifest rechoir@^0.7.0
+62 silly fetch manifest resolve@^1.19.0
+63 silly placeDep ROOT nopt@5.0.0 OK for: grunt-cli@1.5.0 want: ~5.0.0
+64 silly fetch manifest abbrev@1
+65 silly placeDep ROOT v8flags@4.0.1 OK for: grunt-cli@1.5.0 want: ^4.0.1
+66 http fetch GET 200 https://registry.npmjs.org/resolve 23ms (cache hit)
+67 http fetch GET 200 https://registry.npmjs.org/extend 70ms (cache revalidated)
+68 http fetch GET 200 https://registry.npmjs.org/is-plain-object 156ms (cache revalidated)
+69 http fetch GET 200 https://registry.npmjs.org/findup-sync 177ms (cache revalidated)
+70 http fetch GET 200 https://registry.npmjs.org/abbrev 181ms (cache revalidated)
+71 http fetch GET 200 https://registry.npmjs.org/flagged-respawn 337ms (cache revalidated)
+72 http fetch GET 200 https://registry.npmjs.org/fined 342ms (cache revalidated)
+73 http fetch GET 200 https://registry.npmjs.org/object.map 373ms (cache revalidated)
+74 http fetch GET 200 https://registry.npmjs.org/rechoir 468ms (cache revalidated)
+75 timing idealTree:node_modules/grunt-cli Completed in 473ms
+76 timing idealTree:node_modules/grunt-known-options Completed in 0ms
+77 timing idealTree:node_modules/interpret Completed in 0ms
+78 silly placeDep ROOT extend@3.0.2 OK for: liftup@3.0.1 want: ^3.0.2
+79 silly placeDep ROOT findup-sync@4.0.0 OK for: liftup@3.0.1 want: ^4.0.0
+80 silly fetch manifest detect-file@^1.0.0
+81 silly fetch manifest is-glob@^4.0.0
+82 silly fetch manifest micromatch@^4.0.2
+83 silly fetch manifest resolve-dir@^1.0.1
+84 silly placeDep ROOT fined@1.2.0 OK for: liftup@3.0.1 want: ^1.2.0
+85 silly fetch manifest expand-tilde@^2.0.2
+86 silly fetch manifest is-plain-object@^2.0.3
+87 silly fetch manifest object.defaults@^1.1.0
+88 silly fetch manifest object.pick@^1.2.0
+89 silly fetch manifest parse-filepath@^1.0.1
+90 silly placeDep ROOT flagged-respawn@1.0.1 OK for: liftup@3.0.1 want: ^1.0.1
+91 silly placeDep ROOT is-plain-object@2.0.4 OK for: liftup@3.0.1 want: ^2.0.4
+92 silly fetch manifest isobject@^3.0.1
+93 silly placeDep ROOT object.map@1.0.1 OK for: liftup@3.0.1 want: ^1.0.1
+94 silly fetch manifest for-own@^1.0.0
+95 silly fetch manifest make-iterator@^1.0.0
+96 silly placeDep ROOT rechoir@0.7.1 OK for: liftup@3.0.1 want: ^0.7.0
+97 silly fetch manifest resolve@^1.9.0
+98 silly placeDep ROOT resolve@1.22.11 OK for: liftup@3.0.1 want: ^1.19.0
+99 silly fetch manifest is-core-module@^2.16.1
+100 silly fetch manifest path-parse@^1.0.7
+101 silly fetch manifest supports-preserve-symlinks-flag@^1.0.0
+102 http fetch GET 200 https://registry.npmjs.org/isobject 78ms (cache revalidated)
+103 http fetch GET 200 https://registry.npmjs.org/is-glob 89ms (cache revalidated)
+104 http fetch GET 200 https://registry.npmjs.org/micromatch 89ms (cache revalidated)
+105 http fetch GET 200 https://registry.npmjs.org/path-parse 170ms (cache revalidated)
+106 http fetch GET 200 https://registry.npmjs.org/supports-preserve-symlinks-flag 171ms (cache revalidated)
+107 http fetch GET 200 https://registry.npmjs.org/object.pick 240ms (cache revalidated)
+108 http fetch GET 200 https://registry.npmjs.org/detect-file 252ms (cache revalidated)
+109 http fetch GET 200 https://registry.npmjs.org/parse-filepath 254ms (cache revalidated)
+110 http fetch GET 200 https://registry.npmjs.org/expand-tilde 268ms (cache revalidated)
+111 http fetch GET 200 https://registry.npmjs.org/make-iterator 372ms (cache revalidated)
+112 http fetch GET 200 https://registry.npmjs.org/resolve-dir 620ms (cache revalidated)
+113 http fetch GET 200 https://registry.npmjs.org/object.defaults 621ms (cache revalidated)
+114 http fetch GET 200 https://registry.npmjs.org/for-own 640ms (cache revalidated)
+115 http fetch GET 200 https://registry.npmjs.org/is-core-module 706ms (cache revalidated)
+116 timing idealTree:node_modules/liftup Completed in 718ms
+117 timing idealTree:node_modules/extend Completed in 0ms
+118 silly placeDep ROOT detect-file@1.0.0 OK for: findup-sync@4.0.0 want: ^1.0.0
+119 silly placeDep ROOT is-glob@4.0.3 OK for: findup-sync@4.0.0 want: ^4.0.0
+120 silly fetch manifest is-extglob@^2.1.1
+121 silly placeDep ROOT micromatch@4.0.8 OK for: findup-sync@4.0.0 want: ^4.0.2
+122 silly fetch manifest braces@^3.0.3
+123 silly fetch manifest picomatch@^2.3.1
+124 silly placeDep ROOT resolve-dir@1.0.1 OK for: findup-sync@4.0.0 want: ^1.0.1
+125 silly fetch manifest expand-tilde@^2.0.0
+126 silly fetch manifest global-modules@^1.0.0
+127 http fetch GET 200 https://registry.npmjs.org/picomatch 73ms (cache revalidated)
+128 http fetch GET 200 https://registry.npmjs.org/is-extglob 75ms (cache revalidated)
+129 http fetch GET 200 https://registry.npmjs.org/braces 224ms (cache revalidated)
+130 http fetch GET 200 https://registry.npmjs.org/global-modules 257ms (cache revalidated)
+131 timing idealTree:node_modules/findup-sync Completed in 263ms
+132 timing idealTree:node_modules/detect-file Completed in 0ms
+133 silly placeDep ROOT expand-tilde@2.0.2 OK for: fined@1.2.0 want: ^2.0.2
+134 silly fetch manifest homedir-polyfill@^1.0.1
+135 silly placeDep ROOT object.defaults@1.1.0 OK for: fined@1.2.0 want: ^1.1.0
+136 silly fetch manifest array-each@^1.0.1
+137 silly fetch manifest array-slice@^1.0.0
+138 silly fetch manifest isobject@^3.0.0
+139 silly placeDep ROOT object.pick@1.3.0 OK for: fined@1.2.0 want: ^1.2.0
+140 silly placeDep ROOT parse-filepath@1.0.2 OK for: fined@1.2.0 want: ^1.0.1
+141 silly fetch manifest is-absolute@^1.0.0
+142 silly fetch manifest map-cache@^0.2.0
+143 silly fetch manifest path-root@^0.1.1
+144 http fetch GET 200 https://registry.npmjs.org/map-cache 72ms (cache revalidated)
+145 http fetch GET 200 https://registry.npmjs.org/is-absolute 76ms (cache revalidated)
+146 http fetch GET 200 https://registry.npmjs.org/path-root 240ms (cache revalidated)
+147 http fetch GET 200 https://registry.npmjs.org/homedir-polyfill 263ms (cache revalidated)
+148 http fetch GET 200 https://registry.npmjs.org/array-slice 644ms (cache revalidated)
+149 http fetch GET 200 https://registry.npmjs.org/array-each 686ms (cache revalidated)
+150 timing idealTree:node_modules/fined Completed in 692ms
+151 silly placeDep ROOT homedir-polyfill@1.0.3 OK for: expand-tilde@2.0.2 want: ^1.0.1
+152 silly fetch manifest parse-passwd@^1.0.0
+153 http fetch GET 200 https://registry.npmjs.org/parse-passwd 264ms (cache revalidated)
+154 timing idealTree:node_modules/expand-tilde Completed in 267ms
+155 timing idealTree:node_modules/flagged-respawn Completed in 0ms
+156 silly placeDep ROOT parse-passwd@1.0.0 OK for: homedir-polyfill@1.0.3 want: ^1.0.0
+157 timing idealTree:node_modules/homedir-polyfill Completed in 3ms
+158 silly placeDep ROOT is-extglob@2.1.1 OK for: is-glob@4.0.3 want: ^2.1.1
+159 timing idealTree:node_modules/is-glob Completed in 1ms
+160 timing idealTree:node_modules/is-extglob Completed in 0ms
+161 silly placeDep ROOT isobject@3.0.1 OK for: is-plain-object@2.0.4 want: ^3.0.1
+162 timing idealTree:node_modules/is-plain-object Completed in 2ms
+163 timing idealTree:node_modules/isobject Completed in 0ms
+164 silly placeDep ROOT braces@3.0.3 OK for: micromatch@4.0.8 want: ^3.0.3
+165 silly fetch manifest fill-range@^7.1.1
+166 silly placeDep ROOT picomatch@2.3.1 OK for: micromatch@4.0.8 want: ^2.3.1
+167 http fetch GET 200 https://registry.npmjs.org/fill-range 78ms (cache revalidated)
+168 timing idealTree:node_modules/micromatch Completed in 79ms
+169 silly placeDep ROOT fill-range@7.1.1 OK for: braces@3.0.3 want: ^7.1.1
+170 silly fetch manifest to-regex-range@^5.0.1
+171 http fetch GET 200 https://registry.npmjs.org/to-regex-range 79ms (cache revalidated)
+172 timing idealTree:node_modules/braces Completed in 80ms
+173 silly placeDep ROOT to-regex-range@5.0.1 OK for: fill-range@7.1.1 want: ^5.0.1
+174 silly fetch manifest is-number@^7.0.0
+175 http fetch GET 200 https://registry.npmjs.org/is-number 73ms (cache revalidated)
+176 timing idealTree:node_modules/fill-range Completed in 75ms
+177 silly placeDep ROOT abbrev@1.1.1 OK for: nopt@5.0.0 want: 1
+178 timing idealTree:node_modules/nopt Completed in 2ms
+179 timing idealTree:node_modules/abbrev Completed in 0ms
+180 silly placeDep ROOT array-each@1.0.1 OK for: object.defaults@1.1.0 want: ^1.0.1
+181 silly placeDep ROOT array-slice@1.1.0 OK for: object.defaults@1.1.0 want: ^1.0.0
+182 silly placeDep ROOT for-own@1.0.0 OK for: object.defaults@1.1.0 want: ^1.0.0
+183 silly fetch manifest for-in@^1.0.1
+184 http fetch GET 200 https://registry.npmjs.org/for-in 329ms (cache revalidated)
+185 timing idealTree:node_modules/object.defaults Completed in 332ms
+186 timing idealTree:node_modules/array-each Completed in 0ms
+187 timing idealTree:node_modules/array-slice Completed in 0ms
+188 silly placeDep ROOT for-in@1.0.2 OK for: for-own@1.0.0 want: ^1.0.1
+189 timing idealTree:node_modules/for-own Completed in 1ms
+190 timing idealTree:node_modules/for-in Completed in 0ms
+191 silly placeDep ROOT make-iterator@1.0.1 OK for: object.map@1.0.1 want: ^1.0.0
+192 silly fetch manifest kind-of@^6.0.2
+193 http fetch GET 200 https://registry.npmjs.org/kind-of 71ms (cache revalidated)
+194 timing idealTree:node_modules/object.map Completed in 73ms
+195 silly placeDep ROOT kind-of@6.0.3 OK for: make-iterator@1.0.1 want: ^6.0.2
+196 timing idealTree:node_modules/make-iterator Completed in 1ms
+197 timing idealTree:node_modules/kind-of Completed in 0ms
+198 timing idealTree:node_modules/object.pick Completed in 0ms
+199 silly placeDep ROOT is-absolute@1.0.0 OK for: parse-filepath@1.0.2 want: ^1.0.0
+200 silly fetch manifest is-relative@^1.0.0
+201 silly fetch manifest is-windows@^1.0.1
+202 silly placeDep ROOT map-cache@0.2.2 OK for: parse-filepath@1.0.2 want: ^0.2.0
+203 silly placeDep ROOT path-root@0.1.1 OK for: parse-filepath@1.0.2 want: ^0.1.1
+204 silly fetch manifest path-root-regex@^0.1.0
+205 http fetch GET 200 https://registry.npmjs.org/is-windows 76ms (cache revalidated)
+206 http fetch GET 200 https://registry.npmjs.org/is-relative 250ms (cache revalidated)
+207 http fetch GET 200 https://registry.npmjs.org/path-root-regex 249ms (cache revalidated)
+208 timing idealTree:node_modules/parse-filepath Completed in 253ms
+209 silly placeDep ROOT is-relative@1.0.0 OK for: is-absolute@1.0.0 want: ^1.0.0
+210 silly fetch manifest is-unc-path@^1.0.0
+211 silly placeDep ROOT is-windows@1.0.2 OK for: is-absolute@1.0.0 want: ^1.0.1
+212 http fetch GET 200 https://registry.npmjs.org/is-unc-path 257ms (cache revalidated)
+213 timing idealTree:node_modules/is-absolute Completed in 259ms
+214 silly placeDep ROOT is-unc-path@1.0.0 OK for: is-relative@1.0.0 want: ^1.0.0
+215 silly fetch manifest unc-path-regex@^0.1.2
+216 http fetch GET 200 https://registry.npmjs.org/unc-path-regex 583ms (cache revalidated)
+217 timing idealTree:node_modules/is-relative Completed in 585ms
+218 silly placeDep ROOT unc-path-regex@0.1.2 OK for: is-unc-path@1.0.0 want: ^0.1.2
+219 timing idealTree:node_modules/is-unc-path Completed in 2ms
+220 timing idealTree:node_modules/is-windows Completed in 0ms
+221 timing idealTree:node_modules/map-cache Completed in 0ms
+222 timing idealTree:node_modules/parse-passwd Completed in 0ms
+223 silly placeDep ROOT path-root-regex@0.1.2 OK for: path-root@0.1.1 want: ^0.1.0
+224 timing idealTree:node_modules/path-root Completed in 2ms
+225 timing idealTree:node_modules/path-root-regex Completed in 0ms
+226 timing idealTree:node_modules/picomatch Completed in 0ms
+227 timing idealTree:node_modules/rechoir Completed in 0ms
+228 silly placeDep ROOT is-core-module@2.16.1 OK for: resolve@1.22.11 want: ^2.16.1
+229 silly fetch manifest hasown@^2.0.2
+230 silly placeDep ROOT path-parse@1.0.7 OK for: resolve@1.22.11 want: ^1.0.7
+231 silly placeDep ROOT supports-preserve-symlinks-flag@1.0.0 OK for: resolve@1.22.11 want: ^1.0.0
+232 http fetch GET 200 https://registry.npmjs.org/hasown 335ms (cache revalidated)
+233 timing idealTree:node_modules/resolve Completed in 337ms
+234 silly placeDep ROOT hasown@2.0.2 OK for: is-core-module@2.16.1 want: ^2.0.2
+235 silly fetch manifest function-bind@^1.1.2
+236 http fetch GET 200 https://registry.npmjs.org/function-bind 77ms (cache revalidated)
+237 timing idealTree:node_modules/is-core-module Completed in 78ms
+238 silly placeDep ROOT function-bind@1.1.2 OK for: hasown@2.0.2 want: ^1.1.2
+239 timing idealTree:node_modules/hasown Completed in 1ms
+240 timing idealTree:node_modules/function-bind Completed in 0ms
+241 timing idealTree:node_modules/path-parse Completed in 0ms
+242 silly placeDep ROOT global-modules@1.0.0 OK for: resolve-dir@1.0.1 want: ^1.0.0
+243 silly fetch manifest global-prefix@^1.0.1
+244 http fetch GET 200 https://registry.npmjs.org/global-prefix 72ms (cache revalidated)
+245 timing idealTree:node_modules/resolve-dir Completed in 74ms
+246 silly placeDep ROOT global-prefix@1.0.2 OK for: global-modules@1.0.0 want: ^1.0.1
+247 silly fetch manifest ini@^1.3.4
+248 silly fetch manifest which@^1.2.14
+249 http fetch GET 200 https://registry.npmjs.org/ini 73ms (cache revalidated)
+250 http fetch GET 200 https://registry.npmjs.org/which 78ms (cache revalidated)
+251 timing idealTree:node_modules/global-modules Completed in 82ms
+252 silly placeDep ROOT ini@1.3.8 OK for: global-prefix@1.0.2 want: ^1.3.4
+253 silly placeDep ROOT which@1.3.1 OK for: global-prefix@1.0.2 want: ^1.2.14
+254 silly fetch manifest isexe@^2.0.0
+255 http fetch GET 200 https://registry.npmjs.org/isexe 79ms (cache revalidated)
+256 timing idealTree:node_modules/global-prefix Completed in 82ms
+257 timing idealTree:node_modules/ini Completed in 0ms
+258 timing idealTree:node_modules/supports-preserve-symlinks-flag Completed in 0ms
+259 silly placeDep ROOT is-number@7.0.0 OK for: to-regex-range@5.0.1 want: ^7.0.0
+260 timing idealTree:node_modules/to-regex-range Completed in 1ms
+261 timing idealTree:node_modules/is-number Completed in 0ms
+262 timing idealTree:node_modules/unc-path-regex Completed in 0ms
+263 timing idealTree:node_modules/v8flags Completed in 0ms
+264 silly placeDep ROOT isexe@2.0.0 OK for: which@1.3.1 want: ^2.0.0
+265 timing idealTree:node_modules/which Completed in 1ms
+266 timing idealTree:node_modules/isexe Completed in 0ms
+267 timing idealTree:buildDeps Completed in 5690ms
+268 timing idealTree:fixDepFlags Completed in 1ms
+269 timing idealTree Completed in 5704ms
+270 timing reify:loadTrees Completed in 5704ms
+271 timing reify:diffTrees Completed in 1ms
+272 silly reify moves {}
+273 timing reify:retireShallow Completed in 0ms
+274 timing reify:createSparse Completed in 26ms
+275 timing reify:loadBundles Completed in 0ms
+276 silly audit bulk request {
+276 silly audit   'grunt-cli': [ '1.5.0' ],
+276 silly audit   'grunt-known-options': [ '2.0.0' ],
+276 silly audit   interpret: [ '1.1.0' ],
+276 silly audit   liftup: [ '3.0.1' ],
+276 silly audit   nopt: [ '5.0.0' ],
+276 silly audit   v8flags: [ '4.0.1' ],
+276 silly audit   extend: [ '3.0.2' ],
+276 silly audit   'findup-sync': [ '4.0.0' ],
+276 silly audit   fined: [ '1.2.0' ],
+276 silly audit   'flagged-respawn': [ '1.0.1' ],
+276 silly audit   'is-plain-object': [ '2.0.4' ],
+276 silly audit   'object.map': [ '1.0.1' ],
+276 silly audit   rechoir: [ '0.7.1' ],
+276 silly audit   resolve: [ '1.22.11' ],
+276 silly audit   'detect-file': [ '1.0.0' ],
+276 silly audit   'is-glob': [ '4.0.3' ],
+276 silly audit   micromatch: [ '4.0.8' ],
+276 silly audit   'resolve-dir': [ '1.0.1' ],
+276 silly audit   'expand-tilde': [ '2.0.2' ],
+276 silly audit   'object.defaults': [ '1.1.0' ],
+276 silly audit   'object.pick': [ '1.3.0' ],
+276 silly audit   'parse-filepath': [ '1.0.2' ],
+276 silly audit   'homedir-polyfill': [ '1.0.3' ],
+276 silly audit   'parse-passwd': [ '1.0.0' ],
+276 silly audit   'is-extglob': [ '2.1.1' ],
+276 silly audit   isobject: [ '3.0.1' ],
+276 silly audit   braces: [ '3.0.3' ],
+276 silly audit   picomatch: [ '2.3.1' ],
+276 silly audit   'fill-range': [ '7.1.1' ],
+276 silly audit   'to-regex-range': [ '5.0.1' ],
+276 silly audit   abbrev: [ '1.1.1' ],
+276 silly audit   'array-each': [ '1.0.1' ],
+276 silly audit   'array-slice': [ '1.1.0' ],
+276 silly audit   'for-own': [ '1.0.0' ],
+276 silly audit   'for-in': [ '1.0.2' ],
+276 silly audit   'make-iterator': [ '1.0.1' ],
+276 silly audit   'kind-of': [ '6.0.3' ],
+276 silly audit   'is-absolute': [ '1.0.0' ],
+276 silly audit   'map-cache': [ '0.2.2' ],
+276 silly audit   'path-root': [ '0.1.1' ],
+276 silly audit   'is-relative': [ '1.0.0' ],
+276 silly audit   'is-windows': [ '1.0.2' ],
+276 silly audit   'is-unc-path': [ '1.0.0' ],
+276 silly audit   'unc-path-regex': [ '0.1.2' ],
+276 silly audit   'path-root-regex': [ '0.1.2' ],
+276 silly audit   'is-core-module': [ '2.16.1' ],
+276 silly audit   'path-parse': [ '1.0.7' ],
+276 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+276 silly audit   hasown: [ '2.0.2' ],
+276 silly audit   'function-bind': [ '1.1.2' ],
+276 silly audit   'global-modules': [ '1.0.0' ],
+276 silly audit   'global-prefix': [ '1.0.2' ],
+276 silly audit   ini: [ '1.3.8' ],
+276 silly audit   which: [ '1.3.1' ],
+276 silly audit   'is-number': [ '7.0.0' ],
+276 silly audit   isexe: [ '2.0.0' ]
+276 silly audit }
+277 timing reifyNode:node_modules/ini Completed in 79ms
+278 timing reifyNode:node_modules/is-number Completed in 80ms
+279 timing reifyNode:node_modules/global-modules Completed in 79ms
+280 timing reifyNode:node_modules/path-parse Completed in 79ms
+281 timing reifyNode:node_modules/is-unc-path Completed in 79ms
+282 timing reifyNode:node_modules/path-root-regex Completed in 80ms
+283 timing reifyNode:node_modules/global-prefix Completed in 80ms
+284 timing reifyNode:node_modules/unc-path-regex Completed in 80ms
+285 timing reifyNode:node_modules/path-root Completed in 80ms
+286 timing reifyNode:node_modules/is-relative Completed in 80ms
+287 timing reifyNode:node_modules/make-iterator Completed in 80ms
+288 timing reifyNode:node_modules/is-windows Completed in 80ms
+289 timing reifyNode:node_modules/is-absolute Completed in 80ms
+290 timing reifyNode:node_modules/abbrev Completed in 80ms
+291 timing reifyNode:node_modules/for-in Completed in 80ms
+292 timing reifyNode:node_modules/for-own Completed in 80ms
+293 timing reifyNode:node_modules/map-cache Completed in 80ms
+294 timing reifyNode:node_modules/array-each Completed in 80ms
+295 timing reifyNode:node_modules/is-extglob Completed in 80ms
+296 timing reifyNode:node_modules/parse-passwd Completed in 80ms
+297 timing reifyNode:node_modules/parse-filepath Completed in 80ms
+298 timing reifyNode:node_modules/object.pick Completed in 80ms
+299 timing reifyNode:node_modules/resolve-dir Completed in 80ms
+300 timing reifyNode:node_modules/expand-tilde Completed in 80ms
+301 timing reifyNode:node_modules/detect-file Completed in 81ms
+302 timing reifyNode:node_modules/object.map Completed in 81ms
+303 timing reifyNode:node_modules/array-slice Completed in 81ms
+304 timing reifyNode:node_modules/findup-sync Completed in 81ms
+305 timing reifyNode:node_modules/fined Completed in 81ms
+306 timing reifyNode:node_modules/to-regex-range Completed in 82ms
+307 timing reifyNode:node_modules/fill-range Completed in 82ms
+308 timing reifyNode:node_modules/grunt-known-options Completed in 82ms
+309 timing reifyNode:node_modules/is-glob Completed in 82ms
+310 timing reifyNode:node_modules/isobject Completed in 84ms
+311 timing reifyNode:node_modules/micromatch Completed in 85ms
+312 timing reifyNode:node_modules/homedir-polyfill Completed in 85ms
+313 timing reifyNode:node_modules/is-plain-object Completed in 85ms
+314 timing reifyNode:node_modules/v8flags Completed in 85ms
+315 timing reifyNode:node_modules/kind-of Completed in 86ms
+316 timing reifyNode:node_modules/interpret Completed in 86ms
+317 timing reifyNode:node_modules/object.defaults Completed in 87ms
+318 timing reifyNode:node_modules/which Completed in 89ms
+319 timing reifyNode:node_modules/nopt Completed in 90ms
+320 timing reifyNode:node_modules/rechoir Completed in 91ms
+321 timing reifyNode:node_modules/grunt-cli Completed in 92ms
+322 timing reifyNode:node_modules/flagged-respawn Completed in 92ms
+323 timing reifyNode:node_modules/isexe Completed in 94ms
+324 timing reifyNode:node_modules/hasown Completed in 96ms
+325 timing reifyNode:node_modules/extend Completed in 96ms
+326 timing reifyNode:node_modules/is-core-module Completed in 97ms
+327 timing reifyNode:node_modules/supports-preserve-symlinks-flag Completed in 97ms
+328 timing reifyNode:node_modules/braces Completed in 98ms
+329 timing reifyNode:node_modules/picomatch Completed in 98ms
+330 timing reifyNode:node_modules/function-bind Completed in 99ms
+331 timing reifyNode:node_modules/liftup Completed in 100ms
+332 timing reifyNode:node_modules/resolve Completed in 151ms
+333 timing reify:unpack Completed in 152ms
+334 timing reify:unretire Completed in 0ms
+335 timing build:queue Completed in 1ms
+336 timing build:link:node_modules/grunt-cli Completed in 5ms
+337 timing build:link:node_modules/nopt Completed in 4ms
+338 timing build:link:node_modules/resolve Completed in 4ms
+339 timing build:link:node_modules/which Completed in 4ms
+340 timing build:link Completed in 6ms
+341 timing build:deps Completed in 7ms
+342 timing build Completed in 7ms
+343 timing reify:build Completed in 8ms
+344 timing reify:trash Completed in 0ms
+345 timing reify:save Completed in 13ms
+346 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 223ms
+347 timing auditReport:getReport Completed in 223ms
+348 silly audit report {}
+349 timing auditReport:init Completed in 0ms
+350 timing reify:audit Completed in 224ms
+351 timing reify Completed in 5958ms
+352 silly ADD node_modules/isexe
+353 silly ADD node_modules/is-number
+354 silly ADD node_modules/which
+355 silly ADD node_modules/ini
+356 silly ADD node_modules/global-prefix
+357 silly ADD node_modules/global-modules
+358 silly ADD node_modules/function-bind
+359 silly ADD node_modules/hasown
+360 silly ADD node_modules/supports-preserve-symlinks-flag
+361 silly ADD node_modules/path-parse
+362 silly ADD node_modules/is-core-module
+363 silly ADD node_modules/path-root-regex
+364 silly ADD node_modules/unc-path-regex
+365 silly ADD node_modules/is-unc-path
+366 silly ADD node_modules/is-windows
+367 silly ADD node_modules/is-relative
+368 silly ADD node_modules/path-root
+369 silly ADD node_modules/map-cache
+370 silly ADD node_modules/is-absolute
+371 silly ADD node_modules/kind-of
+372 silly ADD node_modules/make-iterator
+373 silly ADD node_modules/for-in
+374 silly ADD node_modules/for-own
+375 silly ADD node_modules/array-slice
+376 silly ADD node_modules/array-each
+377 silly ADD node_modules/abbrev
+378 silly ADD node_modules/to-regex-range
+379 silly ADD node_modules/fill-range
+380 silly ADD node_modules/picomatch
+381 silly ADD node_modules/braces
+382 silly ADD node_modules/isobject
+383 silly ADD node_modules/is-extglob
+384 silly ADD node_modules/parse-passwd
+385 silly ADD node_modules/homedir-polyfill
+386 silly ADD node_modules/parse-filepath
+387 silly ADD node_modules/object.pick
+388 silly ADD node_modules/object.defaults
+389 silly ADD node_modules/expand-tilde
+390 silly ADD node_modules/resolve-dir
+391 silly ADD node_modules/micromatch
+392 silly ADD node_modules/is-glob
+393 silly ADD node_modules/detect-file
+394 silly ADD node_modules/resolve
+395 silly ADD node_modules/rechoir
+396 silly ADD node_modules/object.map
+397 silly ADD node_modules/is-plain-object
+398 silly ADD node_modules/flagged-respawn
+399 silly ADD node_modules/fined
+400 silly ADD node_modules/findup-sync
+401 silly ADD node_modules/extend
+402 silly ADD node_modules/v8flags
+403 silly ADD node_modules/nopt
+404 silly ADD node_modules/liftup
+405 silly ADD node_modules/interpret
+406 silly ADD node_modules/grunt-known-options
+407 silly ADD node_modules/grunt-cli
+408 timing command:i Completed in 5963ms
+409 verbose exit 0
+410 timing npm Completed in 6138ms
+411 info ok

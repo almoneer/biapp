@@ -1,0 +1,1890 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@9.5.1
+2 info using node@v18.16.1
+3 timing npm:load:whichnode Completed in 2ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:C:\Program Files\nodejs\node_modules\npm\npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:C:\Users\almon\.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:C:\Users\almon\AppData\Roaming\npm\etc\npmrc Completed in 0ms
+13 timing config:load:global Completed in 1ms
+14 timing config:load:setEnvs Completed in 1ms
+15 timing config:load Completed in 10ms
+16 timing npm:load:configload Completed in 10ms
+17 timing npm:load:mkdirpcache Completed in 0ms
+18 timing npm:load:mkdirplogs Completed in 1ms
+19 verbose title npm i electron-builder
+20 verbose argv "i" "electron-builder" "--global"
+21 timing npm:load:setTitle Completed in 1ms
+22 timing config:load:flatten Completed in 1ms
+23 timing npm:load:display Completed in 2ms
+24 verbose logfile logs-max:10 dir:C:\Users\almon\AppData\Local\npm-cache\_logs\2023-07-11T06_13_28_407Z-
+25 verbose logfile C:\Users\almon\AppData\Local\npm-cache\_logs\2023-07-11T06_13_28_407Z-debug-0.log
+26 timing npm:load:logFile Completed in 15ms
+27 timing npm:load:timers Completed in 1ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 32ms
+30 timing config:load:flatten Completed in 1ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile start cleaning logs, removing 2 files
+33 silly logfile done cleaning log files
+34 timing idealTree:init Completed in 7ms
+35 timing idealTree:userRequests Completed in 3ms
+36 silly idealTree buildDeps
+37 silly fetch manifest electron-builder@*
+38 http fetch GET 200 https://registry.npmjs.org/electron-builder 17ms (cache hit)
+39 silly placeDep ROOT electron-builder@24.4.0 OK for:  want: *
+40 silly fetch manifest app-builder-lib@24.4.0
+41 silly fetch manifest builder-util@24.4.0
+42 silly fetch manifest builder-util-runtime@9.2.1
+43 silly fetch manifest chalk@^4.1.2
+44 silly fetch manifest dmg-builder@24.4.0
+45 silly fetch manifest fs-extra@^10.1.0
+46 silly fetch manifest is-ci@^3.0.0
+47 silly fetch manifest lazy-val@^1.0.5
+48 silly fetch manifest read-config-file@6.3.2
+49 silly fetch manifest simple-update-notifier@^1.1.0
+50 silly fetch manifest yargs@^17.6.2
+51 http fetch GET 200 https://registry.npmjs.org/fs-extra 31ms (cache hit)
+52 http fetch GET 200 https://registry.npmjs.org/app-builder-lib 37ms (cache hit)
+53 http fetch GET 200 https://registry.npmjs.org/dmg-builder 36ms (cache hit)
+54 http fetch GET 200 https://registry.npmjs.org/chalk 38ms (cache hit)
+55 http fetch GET 200 https://registry.npmjs.org/builder-util 41ms (cache hit)
+56 http fetch GET 200 https://registry.npmjs.org/builder-util-runtime 43ms (cache hit)
+57 http fetch GET 200 https://registry.npmjs.org/yargs 40ms (cache hit)
+58 http fetch GET 200 https://registry.npmjs.org/is-ci 44ms (cache hit)
+59 http fetch GET 200 https://registry.npmjs.org/simple-update-notifier 42ms (cache hit)
+60 http fetch GET 200 https://registry.npmjs.org/lazy-val 44ms (cache hit)
+61 http fetch GET 200 https://registry.npmjs.org/read-config-file 44ms (cache hit)
+62 timing idealTree:#root Completed in 83ms
+63 silly placeDep node_modules/electron-builder app-builder-lib@24.4.0 OK for: electron-builder@24.4.0 want: 24.4.0
+64 silly placeDep node_modules/electron-builder builder-util@24.4.0 OK for: electron-builder@24.4.0 want: 24.4.0
+65 silly placeDep node_modules/electron-builder builder-util-runtime@9.2.1 OK for: electron-builder@24.4.0 want: 9.2.1
+66 silly placeDep node_modules/electron-builder chalk@4.1.2 OK for: electron-builder@24.4.0 want: ^4.1.2
+67 silly placeDep node_modules/electron-builder dmg-builder@24.4.0 OK for: electron-builder@24.4.0 want: 24.4.0
+68 silly placeDep node_modules/electron-builder fs-extra@10.1.0 OK for: electron-builder@24.4.0 want: ^10.1.0
+69 silly placeDep node_modules/electron-builder is-ci@3.0.1 OK for: electron-builder@24.4.0 want: ^3.0.0
+70 silly placeDep node_modules/electron-builder lazy-val@1.0.5 OK for: electron-builder@24.4.0 want: ^1.0.5
+71 silly placeDep node_modules/electron-builder read-config-file@6.3.2 OK for: electron-builder@24.4.0 want: 6.3.2
+72 silly placeDep node_modules/electron-builder simple-update-notifier@1.1.0 OK for: electron-builder@24.4.0 want: ^1.1.0
+73 silly placeDep node_modules/electron-builder yargs@17.7.2 OK for: electron-builder@24.4.0 want: ^17.6.2
+74 silly fetch manifest 7zip-bin@~5.1.1
+75 silly fetch manifest @develar/schema-utils@~2.6.5
+76 silly fetch manifest @electron/notarize@^1.2.3
+77 silly fetch manifest @electron/osx-sign@^1.0.4
+78 silly fetch manifest @electron/rebuild@^3.2.13
+79 silly fetch manifest @electron/universal@1.3.4
+80 silly fetch manifest @malept/flatpak-bundler@^0.4.0
+81 silly fetch manifest @types/fs-extra@9.0.13
+82 silly fetch manifest async-exit-hook@^2.0.1
+83 silly fetch manifest bluebird-lst@^1.0.9
+84 silly fetch manifest chromium-pickle-js@^0.2.0
+85 silly fetch manifest debug@^4.3.4
+86 silly fetch manifest ejs@^3.1.8
+87 silly fetch manifest electron-publish@24.4.0
+88 silly fetch manifest form-data@^4.0.0
+89 silly fetch manifest hosted-git-info@^4.1.0
+90 silly fetch manifest isbinaryfile@^5.0.0
+91 silly fetch manifest js-yaml@^4.1.0
+92 silly fetch manifest minimatch@^5.1.1
+93 silly fetch manifest sanitize-filename@^1.6.3
+94 silly fetch manifest semver@^7.3.8
+95 silly fetch manifest tar@^6.1.12
+96 silly fetch manifest temp-file@^3.4.0
+97 silly fetch manifest @types/debug@^4.1.6
+98 silly fetch manifest app-builder-bin@4.0.0
+99 silly fetch manifest cross-spawn@^7.0.3
+100 silly fetch manifest http-proxy-agent@^5.0.0
+101 silly fetch manifest https-proxy-agent@^5.0.1
+102 silly fetch manifest source-map-support@^0.5.19
+103 silly fetch manifest stat-mode@^1.0.0
+104 silly fetch manifest sax@^1.2.4
+105 silly fetch manifest ansi-styles@^4.1.0
+106 silly fetch manifest supports-color@^7.1.0
+107 silly fetch manifest iconv-lite@^0.6.2
+108 silly fetch manifest dmg-license@^1.0.11
+109 silly fetch manifest graceful-fs@^4.2.0
+110 silly fetch manifest jsonfile@^6.0.1
+111 silly fetch manifest universalify@^2.0.0
+112 silly fetch manifest ci-info@^3.2.0
+113 silly fetch manifest config-file-ts@^0.2.4
+114 silly fetch manifest dotenv@^9.0.2
+115 silly fetch manifest dotenv-expand@^5.1.0
+116 silly fetch manifest json5@^2.2.0
+117 silly fetch manifest semver@~7.0.0
+118 silly fetch manifest cliui@^8.0.1
+119 silly fetch manifest escalade@^3.1.1
+120 silly fetch manifest get-caller-file@^2.0.5
+121 silly fetch manifest require-directory@^2.1.1
+122 silly fetch manifest string-width@^4.2.3
+123 silly fetch manifest y18n@^5.0.5
+124 silly fetch manifest yargs-parser@^21.1.1
+125 http fetch GET 200 https://registry.npmjs.org/@develar%2fschema-utils 99ms (cache hit)
+126 http fetch GET 200 https://registry.npmjs.org/@electron%2frebuild 99ms (cache hit)
+127 http fetch GET 200 https://registry.npmjs.org/@electron%2fnotarize 99ms (cache hit)
+128 http fetch GET 200 https://registry.npmjs.org/7zip-bin 101ms (cache hit)
+129 http fetch GET 200 https://registry.npmjs.org/@malept%2fflatpak-bundler 100ms (cache hit)
+130 http fetch GET 200 https://registry.npmjs.org/@types%2ffs-extra 100ms (cache hit)
+131 http fetch GET 200 https://registry.npmjs.org/@electron%2funiversal 101ms (cache hit)
+132 http fetch GET 200 https://registry.npmjs.org/@electron%2fosx-sign 102ms (cache hit)
+133 http fetch GET 200 https://registry.npmjs.org/bluebird-lst 100ms (cache hit)
+134 http fetch GET 200 https://registry.npmjs.org/async-exit-hook 102ms (cache hit)
+135 http fetch GET 200 https://registry.npmjs.org/debug 100ms (cache hit)
+136 http fetch GET 200 https://registry.npmjs.org/ejs 101ms (cache hit)
+137 http fetch GET 200 https://registry.npmjs.org/isbinaryfile 98ms (cache hit)
+138 http fetch GET 200 https://registry.npmjs.org/electron-publish 101ms (cache hit)
+139 http fetch GET 200 https://registry.npmjs.org/hosted-git-info 102ms (cache hit)
+140 http fetch GET 200 https://registry.npmjs.org/chromium-pickle-js 106ms (cache hit)
+141 http fetch GET 200 https://registry.npmjs.org/form-data 103ms (cache hit)
+142 http fetch GET 200 https://registry.npmjs.org/sanitize-filename 101ms (cache hit)
+143 http fetch GET 200 https://registry.npmjs.org/temp-file 101ms (cache hit)
+144 http fetch GET 200 https://registry.npmjs.org/js-yaml 103ms (cache hit)
+145 http fetch GET 200 https://registry.npmjs.org/semver 103ms (cache hit)
+146 http fetch GET 200 https://registry.npmjs.org/tar 103ms (cache hit)
+147 http fetch GET 200 https://registry.npmjs.org/http-proxy-agent 100ms (cache hit)
+148 http fetch GET 200 https://registry.npmjs.org/cross-spawn 100ms (cache hit)
+149 http fetch GET 200 https://registry.npmjs.org/minimatch 106ms (cache hit)
+150 http fetch GET 200 https://registry.npmjs.org/stat-mode 104ms (cache hit)
+151 http fetch GET 200 https://registry.npmjs.org/app-builder-bin 107ms (cache hit)
+152 http fetch GET 200 https://registry.npmjs.org/@types%2fdebug 107ms (cache hit)
+153 http fetch GET 200 https://registry.npmjs.org/https-proxy-agent 107ms (cache hit)
+154 http fetch GET 200 https://registry.npmjs.org/supports-color 104ms (cache hit)
+155 http fetch GET 200 https://registry.npmjs.org/source-map-support 107ms (cache hit)
+156 http fetch GET 200 https://registry.npmjs.org/ansi-styles 106ms (cache hit)
+157 http fetch GET 200 https://registry.npmjs.org/sax 107ms (cache hit)
+158 http fetch GET 200 https://registry.npmjs.org/iconv-lite 106ms (cache hit)
+159 http fetch GET 200 https://registry.npmjs.org/ci-info 105ms (cache hit)
+160 http fetch GET 200 https://registry.npmjs.org/dmg-license 107ms (cache hit)
+161 http fetch GET 200 https://registry.npmjs.org/graceful-fs 107ms (cache hit)
+162 http fetch GET 200 https://registry.npmjs.org/config-file-ts 105ms (cache hit)
+163 http fetch GET 200 https://registry.npmjs.org/jsonfile 108ms (cache hit)
+164 http fetch GET 200 https://registry.npmjs.org/universalify 107ms (cache hit)
+165 http fetch GET 200 https://registry.npmjs.org/json5 104ms (cache hit)
+166 http fetch GET 200 https://registry.npmjs.org/cliui 103ms (cache hit)
+167 http fetch GET 200 https://registry.npmjs.org/dotenv 107ms (cache hit)
+168 http fetch GET 200 https://registry.npmjs.org/require-directory 103ms (cache hit)
+169 http fetch GET 200 https://registry.npmjs.org/dotenv-expand 107ms (cache hit)
+170 http fetch GET 200 https://registry.npmjs.org/escalade 105ms (cache hit)
+171 http fetch GET 200 https://registry.npmjs.org/semver 106ms (cache hit)
+172 http fetch GET 200 https://registry.npmjs.org/get-caller-file 105ms (cache hit)
+173 http fetch GET 200 https://registry.npmjs.org/y18n 104ms (cache hit)
+174 http fetch GET 200 https://registry.npmjs.org/string-width 104ms (cache hit)
+175 http fetch GET 200 https://registry.npmjs.org/yargs-parser 104ms (cache hit)
+176 timing idealTree:node_modules/electron-builder Completed in 146ms
+177 silly placeDep node_modules/electron-builder @develar/schema-utils@2.6.5 OK for: app-builder-lib@24.4.0 want: ~2.6.5
+178 silly placeDep node_modules/electron-builder @electron/notarize@1.2.4 OK for: app-builder-lib@24.4.0 want: ^1.2.3
+179 silly placeDep node_modules/electron-builder @electron/osx-sign@1.0.4 OK for: app-builder-lib@24.4.0 want: ^1.0.4
+180 silly placeDep node_modules/electron-builder @electron/rebuild@3.2.13 OK for: app-builder-lib@24.4.0 want: ^3.2.13
+181 silly placeDep node_modules/electron-builder @electron/universal@1.3.4 OK for: app-builder-lib@24.4.0 want: 1.3.4
+182 silly placeDep node_modules/electron-builder @malept/flatpak-bundler@0.4.0 OK for: app-builder-lib@24.4.0 want: ^0.4.0
+183 silly placeDep node_modules/electron-builder @types/fs-extra@9.0.13 OK for: app-builder-lib@24.4.0 want: 9.0.13
+184 silly placeDep node_modules/electron-builder 7zip-bin@5.1.1 OK for: app-builder-lib@24.4.0 want: ~5.1.1
+185 silly placeDep node_modules/electron-builder async-exit-hook@2.0.1 OK for: app-builder-lib@24.4.0 want: ^2.0.1
+186 silly placeDep node_modules/electron-builder bluebird-lst@1.0.9 OK for: app-builder-lib@24.4.0 want: ^1.0.9
+187 silly placeDep node_modules/electron-builder chromium-pickle-js@0.2.0 OK for: app-builder-lib@24.4.0 want: ^0.2.0
+188 silly placeDep node_modules/electron-builder debug@4.3.4 OK for: app-builder-lib@24.4.0 want: ^4.3.4
+189 silly placeDep node_modules/electron-builder ejs@3.1.9 OK for: app-builder-lib@24.4.0 want: ^3.1.8
+190 silly placeDep node_modules/electron-builder electron-publish@24.4.0 OK for: app-builder-lib@24.4.0 want: 24.4.0
+191 silly placeDep node_modules/electron-builder form-data@4.0.0 OK for: app-builder-lib@24.4.0 want: ^4.0.0
+192 silly placeDep node_modules/electron-builder hosted-git-info@4.1.0 OK for: app-builder-lib@24.4.0 want: ^4.1.0
+193 silly placeDep node_modules/electron-builder isbinaryfile@5.0.0 OK for: app-builder-lib@24.4.0 want: ^5.0.0
+194 silly placeDep node_modules/electron-builder js-yaml@4.1.0 OK for: app-builder-lib@24.4.0 want: ^4.1.0
+195 silly placeDep node_modules/electron-builder minimatch@5.1.6 OK for: app-builder-lib@24.4.0 want: ^5.1.1
+196 silly placeDep node_modules/electron-builder sanitize-filename@1.6.3 OK for: app-builder-lib@24.4.0 want: ^1.6.3
+197 silly placeDep node_modules/electron-builder semver@7.5.4 OK for: app-builder-lib@24.4.0 want: ^7.3.8
+198 silly placeDep node_modules/electron-builder tar@6.1.15 OK for: app-builder-lib@24.4.0 want: ^6.1.12
+199 silly placeDep node_modules/electron-builder temp-file@3.4.0 OK for: app-builder-lib@24.4.0 want: ^3.4.0
+200 silly fetch manifest ajv@^6.12.0
+201 silly fetch manifest ajv-keywords@^3.4.1
+202 silly fetch manifest fs-extra@^9.0.1
+203 silly fetch manifest compare-version@^0.1.2
+204 silly fetch manifest isbinaryfile@^4.0.8
+205 silly fetch manifest minimist@^1.2.6
+206 silly fetch manifest plist@^3.0.5
+207 silly fetch manifest @malept/cross-spawn-promise@^2.0.0
+208 silly fetch manifest detect-libc@^2.0.1
+209 silly fetch manifest got@^11.7.0
+210 silly fetch manifest node-abi@^3.0.0
+211 silly fetch manifest node-api-version@^0.1.4
+212 silly fetch manifest node-gyp@^9.0.0
+213 silly fetch manifest ora@^5.1.0
+214 silly fetch manifest @electron/asar@^3.2.1
+215 silly fetch manifest @malept/cross-spawn-promise@^1.1.0
+216 silly fetch manifest dir-compare@^3.0.0
+217 silly fetch manifest minimatch@^3.0.4
+218 silly fetch manifest plist@^3.0.4
+219 silly fetch manifest fs-extra@^9.0.0
+220 silly fetch manifest lodash@^4.17.15
+221 silly fetch manifest tmp-promise@^3.0.2
+222 silly fetch manifest @types/node@*
+223 silly fetch manifest bluebird@^3.5.5
+224 silly fetch manifest ms@2.1.2
+225 silly fetch manifest jake@^10.8.5
+226 silly fetch manifest mime@^2.5.2
+227 silly fetch manifest asynckit@^0.4.0
+228 silly fetch manifest combined-stream@^1.0.8
+229 silly fetch manifest mime-types@^2.1.12
+230 silly fetch manifest lru-cache@^6.0.0
+231 silly fetch manifest argparse@^2.0.1
+232 silly fetch manifest brace-expansion@^2.0.1
+233 silly fetch manifest truncate-utf8-bytes@^1.0.0
+234 silly fetch manifest chownr@^2.0.0
+235 silly fetch manifest fs-minipass@^2.0.0
+236 silly fetch manifest minipass@^5.0.0
+237 silly fetch manifest minizlib@^2.1.1
+238 silly fetch manifest mkdirp@^1.0.3
+239 silly fetch manifest yallist@^4.0.0
+240 http fetch GET 200 https://registry.npmjs.org/compare-version 75ms (cache hit)
+241 http fetch GET 200 https://registry.npmjs.org/minimist 76ms (cache hit)
+242 http fetch GET 200 https://registry.npmjs.org/ajv-keywords 77ms (cache hit)
+243 http fetch GET 200 https://registry.npmjs.org/@malept%2fcross-spawn-promise 76ms (cache hit)
+244 http fetch GET 200 https://registry.npmjs.org/plist 76ms (cache hit)
+245 http fetch GET 200 https://registry.npmjs.org/detect-libc 77ms (cache hit)
+246 http fetch GET 200 https://registry.npmjs.org/plist 73ms (cache hit)
+247 http fetch GET 200 https://registry.npmjs.org/ora 75ms (cache hit)
+248 http fetch GET 200 https://registry.npmjs.org/ajv 82ms (cache hit)
+249 http fetch GET 200 https://registry.npmjs.org/node-abi 82ms (cache hit)
+250 http fetch GET 200 https://registry.npmjs.org/dir-compare 81ms (cache hit)
+251 http fetch GET 200 https://registry.npmjs.org/@malept%2fcross-spawn-promise 83ms (cache hit)
+252 http fetch GET 200 https://registry.npmjs.org/node-api-version 84ms (cache hit)
+253 http fetch GET 200 https://registry.npmjs.org/tmp-promise 80ms (cache hit)
+254 http fetch GET 200 https://registry.npmjs.org/node-gyp 85ms (cache hit)
+255 http fetch GET 200 https://registry.npmjs.org/got 87ms (cache hit)
+256 http fetch GET 200 https://registry.npmjs.org/lodash 86ms (cache hit)
+257 http fetch GET 200 https://registry.npmjs.org/ms 85ms (cache hit)
+258 http fetch GET 200 https://registry.npmjs.org/mime-types 82ms (cache hit)
+259 http fetch GET 200 https://registry.npmjs.org/@electron%2fasar 90ms (cache hit)
+260 http fetch GET 200 https://registry.npmjs.org/mime 85ms (cache hit)
+261 http fetch GET 200 https://registry.npmjs.org/bluebird 88ms (cache hit)
+262 http fetch GET 200 https://registry.npmjs.org/combined-stream 87ms (cache hit)
+263 http fetch GET 200 https://registry.npmjs.org/asynckit 88ms (cache hit)
+264 http fetch GET 200 https://registry.npmjs.org/truncate-utf8-bytes 86ms (cache hit)
+265 http fetch GET 200 https://registry.npmjs.org/chownr 85ms (cache hit)
+266 http fetch GET 200 https://registry.npmjs.org/jake 89ms (cache hit)
+267 http fetch GET 200 https://registry.npmjs.org/fs-minipass 86ms (cache hit)
+268 http fetch GET 200 https://registry.npmjs.org/lru-cache 89ms (cache hit)
+269 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 97ms (cache hit)
+270 http fetch GET 200 https://registry.npmjs.org/brace-expansion 97ms (cache hit)
+271 http fetch GET 200 https://registry.npmjs.org/argparse 97ms (cache hit)
+272 http fetch GET 200 https://registry.npmjs.org/minizlib 95ms (cache hit)
+273 http fetch GET 200 https://registry.npmjs.org/minipass 96ms (cache hit)
+274 http fetch GET 200 https://registry.npmjs.org/yallist 98ms (cache hit)
+275 http fetch GET 200 https://registry.npmjs.org/mkdirp 99ms (cache hit)
+276 timing idealTree:node_modules/electron-builder/node_modules/app-builder-lib Completed in 136ms
+277 silly placeDep node_modules/electron-builder ajv@6.12.6 OK for: @develar/schema-utils@2.6.5 want: ^6.12.0
+278 silly placeDep node_modules/electron-builder ajv-keywords@3.5.2 OK for: @develar/schema-utils@2.6.5 want: ^3.4.1
+279 silly fetch manifest fast-deep-equal@^3.1.1
+280 silly fetch manifest fast-json-stable-stringify@^2.0.0
+281 silly fetch manifest json-schema-traverse@^0.4.1
+282 silly fetch manifest uri-js@^4.2.2
+283 http fetch GET 200 https://registry.npmjs.org/json-schema-traverse 7ms (cache hit)
+284 http fetch GET 200 https://registry.npmjs.org/uri-js 7ms (cache hit)
+285 http fetch GET 200 https://registry.npmjs.org/fast-json-stable-stringify 9ms (cache hit)
+286 http fetch GET 200 https://registry.npmjs.org/fast-deep-equal 9ms (cache hit)
+287 timing idealTree:node_modules/electron-builder/node_modules/@develar/schema-utils Completed in 12ms
+288 silly placeDep node_modules/electron-builder/node_modules/@electron/notarize fs-extra@9.1.0 OK for: @electron/notarize@1.2.4 want: ^9.0.1
+289 silly fetch manifest at-least-node@^1.0.0
+290 http fetch GET 200 https://registry.npmjs.org/at-least-node 5ms (cache hit)
+291 timing idealTree:node_modules/electron-builder/node_modules/@electron/notarize Completed in 7ms
+292 silly placeDep node_modules/electron-builder compare-version@0.1.2 OK for: @electron/osx-sign@1.0.4 want: ^0.1.2
+293 silly placeDep node_modules/electron-builder/node_modules/@electron/osx-sign isbinaryfile@4.0.10 OK for: @electron/osx-sign@1.0.4 want: ^4.0.8
+294 silly placeDep node_modules/electron-builder minimist@1.2.8 OK for: @electron/osx-sign@1.0.4 want: ^1.2.6
+295 silly placeDep node_modules/electron-builder plist@3.1.0 OK for: @electron/osx-sign@1.0.4 want: ^3.0.5
+296 silly fetch manifest @xmldom/xmldom@^0.8.8
+297 silly fetch manifest base64-js@^1.5.1
+298 silly fetch manifest xmlbuilder@^15.1.1
+299 http fetch GET 200 https://registry.npmjs.org/@xmldom%2fxmldom 8ms (cache hit)
+300 http fetch GET 200 https://registry.npmjs.org/base64-js 10ms (cache hit)
+301 http fetch GET 200 https://registry.npmjs.org/xmlbuilder 10ms (cache hit)
+302 timing idealTree:node_modules/electron-builder/node_modules/@electron/osx-sign Completed in 14ms
+303 silly placeDep node_modules/electron-builder @malept/cross-spawn-promise@2.0.0 OK for: @electron/rebuild@3.2.13 want: ^2.0.0
+304 silly placeDep node_modules/electron-builder detect-libc@2.0.1 OK for: @electron/rebuild@3.2.13 want: ^2.0.1
+305 silly placeDep node_modules/electron-builder got@11.8.6 OK for: @electron/rebuild@3.2.13 want: ^11.7.0
+306 silly placeDep node_modules/electron-builder node-abi@3.45.0 OK for: @electron/rebuild@3.2.13 want: ^3.0.0
+307 silly placeDep node_modules/electron-builder node-api-version@0.1.4 OK for: @electron/rebuild@3.2.13 want: ^0.1.4
+308 silly placeDep node_modules/electron-builder node-gyp@9.4.0 OK for: @electron/rebuild@3.2.13 want: ^9.0.0
+309 silly placeDep node_modules/electron-builder ora@5.4.1 OK for: @electron/rebuild@3.2.13 want: ^5.1.0
+310 silly fetch manifest cross-spawn@^7.0.1
+311 silly fetch manifest @sindresorhus/is@^4.0.0
+312 silly fetch manifest @szmarczak/http-timer@^4.0.5
+313 silly fetch manifest @types/cacheable-request@^6.0.1
+314 silly fetch manifest @types/responselike@^1.0.0
+315 silly fetch manifest cacheable-lookup@^5.0.3
+316 silly fetch manifest cacheable-request@^7.0.2
+317 silly fetch manifest decompress-response@^6.0.0
+318 silly fetch manifest http2-wrapper@^1.0.0-beta.5.2
+319 silly fetch manifest lowercase-keys@^2.0.0
+320 silly fetch manifest p-cancelable@^2.0.0
+321 silly fetch manifest responselike@^2.0.0
+322 silly fetch manifest env-paths@^2.2.0
+323 silly fetch manifest exponential-backoff@^3.1.1
+324 silly fetch manifest glob@^7.1.4
+325 silly fetch manifest graceful-fs@^4.2.6
+326 silly fetch manifest make-fetch-happen@^11.0.3
+327 silly fetch manifest nopt@^6.0.0
+328 silly fetch manifest npmlog@^6.0.0
+329 silly fetch manifest rimraf@^3.0.2
+330 silly fetch manifest which@^2.0.2
+331 silly fetch manifest bl@^4.1.0
+332 silly fetch manifest cli-cursor@^3.1.0
+333 silly fetch manifest cli-spinners@^2.5.0
+334 silly fetch manifest is-interactive@^1.0.0
+335 silly fetch manifest is-unicode-supported@^0.1.0
+336 silly fetch manifest log-symbols@^4.1.0
+337 silly fetch manifest strip-ansi@^6.0.0
+338 silly fetch manifest wcwidth@^1.0.1
+339 http fetch GET 200 https://registry.npmjs.org/decompress-response 53ms (cache hit)
+340 http fetch GET 200 https://registry.npmjs.org/@types%2fresponselike 55ms (cache hit)
+341 http fetch GET 200 https://registry.npmjs.org/@szmarczak%2fhttp-timer 56ms (cache hit)
+342 http fetch GET 200 https://registry.npmjs.org/@types%2fcacheable-request 57ms (cache hit)
+343 http fetch GET 200 https://registry.npmjs.org/@sindresorhus%2fis 57ms (cache hit)
+344 http fetch GET 200 https://registry.npmjs.org/lowercase-keys 55ms (cache hit)
+345 http fetch GET 200 https://registry.npmjs.org/http2-wrapper 56ms (cache hit)
+346 http fetch GET 200 https://registry.npmjs.org/env-paths 55ms (cache hit)
+347 http fetch GET 200 https://registry.npmjs.org/cacheable-lookup 59ms (cache hit)
+348 http fetch GET 200 https://registry.npmjs.org/responselike 57ms (cache hit)
+349 http fetch GET 200 https://registry.npmjs.org/cacheable-request 59ms (cache hit)
+350 http fetch GET 200 https://registry.npmjs.org/exponential-backoff 58ms (cache hit)
+351 http fetch GET 200 https://registry.npmjs.org/p-cancelable 59ms (cache hit)
+352 http fetch GET 200 https://registry.npmjs.org/bl 55ms (cache hit)
+353 http fetch GET 200 https://registry.npmjs.org/is-interactive 55ms (cache hit)
+354 http fetch GET 200 https://registry.npmjs.org/glob 58ms (cache hit)
+355 http fetch GET 200 https://registry.npmjs.org/which 59ms (cache hit)
+356 http fetch GET 200 https://registry.npmjs.org/cli-cursor 58ms (cache hit)
+357 http fetch GET 200 https://registry.npmjs.org/make-fetch-happen 61ms (cache hit)
+358 http fetch GET 200 https://registry.npmjs.org/is-unicode-supported 59ms (cache hit)
+359 http fetch GET 200 https://registry.npmjs.org/log-symbols 58ms (cache hit)
+360 http fetch GET 200 https://registry.npmjs.org/cli-spinners 60ms (cache hit)
+361 http fetch GET 200 https://registry.npmjs.org/rimraf 62ms (cache hit)
+362 http fetch GET 200 https://registry.npmjs.org/strip-ansi 60ms (cache hit)
+363 http fetch GET 200 https://registry.npmjs.org/wcwidth 59ms (cache hit)
+364 http fetch GET 200 https://registry.npmjs.org/nopt 65ms (cache hit)
+365 http fetch GET 200 https://registry.npmjs.org/npmlog 64ms (cache hit)
+366 timing idealTree:node_modules/electron-builder/node_modules/@electron/rebuild Completed in 76ms
+367 silly placeDep node_modules/electron-builder @electron/asar@3.2.4 OK for: @electron/universal@1.3.4 want: ^3.2.1
+368 silly placeDep node_modules/electron-builder/node_modules/@electron/universal @malept/cross-spawn-promise@1.1.1 OK for: @electron/universal@1.3.4 want: ^1.1.0
+369 silly placeDep node_modules/electron-builder dir-compare@3.3.0 OK for: @electron/universal@1.3.4 want: ^3.0.0
+370 silly placeDep node_modules/electron-builder/node_modules/@electron/universal fs-extra@9.1.0 OK for: @electron/universal@1.3.4 want: ^9.0.1
+371 silly placeDep node_modules/electron-builder/node_modules/@electron/universal minimatch@3.1.2 OK for: @electron/universal@1.3.4 want: ^3.0.4
+372 silly fetch manifest commander@^5.0.0
+373 silly fetch manifest glob@^7.1.6
+374 silly fetch manifest buffer-equal@^1.0.0
+375 silly fetch manifest brace-expansion@^1.1.7
+376 http fetch GET 200 https://registry.npmjs.org/buffer-equal 11ms (cache hit)
+377 http fetch GET 200 https://registry.npmjs.org/commander 13ms (cache hit)
+378 timing idealTree:node_modules/electron-builder/node_modules/@electron/universal Completed in 18ms
+379 silly placeDep node_modules/electron-builder commander@5.1.0 OK for: @electron/asar@3.2.4 want: ^5.0.0
+380 silly placeDep node_modules/electron-builder glob@7.2.3 OK for: @electron/asar@3.2.4 want: ^7.1.6
+381 silly placeDep node_modules/electron-builder/node_modules/@electron/asar minimatch@3.1.2 OK for: @electron/asar@3.2.4 want: ^3.0.4
+382 silly fetch manifest fs.realpath@^1.0.0
+383 silly fetch manifest inflight@^1.0.4
+384 silly fetch manifest inherits@2
+385 silly fetch manifest minimatch@^3.1.1
+386 silly fetch manifest once@^1.3.0
+387 silly fetch manifest path-is-absolute@^1.0.0
+388 http fetch GET 200 https://registry.npmjs.org/path-is-absolute 11ms (cache hit)
+389 http fetch GET 200 https://registry.npmjs.org/inflight 13ms (cache hit)
+390 http fetch GET 200 https://registry.npmjs.org/inherits 13ms (cache hit)
+391 http fetch GET 200 https://registry.npmjs.org/fs.realpath 14ms (cache hit)
+392 http fetch GET 200 https://registry.npmjs.org/once 12ms (cache hit)
+393 timing idealTree:node_modules/electron-builder/node_modules/@electron/asar Completed in 16ms
+394 silly placeDep node_modules/electron-builder cross-spawn@7.0.3 OK for: @malept/cross-spawn-promise@2.0.0 want: ^7.0.1
+395 silly fetch manifest path-key@^3.1.0
+396 silly fetch manifest shebang-command@^2.0.0
+397 silly fetch manifest which@^2.0.1
+398 http fetch GET 200 https://registry.npmjs.org/path-key 7ms (cache hit)
+399 http fetch GET 200 https://registry.npmjs.org/shebang-command 7ms (cache hit)
+400 timing idealTree:node_modules/electron-builder/node_modules/@malept/cross-spawn-promise Completed in 9ms
+401 silly placeDep node_modules/electron-builder/node_modules/@malept/flatpak-bundler fs-extra@9.1.0 OK for: @malept/flatpak-bundler@0.4.0 want: ^9.0.0
+402 silly placeDep node_modules/electron-builder lodash@4.17.21 OK for: @malept/flatpak-bundler@0.4.0 want: ^4.17.15
+403 silly placeDep node_modules/electron-builder tmp-promise@3.0.3 OK for: @malept/flatpak-bundler@0.4.0 want: ^3.0.2
+404 silly fetch manifest tmp@^0.2.0
+405 http fetch GET 200 https://registry.npmjs.org/tmp 5ms (cache hit)
+406 timing idealTree:node_modules/electron-builder/node_modules/@malept/flatpak-bundler Completed in 7ms
+407 silly placeDep node_modules/electron-builder @types/node@20.4.1 OK for: @types/fs-extra@9.0.13 want: *
+408 timing idealTree:node_modules/electron-builder/node_modules/@types/fs-extra Completed in 0ms
+409 timing idealTree:node_modules/electron-builder/node_modules/@types/node Completed in 0ms
+410 timing idealTree:node_modules/electron-builder/node_modules/7zip-bin Completed in 0ms
+411 silly placeDep node_modules/electron-builder fast-deep-equal@3.1.3 OK for: ajv@6.12.6 want: ^3.1.1
+412 silly placeDep node_modules/electron-builder fast-json-stable-stringify@2.1.0 OK for: ajv@6.12.6 want: ^2.0.0
+413 silly placeDep node_modules/electron-builder json-schema-traverse@0.4.1 OK for: ajv@6.12.6 want: ^0.4.1
+414 silly placeDep node_modules/electron-builder uri-js@4.4.1 OK for: ajv@6.12.6 want: ^4.2.2
+415 silly fetch manifest punycode@^2.1.0
+416 http fetch GET 200 https://registry.npmjs.org/punycode 7ms (cache hit)
+417 timing idealTree:node_modules/electron-builder/node_modules/ajv Completed in 10ms
+418 timing idealTree:node_modules/electron-builder/node_modules/ajv-keywords Completed in 0ms
+419 timing idealTree:node_modules/electron-builder/node_modules/async-exit-hook Completed in 0ms
+420 silly placeDep node_modules/electron-builder bluebird@3.7.2 OK for: bluebird-lst@1.0.9 want: ^3.5.5
+421 timing idealTree:node_modules/electron-builder/node_modules/bluebird-lst Completed in 1ms
+422 timing idealTree:node_modules/electron-builder/node_modules/bluebird Completed in 0ms
+423 silly placeDep node_modules/electron-builder @types/debug@4.1.8 OK for: builder-util@24.4.0 want: ^4.1.6
+424 silly placeDep node_modules/electron-builder app-builder-bin@4.0.0 OK for: builder-util@24.4.0 want: 4.0.0
+425 silly placeDep node_modules/electron-builder http-proxy-agent@5.0.0 OK for: builder-util@24.4.0 want: ^5.0.0
+426 silly placeDep node_modules/electron-builder https-proxy-agent@5.0.1 OK for: builder-util@24.4.0 want: ^5.0.1
+427 silly placeDep node_modules/electron-builder source-map-support@0.5.21 OK for: builder-util@24.4.0 want: ^0.5.19
+428 silly placeDep node_modules/electron-builder stat-mode@1.0.0 OK for: builder-util@24.4.0 want: ^1.0.0
+429 silly fetch manifest @types/ms@*
+430 silly fetch manifest @tootallnate/once@2
+431 silly fetch manifest agent-base@6
+432 silly fetch manifest buffer-from@^1.0.0
+433 silly fetch manifest source-map@^0.6.0
+434 http fetch GET 200 https://registry.npmjs.org/@types%2fms 14ms (cache hit)
+435 http fetch GET 200 https://registry.npmjs.org/@tootallnate%2fonce 14ms (cache hit)
+436 http fetch GET 200 https://registry.npmjs.org/agent-base 14ms (cache hit)
+437 http fetch GET 200 https://registry.npmjs.org/buffer-from 14ms (cache hit)
+438 http fetch GET 200 https://registry.npmjs.org/source-map 13ms (cache hit)
+439 timing idealTree:node_modules/electron-builder/node_modules/builder-util Completed in 20ms
+440 silly placeDep node_modules/electron-builder @types/ms@0.7.31 OK for: @types/debug@4.1.8 want: *
+441 timing idealTree:node_modules/electron-builder/node_modules/@types/debug Completed in 1ms
+442 timing idealTree:node_modules/electron-builder/node_modules/@types/ms Completed in 0ms
+443 timing idealTree:node_modules/electron-builder/node_modules/app-builder-bin Completed in 0ms
+444 silly placeDep node_modules/electron-builder sax@1.2.4 OK for: builder-util-runtime@9.2.1 want: ^1.2.4
+445 timing idealTree:node_modules/electron-builder/node_modules/builder-util-runtime Completed in 0ms
+446 silly placeDep node_modules/electron-builder ansi-styles@4.3.0 OK for: chalk@4.1.2 want: ^4.1.0
+447 silly placeDep node_modules/electron-builder supports-color@7.2.0 OK for: chalk@4.1.2 want: ^7.1.0
+448 silly fetch manifest color-convert@^2.0.1
+449 silly fetch manifest has-flag@^4.0.0
+450 http fetch GET 200 https://registry.npmjs.org/color-convert 8ms (cache hit)
+451 http fetch GET 200 https://registry.npmjs.org/has-flag 8ms (cache hit)
+452 timing idealTree:node_modules/electron-builder/node_modules/chalk Completed in 11ms
+453 silly placeDep node_modules/electron-builder color-convert@2.0.1 OK for: ansi-styles@4.3.0 want: ^2.0.1
+454 silly fetch manifest color-name@~1.1.4
+455 http fetch GET 200 https://registry.npmjs.org/color-name 8ms (cache hit)
+456 timing idealTree:node_modules/electron-builder/node_modules/ansi-styles Completed in 9ms
+457 timing idealTree:node_modules/electron-builder/node_modules/chromium-pickle-js Completed in 0ms
+458 silly placeDep node_modules/electron-builder color-name@1.1.4 OK for: color-convert@2.0.1 want: ~1.1.4
+459 timing idealTree:node_modules/electron-builder/node_modules/color-convert Completed in 1ms
+460 timing idealTree:node_modules/electron-builder/node_modules/color-name Completed in 0ms
+461 timing idealTree:node_modules/electron-builder/node_modules/commander Completed in 0ms
+462 timing idealTree:node_modules/electron-builder/node_modules/compare-version Completed in 0ms
+463 silly placeDep node_modules/electron-builder path-key@3.1.1 OK for: cross-spawn@7.0.3 want: ^3.1.0
+464 silly placeDep node_modules/electron-builder shebang-command@2.0.0 OK for: cross-spawn@7.0.3 want: ^2.0.0
+465 silly placeDep node_modules/electron-builder which@2.0.2 OK for: cross-spawn@7.0.3 want: ^2.0.1
+466 silly fetch manifest shebang-regex@^3.0.0
+467 silly fetch manifest isexe@^2.0.0
+468 http fetch GET 200 https://registry.npmjs.org/isexe 7ms (cache hit)
+469 http fetch GET 200 https://registry.npmjs.org/shebang-regex 8ms (cache hit)
+470 timing idealTree:node_modules/electron-builder/node_modules/cross-spawn Completed in 10ms
+471 silly placeDep node_modules/electron-builder ms@2.1.2 OK for: debug@4.3.4 want: 2.1.2
+472 timing idealTree:node_modules/electron-builder/node_modules/debug Completed in 0ms
+473 timing idealTree:node_modules/electron-builder/node_modules/detect-libc Completed in 0ms
+474 silly placeDep node_modules/electron-builder buffer-equal@1.0.1 OK for: dir-compare@3.3.0 want: ^1.0.0
+475 silly placeDep node_modules/electron-builder/node_modules/dir-compare minimatch@3.1.2 OK for: dir-compare@3.3.0 want: ^3.0.4
+476 timing idealTree:node_modules/electron-builder/node_modules/dir-compare Completed in 1ms
+477 timing idealTree:node_modules/electron-builder/node_modules/buffer-equal Completed in 0ms
+478 silly placeDep node_modules/electron-builder dmg-license@1.0.11 OK for: dmg-builder@24.4.0 want: ^1.0.11
+479 silly placeDep node_modules/electron-builder iconv-lite@0.6.3 OK for: dmg-builder@24.4.0 want: ^0.6.2
+480 silly fetch manifest @types/plist@^3.0.1
+481 silly fetch manifest @types/verror@^1.10.3
+482 silly fetch manifest crc@^3.8.0
+483 silly fetch manifest iconv-corefoundation@^1.1.7
+484 silly fetch manifest smart-buffer@^4.0.2
+485 silly fetch manifest verror@^1.10.0
+486 silly fetch manifest safer-buffer@>= 2.1.2 < 3.0.0
+487 http fetch GET 200 https://registry.npmjs.org/@types%2fplist 18ms (cache hit)
+488 http fetch GET 200 https://registry.npmjs.org/@types%2fverror 19ms (cache hit)
+489 http fetch GET 200 https://registry.npmjs.org/iconv-corefoundation 19ms (cache hit)
+490 http fetch GET 200 https://registry.npmjs.org/crc 20ms (cache hit)
+491 http fetch GET 200 https://registry.npmjs.org/smart-buffer 21ms (cache hit)
+492 http fetch GET 200 https://registry.npmjs.org/verror 22ms (cache hit)
+493 http fetch GET 200 https://registry.npmjs.org/safer-buffer 23ms (cache hit)
+494 timing idealTree:node_modules/electron-builder/node_modules/dmg-builder Completed in 27ms
+495 silly placeDep node_modules/electron-builder @types/plist@3.0.2 OK for: dmg-license@1.0.11 want: ^3.0.1
+496 silly placeDep node_modules/electron-builder @types/verror@1.10.6 OK for: dmg-license@1.0.11 want: ^1.10.3
+497 silly placeDep node_modules/electron-builder crc@3.8.0 OK for: dmg-license@1.0.11 want: ^3.8.0
+498 silly placeDep node_modules/electron-builder iconv-corefoundation@1.1.7 OK for: dmg-license@1.0.11 want: ^1.1.7
+499 silly placeDep node_modules/electron-builder smart-buffer@4.2.0 OK for: dmg-license@1.0.11 want: ^4.0.2
+500 silly placeDep node_modules/electron-builder verror@1.10.1 OK for: dmg-license@1.0.11 want: ^1.10.0
+501 silly fetch manifest xmlbuilder@>=11.0.1
+502 silly fetch manifest buffer@^5.1.0
+503 silly fetch manifest cli-truncate@^2.1.0
+504 silly fetch manifest node-addon-api@^1.6.3
+505 silly fetch manifest assert-plus@^1.0.0
+506 silly fetch manifest core-util-is@1.0.2
+507 silly fetch manifest extsprintf@^1.2.0
+508 http fetch GET 200 https://registry.npmjs.org/buffer 16ms (cache hit)
+509 http fetch GET 200 https://registry.npmjs.org/cli-truncate 17ms (cache hit)
+510 http fetch GET 200 https://registry.npmjs.org/core-util-is 17ms (cache hit)
+511 http fetch GET 200 https://registry.npmjs.org/assert-plus 18ms (cache hit)
+512 http fetch GET 200 https://registry.npmjs.org/node-addon-api 18ms (cache hit)
+513 http fetch GET 200 https://registry.npmjs.org/extsprintf 18ms (cache hit)
+514 timing idealTree:node_modules/electron-builder/node_modules/dmg-license Completed in 24ms
+515 silly placeDep node_modules/electron-builder xmlbuilder@15.1.1 OK for: @types/plist@3.0.2 want: >=11.0.1
+516 timing idealTree:node_modules/electron-builder/node_modules/@types/plist Completed in 1ms
+517 timing idealTree:node_modules/electron-builder/node_modules/@types/verror Completed in 0ms
+518 silly placeDep node_modules/electron-builder buffer@5.7.1 OK for: crc@3.8.0 want: ^5.1.0
+519 silly fetch manifest base64-js@^1.3.1
+520 silly fetch manifest ieee754@^1.1.13
+521 http fetch GET 200 https://registry.npmjs.org/ieee754 6ms (cache hit)
+522 timing idealTree:node_modules/electron-builder/node_modules/crc Completed in 9ms
+523 silly placeDep node_modules/electron-builder base64-js@1.5.1 OK for: buffer@5.7.1 want: ^1.3.1
+524 silly placeDep node_modules/electron-builder ieee754@1.2.1 OK for: buffer@5.7.1 want: ^1.1.13
+525 timing idealTree:node_modules/electron-builder/node_modules/buffer Completed in 1ms
+526 timing idealTree:node_modules/electron-builder/node_modules/base64-js Completed in 0ms
+527 silly placeDep node_modules/electron-builder jake@10.8.7 OK for: ejs@3.1.9 want: ^10.8.5
+528 silly fetch manifest async@^3.2.3
+529 silly fetch manifest filelist@^1.0.4
+530 silly fetch manifest minimatch@^3.1.2
+531 http fetch GET 200 https://registry.npmjs.org/filelist 10ms (cache hit)
+532 http fetch GET 200 https://registry.npmjs.org/async 12ms (cache hit)
+533 timing idealTree:node_modules/electron-builder/node_modules/ejs Completed in 13ms
+534 silly placeDep node_modules/electron-builder mime@2.6.0 OK for: electron-publish@24.4.0 want: ^2.5.2
+535 timing idealTree:node_modules/electron-builder/node_modules/electron-publish Completed in 0ms
+536 timing idealTree:node_modules/electron-builder/node_modules/fast-deep-equal Completed in 0ms
+537 timing idealTree:node_modules/electron-builder/node_modules/fast-json-stable-stringify Completed in 0ms
+538 silly placeDep node_modules/electron-builder asynckit@0.4.0 OK for: form-data@4.0.0 want: ^0.4.0
+539 silly placeDep node_modules/electron-builder combined-stream@1.0.8 OK for: form-data@4.0.0 want: ^1.0.8
+540 silly placeDep node_modules/electron-builder mime-types@2.1.35 OK for: form-data@4.0.0 want: ^2.1.12
+541 silly fetch manifest delayed-stream@~1.0.0
+542 silly fetch manifest mime-db@1.52.0
+543 http fetch GET 200 https://registry.npmjs.org/delayed-stream 7ms (cache hit)
+544 http fetch GET 200 https://registry.npmjs.org/mime-db 7ms (cache hit)
+545 timing idealTree:node_modules/electron-builder/node_modules/form-data Completed in 9ms
+546 timing idealTree:node_modules/electron-builder/node_modules/asynckit Completed in 0ms
+547 silly placeDep node_modules/electron-builder delayed-stream@1.0.0 OK for: combined-stream@1.0.8 want: ~1.0.0
+548 timing idealTree:node_modules/electron-builder/node_modules/combined-stream Completed in 1ms
+549 timing idealTree:node_modules/electron-builder/node_modules/delayed-stream Completed in 0ms
+550 silly placeDep node_modules/electron-builder graceful-fs@4.2.11 OK for: fs-extra@10.1.0 want: ^4.2.0
+551 silly placeDep node_modules/electron-builder jsonfile@6.1.0 OK for: fs-extra@10.1.0 want: ^6.0.1
+552 silly placeDep node_modules/electron-builder universalify@2.0.0 OK for: fs-extra@10.1.0 want: ^2.0.0
+553 timing idealTree:node_modules/electron-builder/node_modules/fs-extra Completed in 2ms
+554 silly placeDep node_modules/electron-builder fs.realpath@1.0.0 OK for: glob@7.2.3 want: ^1.0.0
+555 silly placeDep node_modules/electron-builder inflight@1.0.6 OK for: glob@7.2.3 want: ^1.0.4
+556 silly placeDep node_modules/electron-builder inherits@2.0.4 OK for: glob@7.2.3 want: 2
+557 silly placeDep node_modules/electron-builder/node_modules/glob minimatch@3.1.2 OK for: glob@7.2.3 want: ^3.1.1
+558 silly placeDep node_modules/electron-builder once@1.4.0 OK for: glob@7.2.3 want: ^1.3.0
+559 silly placeDep node_modules/electron-builder path-is-absolute@1.0.1 OK for: glob@7.2.3 want: ^1.0.0
+560 silly fetch manifest wrappy@1
+561 http fetch GET 200 https://registry.npmjs.org/wrappy 6ms (cache hit)
+562 timing idealTree:node_modules/electron-builder/node_modules/glob Completed in 11ms
+563 timing idealTree:node_modules/electron-builder/node_modules/fs.realpath Completed in 0ms
+564 silly placeDep node_modules/electron-builder @sindresorhus/is@4.6.0 OK for: got@11.8.6 want: ^4.0.0
+565 silly placeDep node_modules/electron-builder @szmarczak/http-timer@4.0.6 OK for: got@11.8.6 want: ^4.0.5
+566 silly placeDep node_modules/electron-builder @types/cacheable-request@6.0.3 OK for: got@11.8.6 want: ^6.0.1
+567 silly placeDep node_modules/electron-builder @types/responselike@1.0.0 OK for: got@11.8.6 want: ^1.0.0
+568 silly placeDep node_modules/electron-builder cacheable-lookup@5.0.4 OK for: got@11.8.6 want: ^5.0.3
+569 silly placeDep node_modules/electron-builder cacheable-request@7.0.4 OK for: got@11.8.6 want: ^7.0.2
+570 silly placeDep node_modules/electron-builder decompress-response@6.0.0 OK for: got@11.8.6 want: ^6.0.0
+571 silly placeDep node_modules/electron-builder http2-wrapper@1.0.3 OK for: got@11.8.6 want: ^1.0.0-beta.5.2
+572 silly placeDep node_modules/electron-builder lowercase-keys@2.0.0 OK for: got@11.8.6 want: ^2.0.0
+573 silly placeDep node_modules/electron-builder p-cancelable@2.1.1 OK for: got@11.8.6 want: ^2.0.0
+574 silly placeDep node_modules/electron-builder responselike@2.0.1 OK for: got@11.8.6 want: ^2.0.0
+575 silly fetch manifest defer-to-connect@^2.0.0
+576 silly fetch manifest @types/http-cache-semantics@*
+577 silly fetch manifest @types/keyv@^3.1.4
+578 silly fetch manifest clone-response@^1.0.2
+579 silly fetch manifest get-stream@^5.1.0
+580 silly fetch manifest http-cache-semantics@^4.0.0
+581 silly fetch manifest keyv@^4.0.0
+582 silly fetch manifest normalize-url@^6.0.1
+583 silly fetch manifest mimic-response@^3.1.0
+584 silly fetch manifest quick-lru@^5.1.1
+585 silly fetch manifest resolve-alpn@^1.0.0
+586 http fetch GET 200 https://registry.npmjs.org/defer-to-connect 25ms (cache hit)
+587 http fetch GET 200 https://registry.npmjs.org/get-stream 25ms (cache hit)
+588 http fetch GET 200 https://registry.npmjs.org/clone-response 26ms (cache hit)
+589 http fetch GET 200 https://registry.npmjs.org/@types%2fhttp-cache-semantics 27ms (cache hit)
+590 http fetch GET 200 https://registry.npmjs.org/http-cache-semantics 25ms (cache hit)
+591 http fetch GET 200 https://registry.npmjs.org/@types%2fkeyv 28ms (cache hit)
+592 http fetch GET 200 https://registry.npmjs.org/keyv 26ms (cache hit)
+593 http fetch GET 200 https://registry.npmjs.org/mimic-response 26ms (cache hit)
+594 http fetch GET 200 https://registry.npmjs.org/normalize-url 27ms (cache hit)
+595 http fetch GET 200 https://registry.npmjs.org/quick-lru 27ms (cache hit)
+596 http fetch GET 200 https://registry.npmjs.org/resolve-alpn 24ms (cache hit)
+597 timing idealTree:node_modules/electron-builder/node_modules/got Completed in 36ms
+598 timing idealTree:node_modules/electron-builder/node_modules/@sindresorhus/is Completed in 0ms
+599 silly placeDep node_modules/electron-builder defer-to-connect@2.0.1 OK for: @szmarczak/http-timer@4.0.6 want: ^2.0.0
+600 timing idealTree:node_modules/electron-builder/node_modules/@szmarczak/http-timer Completed in 0ms
+601 silly placeDep node_modules/electron-builder @types/http-cache-semantics@4.0.1 OK for: @types/cacheable-request@6.0.3 want: *
+602 silly placeDep node_modules/electron-builder @types/keyv@3.1.4 OK for: @types/cacheable-request@6.0.3 want: ^3.1.4
+603 timing idealTree:node_modules/electron-builder/node_modules/@types/cacheable-request Completed in 1ms
+604 timing idealTree:node_modules/electron-builder/node_modules/@types/http-cache-semantics Completed in 0ms
+605 timing idealTree:node_modules/electron-builder/node_modules/@types/keyv Completed in 0ms
+606 timing idealTree:node_modules/electron-builder/node_modules/@types/responselike Completed in 0ms
+607 timing idealTree:node_modules/electron-builder/node_modules/cacheable-lookup Completed in 0ms
+608 silly placeDep node_modules/electron-builder clone-response@1.0.3 OK for: cacheable-request@7.0.4 want: ^1.0.2
+609 silly placeDep node_modules/electron-builder get-stream@5.2.0 OK for: cacheable-request@7.0.4 want: ^5.1.0
+610 silly placeDep node_modules/electron-builder http-cache-semantics@4.1.1 OK for: cacheable-request@7.0.4 want: ^4.0.0
+611 silly placeDep node_modules/electron-builder keyv@4.5.2 OK for: cacheable-request@7.0.4 want: ^4.0.0
+612 silly placeDep node_modules/electron-builder normalize-url@6.1.0 OK for: cacheable-request@7.0.4 want: ^6.0.1
+613 silly fetch manifest mimic-response@^1.0.0
+614 silly fetch manifest pump@^3.0.0
+615 silly fetch manifest json-buffer@3.0.1
+616 http fetch GET 200 https://registry.npmjs.org/json-buffer 11ms (cache hit)
+617 http fetch GET 200 https://registry.npmjs.org/pump 11ms (cache hit)
+618 timing idealTree:node_modules/electron-builder/node_modules/cacheable-request Completed in 15ms
+619 silly placeDep node_modules/electron-builder mimic-response@1.0.1 OK for: clone-response@1.0.3 want: ^1.0.0
+620 timing idealTree:node_modules/electron-builder/node_modules/clone-response Completed in 1ms
+621 silly placeDep node_modules/electron-builder/node_modules/decompress-response mimic-response@3.1.0 OK for: decompress-response@6.0.0 want: ^3.1.0
+622 timing idealTree:node_modules/electron-builder/node_modules/decompress-response Completed in 0ms
+623 timing idealTree:node_modules/electron-builder/node_modules/defer-to-connect Completed in 0ms
+624 silly placeDep node_modules/electron-builder pump@3.0.0 OK for: get-stream@5.2.0 want: ^3.0.0
+625 silly fetch manifest end-of-stream@^1.1.0
+626 http fetch GET 200 https://registry.npmjs.org/end-of-stream 5ms (cache hit)
+627 timing idealTree:node_modules/electron-builder/node_modules/get-stream Completed in 6ms
+628 timing idealTree:node_modules/electron-builder/node_modules/graceful-fs Completed in 0ms
+629 silly placeDep node_modules/electron-builder lru-cache@6.0.0 OK for: hosted-git-info@4.1.0 want: ^6.0.0
+630 timing idealTree:node_modules/electron-builder/node_modules/hosted-git-info Completed in 1ms
+631 timing idealTree:node_modules/electron-builder/node_modules/http-cache-semantics Completed in 0ms
+632 silly placeDep node_modules/electron-builder @tootallnate/once@2.0.0 OK for: http-proxy-agent@5.0.0 want: 2
+633 silly placeDep node_modules/electron-builder agent-base@6.0.2 OK for: http-proxy-agent@5.0.0 want: 6
+634 timing idealTree:node_modules/electron-builder/node_modules/http-proxy-agent Completed in 1ms
+635 timing idealTree:node_modules/electron-builder/node_modules/@tootallnate/once Completed in 0ms
+636 timing idealTree:node_modules/electron-builder/node_modules/agent-base Completed in 0ms
+637 silly placeDep node_modules/electron-builder quick-lru@5.1.1 OK for: http2-wrapper@1.0.3 want: ^5.1.1
+638 silly placeDep node_modules/electron-builder resolve-alpn@1.2.1 OK for: http2-wrapper@1.0.3 want: ^1.0.0
+639 timing idealTree:node_modules/electron-builder/node_modules/http2-wrapper Completed in 2ms
+640 timing idealTree:node_modules/electron-builder/node_modules/https-proxy-agent Completed in 0ms
+641 silly placeDep node_modules/electron-builder cli-truncate@2.1.0 OK for: iconv-corefoundation@1.1.7 want: ^2.1.0
+642 silly placeDep node_modules/electron-builder node-addon-api@1.7.2 OK for: iconv-corefoundation@1.1.7 want: ^1.6.3
+643 silly fetch manifest slice-ansi@^3.0.0
+644 silly fetch manifest string-width@^4.2.0
+645 http fetch GET 200 https://registry.npmjs.org/slice-ansi 7ms (cache hit)
+646 timing idealTree:node_modules/electron-builder/node_modules/iconv-corefoundation Completed in 9ms
+647 silly placeDep node_modules/electron-builder slice-ansi@3.0.0 OK for: cli-truncate@2.1.0 want: ^3.0.0
+648 silly placeDep node_modules/electron-builder string-width@4.2.3 OK for: cli-truncate@2.1.0 want: ^4.2.0
+649 silly fetch manifest astral-regex@^2.0.0
+650 silly fetch manifest is-fullwidth-code-point@^3.0.0
+651 silly fetch manifest emoji-regex@^8.0.0
+652 silly fetch manifest strip-ansi@^6.0.1
+653 http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point 10ms (cache hit)
+654 http fetch GET 200 https://registry.npmjs.org/emoji-regex 10ms (cache hit)
+655 http fetch GET 200 https://registry.npmjs.org/astral-regex 11ms (cache hit)
+656 timing idealTree:node_modules/electron-builder/node_modules/cli-truncate Completed in 13ms
+657 silly placeDep node_modules/electron-builder safer-buffer@2.1.2 OK for: iconv-lite@0.6.3 want: >= 2.1.2 < 3.0.0
+658 timing idealTree:node_modules/electron-builder/node_modules/iconv-lite Completed in 0ms
+659 timing idealTree:node_modules/electron-builder/node_modules/ieee754 Completed in 0ms
+660 silly placeDep node_modules/electron-builder wrappy@1.0.2 OK for: inflight@1.0.6 want: 1
+661 timing idealTree:node_modules/electron-builder/node_modules/inflight Completed in 0ms
+662 timing idealTree:node_modules/electron-builder/node_modules/inherits Completed in 0ms
+663 silly placeDep node_modules/electron-builder ci-info@3.8.0 OK for: is-ci@3.0.1 want: ^3.2.0
+664 timing idealTree:node_modules/electron-builder/node_modules/is-ci Completed in 0ms
+665 timing idealTree:node_modules/electron-builder/node_modules/ci-info Completed in 0ms
+666 timing idealTree:node_modules/electron-builder/node_modules/isbinaryfile Completed in 0ms
+667 silly placeDep node_modules/electron-builder async@3.2.4 OK for: jake@10.8.7 want: ^3.2.3
+668 silly placeDep node_modules/electron-builder filelist@1.0.4 OK for: jake@10.8.7 want: ^1.0.4
+669 silly placeDep node_modules/electron-builder/node_modules/jake minimatch@3.1.2 OK for: jake@10.8.7 want: ^3.1.2
+670 timing idealTree:node_modules/electron-builder/node_modules/jake Completed in 2ms
+671 timing idealTree:node_modules/electron-builder/node_modules/async Completed in 0ms
+672 timing idealTree:node_modules/electron-builder/node_modules/filelist Completed in 0ms
+673 silly placeDep node_modules/electron-builder argparse@2.0.1 OK for: js-yaml@4.1.0 want: ^2.0.1
+674 timing idealTree:node_modules/electron-builder/node_modules/js-yaml Completed in 1ms
+675 timing idealTree:node_modules/electron-builder/node_modules/argparse Completed in 0ms
+676 timing idealTree:node_modules/electron-builder/node_modules/json-schema-traverse Completed in 0ms
+677 timing idealTree:node_modules/electron-builder/node_modules/jsonfile Completed in 0ms
+678 silly placeDep node_modules/electron-builder json-buffer@3.0.1 OK for: keyv@4.5.2 want: 3.0.1
+679 timing idealTree:node_modules/electron-builder/node_modules/keyv Completed in 0ms
+680 timing idealTree:node_modules/electron-builder/node_modules/json-buffer Completed in 0ms
+681 timing idealTree:node_modules/electron-builder/node_modules/lazy-val Completed in 0ms
+682 timing idealTree:node_modules/electron-builder/node_modules/lodash Completed in 0ms
+683 timing idealTree:node_modules/electron-builder/node_modules/lowercase-keys Completed in 0ms
+684 silly placeDep node_modules/electron-builder yallist@4.0.0 OK for: lru-cache@6.0.0 want: ^4.0.0
+685 timing idealTree:node_modules/electron-builder/node_modules/lru-cache Completed in 0ms
+686 timing idealTree:node_modules/electron-builder/node_modules/mime Completed in 0ms
+687 silly placeDep node_modules/electron-builder mime-db@1.52.0 OK for: mime-types@2.1.35 want: 1.52.0
+688 timing idealTree:node_modules/electron-builder/node_modules/mime-types Completed in 1ms
+689 timing idealTree:node_modules/electron-builder/node_modules/mime-db Completed in 0ms
+690 timing idealTree:node_modules/electron-builder/node_modules/mimic-response Completed in 0ms
+691 silly placeDep node_modules/electron-builder brace-expansion@2.0.1 OK for: minimatch@5.1.6 want: ^2.0.1
+692 silly fetch manifest balanced-match@^1.0.0
+693 http fetch GET 200 https://registry.npmjs.org/balanced-match 8ms (cache hit)
+694 timing idealTree:node_modules/electron-builder/node_modules/minimatch Completed in 10ms
+695 silly placeDep node_modules/electron-builder balanced-match@1.0.2 OK for: brace-expansion@2.0.1 want: ^1.0.0
+696 timing idealTree:node_modules/electron-builder/node_modules/brace-expansion Completed in 0ms
+697 timing idealTree:node_modules/electron-builder/node_modules/balanced-match Completed in 0ms
+698 timing idealTree:node_modules/electron-builder/node_modules/minimist Completed in 0ms
+699 timing idealTree:node_modules/electron-builder/node_modules/ms Completed in 0ms
+700 timing idealTree:node_modules/electron-builder/node_modules/node-abi Completed in 0ms
+701 timing idealTree:node_modules/electron-builder/node_modules/node-addon-api Completed in 0ms
+702 timing idealTree:node_modules/electron-builder/node_modules/node-api-version Completed in 0ms
+703 silly placeDep node_modules/electron-builder env-paths@2.2.1 OK for: node-gyp@9.4.0 want: ^2.2.0
+704 silly placeDep node_modules/electron-builder exponential-backoff@3.1.1 OK for: node-gyp@9.4.0 want: ^3.1.1
+705 silly placeDep node_modules/electron-builder make-fetch-happen@11.1.1 OK for: node-gyp@9.4.0 want: ^11.0.3
+706 silly placeDep node_modules/electron-builder nopt@6.0.0 OK for: node-gyp@9.4.0 want: ^6.0.0
+707 silly placeDep node_modules/electron-builder npmlog@6.0.2 OK for: node-gyp@9.4.0 want: ^6.0.0
+708 silly placeDep node_modules/electron-builder rimraf@3.0.2 OK for: node-gyp@9.4.0 want: ^3.0.2
+709 silly fetch manifest agentkeepalive@^4.2.1
+710 silly fetch manifest cacache@^17.0.0
+711 silly fetch manifest is-lambda@^1.0.1
+712 silly fetch manifest lru-cache@^7.7.1
+713 silly fetch manifest minipass-fetch@^3.0.0
+714 silly fetch manifest minipass-flush@^1.0.5
+715 silly fetch manifest minipass-pipeline@^1.2.4
+716 silly fetch manifest negotiator@^0.6.3
+717 silly fetch manifest promise-retry@^2.0.1
+718 silly fetch manifest socks-proxy-agent@^7.0.0
+719 silly fetch manifest ssri@^10.0.0
+720 silly fetch manifest abbrev@^1.0.0
+721 silly fetch manifest are-we-there-yet@^3.0.0
+722 silly fetch manifest console-control-strings@^1.1.0
+723 silly fetch manifest gauge@^4.0.3
+724 silly fetch manifest set-blocking@^2.0.0
+725 http fetch GET 200 https://registry.npmjs.org/cacache 36ms (cache hit)
+726 http fetch GET 200 https://registry.npmjs.org/agentkeepalive 40ms (cache hit)
+727 http fetch GET 200 https://registry.npmjs.org/is-lambda 39ms (cache hit)
+728 http fetch GET 200 https://registry.npmjs.org/promise-retry 37ms (cache hit)
+729 http fetch GET 200 https://registry.npmjs.org/socks-proxy-agent 38ms (cache hit)
+730 http fetch GET 200 https://registry.npmjs.org/minipass-fetch 39ms (cache hit)
+731 http fetch GET 200 https://registry.npmjs.org/minipass-flush 39ms (cache hit)
+732 http fetch GET 200 https://registry.npmjs.org/abbrev 38ms (cache hit)
+733 http fetch GET 200 https://registry.npmjs.org/ssri 38ms (cache hit)
+734 http fetch GET 200 https://registry.npmjs.org/minipass-pipeline 41ms (cache hit)
+735 http fetch GET 200 https://registry.npmjs.org/negotiator 40ms (cache hit)
+736 http fetch GET 200 https://registry.npmjs.org/are-we-there-yet 38ms (cache hit)
+737 http fetch GET 200 https://registry.npmjs.org/gauge 38ms (cache hit)
+738 http fetch GET 200 https://registry.npmjs.org/console-control-strings 38ms (cache hit)
+739 http fetch GET 200 https://registry.npmjs.org/set-blocking 37ms (cache hit)
+740 timing idealTree:node_modules/electron-builder/node_modules/node-gyp Completed in 48ms
+741 timing idealTree:node_modules/electron-builder/node_modules/env-paths Completed in 0ms
+742 timing idealTree:node_modules/electron-builder/node_modules/exponential-backoff Completed in 0ms
+743 silly placeDep node_modules/electron-builder agentkeepalive@4.3.0 OK for: make-fetch-happen@11.1.1 want: ^4.2.1
+744 silly placeDep node_modules/electron-builder cacache@17.1.3 OK for: make-fetch-happen@11.1.1 want: ^17.0.0
+745 silly placeDep node_modules/electron-builder is-lambda@1.0.1 OK for: make-fetch-happen@11.1.1 want: ^1.0.1
+746 silly placeDep node_modules/electron-builder/node_modules/make-fetch-happen lru-cache@7.18.3 OK for: make-fetch-happen@11.1.1 want: ^7.7.1
+747 silly placeDep node_modules/electron-builder minipass@5.0.0 OK for: make-fetch-happen@11.1.1 want: ^5.0.0
+748 silly placeDep node_modules/electron-builder minipass-fetch@3.0.3 OK for: make-fetch-happen@11.1.1 want: ^3.0.0
+749 silly placeDep node_modules/electron-builder minipass-flush@1.0.5 OK for: make-fetch-happen@11.1.1 want: ^1.0.5
+750 silly placeDep node_modules/electron-builder minipass-pipeline@1.2.4 OK for: make-fetch-happen@11.1.1 want: ^1.2.4
+751 silly placeDep node_modules/electron-builder negotiator@0.6.3 OK for: make-fetch-happen@11.1.1 want: ^0.6.3
+752 silly placeDep node_modules/electron-builder promise-retry@2.0.1 OK for: make-fetch-happen@11.1.1 want: ^2.0.1
+753 silly placeDep node_modules/electron-builder socks-proxy-agent@7.0.0 OK for: make-fetch-happen@11.1.1 want: ^7.0.0
+754 silly placeDep node_modules/electron-builder ssri@10.0.4 OK for: make-fetch-happen@11.1.1 want: ^10.0.0
+755 silly fetch manifest depd@^2.0.0
+756 silly fetch manifest humanize-ms@^1.2.1
+757 silly fetch manifest @npmcli/fs@^3.1.0
+758 silly fetch manifest fs-minipass@^3.0.0
+759 silly fetch manifest glob@^10.2.2
+760 silly fetch manifest minipass-collect@^1.0.2
+761 silly fetch manifest p-map@^4.0.0
+762 silly fetch manifest unique-filename@^3.0.0
+763 silly fetch manifest minipass-sized@^1.0.3
+764 silly fetch manifest minizlib@^2.1.2
+765 silly fetch manifest encoding@^0.1.13
+766 silly fetch manifest minipass@^3.0.0
+767 silly fetch manifest err-code@^2.0.2
+768 silly fetch manifest retry@^0.12.0
+769 silly fetch manifest socks@^2.6.2
+770 http fetch GET 200 https://registry.npmjs.org/depd 28ms (cache hit)
+771 http fetch GET 200 https://registry.npmjs.org/encoding 24ms (cache hit)
+772 http fetch GET 200 https://registry.npmjs.org/@npmcli%2ffs 28ms (cache hit)
+773 http fetch GET 200 https://registry.npmjs.org/humanize-ms 29ms (cache hit)
+774 http fetch GET 200 https://registry.npmjs.org/unique-filename 28ms (cache hit)
+775 http fetch GET 200 https://registry.npmjs.org/minipass-collect 28ms (cache hit)
+776 http fetch GET 200 https://registry.npmjs.org/err-code 27ms (cache hit)
+777 http fetch GET 200 https://registry.npmjs.org/retry 26ms (cache hit)
+778 http fetch GET 200 https://registry.npmjs.org/p-map 29ms (cache hit)
+779 http fetch GET 200 https://registry.npmjs.org/socks 27ms (cache hit)
+780 http fetch GET 200 https://registry.npmjs.org/minipass-sized 30ms (cache hit)
+781 timing idealTree:node_modules/electron-builder/node_modules/make-fetch-happen Completed in 41ms
+782 silly placeDep node_modules/electron-builder depd@2.0.0 OK for: agentkeepalive@4.3.0 want: ^2.0.0
+783 silly placeDep node_modules/electron-builder humanize-ms@1.2.1 OK for: agentkeepalive@4.3.0 want: ^1.2.1
+784 timing idealTree:node_modules/electron-builder/node_modules/agentkeepalive Completed in 1ms
+785 silly placeDep node_modules/electron-builder @npmcli/fs@3.1.0 OK for: cacache@17.1.3 want: ^3.1.0
+786 silly placeDep node_modules/electron-builder fs-minipass@3.0.2 OK for: cacache@17.1.3 want: ^3.0.0
+787 silly placeDep node_modules/electron-builder/node_modules/cacache glob@10.3.3 OK for: cacache@17.1.3 want: ^10.2.2
+788 silly placeDep node_modules/electron-builder/node_modules/cacache lru-cache@7.18.3 OK for: cacache@17.1.3 want: ^7.7.1
+789 silly placeDep node_modules/electron-builder minipass-collect@1.0.2 OK for: cacache@17.1.3 want: ^1.0.2
+790 silly placeDep node_modules/electron-builder p-map@4.0.0 OK for: cacache@17.1.3 want: ^4.0.0
+791 silly placeDep node_modules/electron-builder unique-filename@3.0.0 OK for: cacache@17.1.3 want: ^3.0.0
+792 silly fetch manifest foreground-child@^3.1.0
+793 silly fetch manifest jackspeak@^2.0.3
+794 silly fetch manifest minimatch@^9.0.1
+795 silly fetch manifest path-scurry@^1.10.1
+796 silly fetch manifest aggregate-error@^3.0.0
+797 silly fetch manifest unique-slug@^4.0.0
+798 http fetch GET 200 https://registry.npmjs.org/jackspeak 15ms (cache hit)
+799 http fetch GET 200 https://registry.npmjs.org/foreground-child 17ms (cache hit)
+800 http fetch GET 200 https://registry.npmjs.org/unique-slug 15ms (cache hit)
+801 http fetch GET 200 https://registry.npmjs.org/aggregate-error 15ms (cache hit)
+802 http fetch GET 200 https://registry.npmjs.org/path-scurry 17ms (cache hit)
+803 timing idealTree:node_modules/electron-builder/node_modules/cacache Completed in 23ms
+804 timing idealTree:node_modules/electron-builder/node_modules/@npmcli/fs Completed in 0ms
+805 timing idealTree:node_modules/electron-builder/node_modules/depd Completed in 0ms
+806 timing idealTree:node_modules/electron-builder/node_modules/fs-minipass Completed in 0ms
+807 timing idealTree:node_modules/electron-builder/node_modules/humanize-ms Completed in 0ms
+808 timing idealTree:node_modules/electron-builder/node_modules/is-lambda Completed in 0ms
+809 timing idealTree:node_modules/electron-builder/node_modules/minipass Completed in 0ms
+810 silly placeDep node_modules/electron-builder/node_modules/minipass-collect minipass@3.3.6 OK for: minipass-collect@1.0.2 want: ^3.0.0
+811 timing idealTree:node_modules/electron-builder/node_modules/minipass-collect Completed in 1ms
+812 silly placeDep node_modules/electron-builder encoding@0.1.13 OK for: minipass-fetch@3.0.3 want: ^0.1.13
+813 silly placeDep node_modules/electron-builder minipass-sized@1.0.3 OK for: minipass-fetch@3.0.3 want: ^1.0.3
+814 silly placeDep node_modules/electron-builder minizlib@2.1.2 OK for: minipass-fetch@3.0.3 want: ^2.1.2
+815 timing idealTree:node_modules/electron-builder/node_modules/minipass-fetch Completed in 2ms
+816 timing idealTree:node_modules/electron-builder/node_modules/encoding Completed in 0ms
+817 silly placeDep node_modules/electron-builder/node_modules/minipass-flush minipass@3.3.6 OK for: minipass-flush@1.0.5 want: ^3.0.0
+818 timing idealTree:node_modules/electron-builder/node_modules/minipass-flush Completed in 0ms
+819 silly placeDep node_modules/electron-builder/node_modules/minipass-pipeline minipass@3.3.6 OK for: minipass-pipeline@1.2.4 want: ^3.0.0
+820 timing idealTree:node_modules/electron-builder/node_modules/minipass-pipeline Completed in 0ms
+821 silly placeDep node_modules/electron-builder/node_modules/minipass-sized minipass@3.3.6 OK for: minipass-sized@1.0.3 want: ^3.0.0
+822 timing idealTree:node_modules/electron-builder/node_modules/minipass-sized Completed in 1ms
+823 silly placeDep node_modules/electron-builder/node_modules/minizlib minipass@3.3.6 OK for: minizlib@2.1.2 want: ^3.0.0
+824 timing idealTree:node_modules/electron-builder/node_modules/minizlib Completed in 0ms
+825 timing idealTree:node_modules/electron-builder/node_modules/negotiator Completed in 0ms
+826 silly placeDep node_modules/electron-builder abbrev@1.1.1 OK for: nopt@6.0.0 want: ^1.0.0
+827 timing idealTree:node_modules/electron-builder/node_modules/nopt Completed in 1ms
+828 timing idealTree:node_modules/electron-builder/node_modules/abbrev Completed in 0ms
+829 timing idealTree:node_modules/electron-builder/node_modules/normalize-url Completed in 0ms
+830 silly placeDep node_modules/electron-builder are-we-there-yet@3.0.1 OK for: npmlog@6.0.2 want: ^3.0.0
+831 silly placeDep node_modules/electron-builder console-control-strings@1.1.0 OK for: npmlog@6.0.2 want: ^1.1.0
+832 silly placeDep node_modules/electron-builder gauge@4.0.4 OK for: npmlog@6.0.2 want: ^4.0.3
+833 silly placeDep node_modules/electron-builder set-blocking@2.0.0 OK for: npmlog@6.0.2 want: ^2.0.0
+834 silly fetch manifest delegates@^1.0.0
+835 silly fetch manifest readable-stream@^3.6.0
+836 silly fetch manifest aproba@^1.0.3 || ^2.0.0
+837 silly fetch manifest color-support@^1.1.3
+838 silly fetch manifest has-unicode@^2.0.1
+839 silly fetch manifest signal-exit@^3.0.7
+840 silly fetch manifest wide-align@^1.1.5
+841 http fetch GET 200 https://registry.npmjs.org/delegates 20ms (cache hit)
+842 http fetch GET 200 https://registry.npmjs.org/has-unicode 18ms (cache hit)
+843 http fetch GET 200 https://registry.npmjs.org/signal-exit 19ms (cache hit)
+844 http fetch GET 200 https://registry.npmjs.org/readable-stream 21ms (cache hit)
+845 http fetch GET 200 https://registry.npmjs.org/aproba 22ms (cache hit)
+846 http fetch GET 200 https://registry.npmjs.org/color-support 23ms (cache hit)
+847 http fetch GET 200 https://registry.npmjs.org/wide-align 21ms (cache hit)
+848 timing idealTree:node_modules/electron-builder/node_modules/npmlog Completed in 26ms
+849 silly placeDep node_modules/electron-builder delegates@1.0.0 OK for: are-we-there-yet@3.0.1 want: ^1.0.0
+850 silly placeDep node_modules/electron-builder readable-stream@3.6.2 OK for: are-we-there-yet@3.0.1 want: ^3.6.0
+851 silly fetch manifest string_decoder@^1.1.1
+852 silly fetch manifest util-deprecate@^1.0.1
+853 http fetch GET 200 https://registry.npmjs.org/string_decoder 6ms (cache hit)
+854 http fetch GET 200 https://registry.npmjs.org/util-deprecate 5ms (cache hit)
+855 timing idealTree:node_modules/electron-builder/node_modules/are-we-there-yet Completed in 8ms
+856 timing idealTree:node_modules/electron-builder/node_modules/console-control-strings Completed in 0ms
+857 timing idealTree:node_modules/electron-builder/node_modules/delegates Completed in 0ms
+858 silly placeDep node_modules/electron-builder aproba@2.0.0 OK for: gauge@4.0.4 want: ^1.0.3 || ^2.0.0
+859 silly placeDep node_modules/electron-builder color-support@1.1.3 OK for: gauge@4.0.4 want: ^1.1.3
+860 silly placeDep node_modules/electron-builder has-unicode@2.0.1 OK for: gauge@4.0.4 want: ^2.0.1
+861 silly placeDep node_modules/electron-builder signal-exit@3.0.7 OK for: gauge@4.0.4 want: ^3.0.7
+862 silly placeDep node_modules/electron-builder strip-ansi@6.0.1 OK for: gauge@4.0.4 want: ^6.0.1
+863 silly placeDep node_modules/electron-builder wide-align@1.1.5 OK for: gauge@4.0.4 want: ^1.1.5
+864 silly fetch manifest ansi-regex@^5.0.1
+865 http fetch GET 200 https://registry.npmjs.org/ansi-regex 6ms (cache hit)
+866 timing idealTree:node_modules/electron-builder/node_modules/gauge Completed in 11ms
+867 timing idealTree:node_modules/electron-builder/node_modules/aproba Completed in 0ms
+868 timing idealTree:node_modules/electron-builder/node_modules/color-support Completed in 0ms
+869 timing idealTree:node_modules/electron-builder/node_modules/has-unicode Completed in 0ms
+870 timing idealTree:node_modules/electron-builder/node_modules/once Completed in 0ms
+871 silly placeDep node_modules/electron-builder bl@4.1.0 OK for: ora@5.4.1 want: ^4.1.0
+872 silly placeDep node_modules/electron-builder cli-cursor@3.1.0 OK for: ora@5.4.1 want: ^3.1.0
+873 silly placeDep node_modules/electron-builder cli-spinners@2.9.0 OK for: ora@5.4.1 want: ^2.5.0
+874 silly placeDep node_modules/electron-builder is-interactive@1.0.0 OK for: ora@5.4.1 want: ^1.0.0
+875 silly placeDep node_modules/electron-builder is-unicode-supported@0.1.0 OK for: ora@5.4.1 want: ^0.1.0
+876 silly placeDep node_modules/electron-builder log-symbols@4.1.0 OK for: ora@5.4.1 want: ^4.1.0
+877 silly placeDep node_modules/electron-builder wcwidth@1.0.1 OK for: ora@5.4.1 want: ^1.0.1
+878 silly fetch manifest restore-cursor@^3.1.0
+879 silly fetch manifest defaults@^1.0.3
+880 http fetch GET 200 https://registry.npmjs.org/defaults 7ms (cache hit)
+881 http fetch GET 200 https://registry.npmjs.org/restore-cursor 8ms (cache hit)
+882 timing idealTree:node_modules/electron-builder/node_modules/ora Completed in 12ms
+883 timing idealTree:node_modules/electron-builder/node_modules/bl Completed in 0ms
+884 silly placeDep node_modules/electron-builder restore-cursor@3.1.0 OK for: cli-cursor@3.1.0 want: ^3.1.0
+885 silly fetch manifest onetime@^5.1.0
+886 http fetch GET 200 https://registry.npmjs.org/onetime 8ms (cache hit)
+887 timing idealTree:node_modules/electron-builder/node_modules/cli-cursor Completed in 10ms
+888 timing idealTree:node_modules/electron-builder/node_modules/cli-spinners Completed in 0ms
+889 timing idealTree:node_modules/electron-builder/node_modules/is-interactive Completed in 0ms
+890 timing idealTree:node_modules/electron-builder/node_modules/is-unicode-supported Completed in 0ms
+891 timing idealTree:node_modules/electron-builder/node_modules/log-symbols Completed in 0ms
+892 timing idealTree:node_modules/electron-builder/node_modules/p-cancelable Completed in 0ms
+893 silly placeDep node_modules/electron-builder aggregate-error@3.1.0 OK for: p-map@4.0.0 want: ^3.0.0
+894 silly fetch manifest clean-stack@^2.0.0
+895 silly fetch manifest indent-string@^4.0.0
+896 http fetch GET 200 https://registry.npmjs.org/clean-stack 8ms (cache hit)
+897 http fetch GET 200 https://registry.npmjs.org/indent-string 8ms (cache hit)
+898 timing idealTree:node_modules/electron-builder/node_modules/p-map Completed in 10ms
+899 silly placeDep node_modules/electron-builder clean-stack@2.2.0 OK for: aggregate-error@3.1.0 want: ^2.0.0
+900 silly placeDep node_modules/electron-builder indent-string@4.0.0 OK for: aggregate-error@3.1.0 want: ^4.0.0
+901 timing idealTree:node_modules/electron-builder/node_modules/aggregate-error Completed in 2ms
+902 timing idealTree:node_modules/electron-builder/node_modules/clean-stack Completed in 0ms
+903 timing idealTree:node_modules/electron-builder/node_modules/indent-string Completed in 0ms
+904 timing idealTree:node_modules/electron-builder/node_modules/path-is-absolute Completed in 0ms
+905 timing idealTree:node_modules/electron-builder/node_modules/path-key Completed in 0ms
+906 silly placeDep node_modules/electron-builder @xmldom/xmldom@0.8.8 OK for: plist@3.1.0 want: ^0.8.8
+907 timing idealTree:node_modules/electron-builder/node_modules/plist Completed in 1ms
+908 timing idealTree:node_modules/electron-builder/node_modules/@xmldom/xmldom Completed in 0ms
+909 silly placeDep node_modules/electron-builder err-code@2.0.3 OK for: promise-retry@2.0.1 want: ^2.0.2
+910 silly placeDep node_modules/electron-builder retry@0.12.0 OK for: promise-retry@2.0.1 want: ^0.12.0
+911 timing idealTree:node_modules/electron-builder/node_modules/promise-retry Completed in 1ms
+912 timing idealTree:node_modules/electron-builder/node_modules/err-code Completed in 0ms
+913 silly placeDep node_modules/electron-builder end-of-stream@1.4.4 OK for: pump@3.0.0 want: ^1.1.0
+914 timing idealTree:node_modules/electron-builder/node_modules/pump Completed in 2ms
+915 timing idealTree:node_modules/electron-builder/node_modules/end-of-stream Completed in 0ms
+916 timing idealTree:node_modules/electron-builder/node_modules/quick-lru Completed in 0ms
+917 silly placeDep node_modules/electron-builder config-file-ts@0.2.4 OK for: read-config-file@6.3.2 want: ^0.2.4
+918 silly placeDep node_modules/electron-builder dotenv@9.0.2 OK for: read-config-file@6.3.2 want: ^9.0.2
+919 silly placeDep node_modules/electron-builder dotenv-expand@5.1.0 OK for: read-config-file@6.3.2 want: ^5.1.0
+920 silly placeDep node_modules/electron-builder json5@2.2.3 OK for: read-config-file@6.3.2 want: ^2.2.0
+921 silly fetch manifest typescript@^4.0.2
+922 http fetch GET 200 https://registry.npmjs.org/typescript 16ms (cache hit)
+923 timing idealTree:node_modules/electron-builder/node_modules/read-config-file Completed in 60ms
+924 silly placeDep node_modules/electron-builder typescript@4.9.5 OK for: config-file-ts@0.2.4 want: ^4.0.2
+925 timing idealTree:node_modules/electron-builder/node_modules/config-file-ts Completed in 0ms
+926 timing idealTree:node_modules/electron-builder/node_modules/dotenv Completed in 0ms
+927 timing idealTree:node_modules/electron-builder/node_modules/dotenv-expand Completed in 0ms
+928 timing idealTree:node_modules/electron-builder/node_modules/json5 Completed in 0ms
+929 silly placeDep node_modules/electron-builder string_decoder@1.3.0 OK for: readable-stream@3.6.2 want: ^1.1.1
+930 silly placeDep node_modules/electron-builder util-deprecate@1.0.2 OK for: readable-stream@3.6.2 want: ^1.0.1
+931 silly fetch manifest safe-buffer@~5.2.0
+932 http fetch GET 200 https://registry.npmjs.org/safe-buffer 5ms (cache hit)
+933 timing idealTree:node_modules/electron-builder/node_modules/readable-stream Completed in 7ms
+934 timing idealTree:node_modules/electron-builder/node_modules/resolve-alpn Completed in 0ms
+935 timing idealTree:node_modules/electron-builder/node_modules/responselike Completed in 0ms
+936 silly placeDep node_modules/electron-builder onetime@5.1.2 OK for: restore-cursor@3.1.0 want: ^5.1.0
+937 silly fetch manifest mimic-fn@^2.1.0
+938 http fetch GET 200 https://registry.npmjs.org/mimic-fn 5ms (cache hit)
+939 timing idealTree:node_modules/electron-builder/node_modules/restore-cursor Completed in 6ms
+940 silly placeDep node_modules/electron-builder mimic-fn@2.1.0 OK for: onetime@5.1.2 want: ^2.1.0
+941 timing idealTree:node_modules/electron-builder/node_modules/onetime Completed in 1ms
+942 timing idealTree:node_modules/electron-builder/node_modules/mimic-fn Completed in 0ms
+943 timing idealTree:node_modules/electron-builder/node_modules/retry Completed in 0ms
+944 timing idealTree:node_modules/electron-builder/node_modules/rimraf Completed in 0ms
+945 timing idealTree:node_modules/electron-builder/node_modules/safer-buffer Completed in 0ms
+946 silly placeDep node_modules/electron-builder truncate-utf8-bytes@1.0.2 OK for: sanitize-filename@1.6.3 want: ^1.0.0
+947 silly fetch manifest utf8-byte-length@^1.0.1
+948 http fetch GET 200 https://registry.npmjs.org/utf8-byte-length 8ms (cache hit)
+949 timing idealTree:node_modules/electron-builder/node_modules/sanitize-filename Completed in 10ms
+950 timing idealTree:node_modules/electron-builder/node_modules/sax Completed in 0ms
+951 timing idealTree:node_modules/electron-builder/node_modules/semver Completed in 0ms
+952 timing idealTree:node_modules/electron-builder/node_modules/set-blocking Completed in 0ms
+953 silly placeDep node_modules/electron-builder shebang-regex@3.0.0 OK for: shebang-command@2.0.0 want: ^3.0.0
+954 timing idealTree:node_modules/electron-builder/node_modules/shebang-command Completed in 1ms
+955 timing idealTree:node_modules/electron-builder/node_modules/shebang-regex Completed in 0ms
+956 timing idealTree:node_modules/electron-builder/node_modules/signal-exit Completed in 0ms
+957 silly placeDep node_modules/electron-builder/node_modules/simple-update-notifier semver@7.0.0 OK for: simple-update-notifier@1.1.0 want: ~7.0.0
+958 timing idealTree:node_modules/electron-builder/node_modules/simple-update-notifier Completed in 1ms
+959 silly placeDep node_modules/electron-builder astral-regex@2.0.0 OK for: slice-ansi@3.0.0 want: ^2.0.0
+960 silly placeDep node_modules/electron-builder is-fullwidth-code-point@3.0.0 OK for: slice-ansi@3.0.0 want: ^3.0.0
+961 timing idealTree:node_modules/electron-builder/node_modules/slice-ansi Completed in 1ms
+962 timing idealTree:node_modules/electron-builder/node_modules/astral-regex Completed in 0ms
+963 timing idealTree:node_modules/electron-builder/node_modules/is-fullwidth-code-point Completed in 0ms
+964 timing idealTree:node_modules/electron-builder/node_modules/smart-buffer Completed in 0ms
+965 silly placeDep node_modules/electron-builder socks@2.7.1 OK for: socks-proxy-agent@7.0.0 want: ^2.6.2
+966 silly fetch manifest ip@^2.0.0
+967 http fetch GET 200 https://registry.npmjs.org/ip 7ms (cache hit)
+968 timing idealTree:node_modules/electron-builder/node_modules/socks-proxy-agent Completed in 9ms
+969 silly placeDep node_modules/electron-builder ip@2.0.0 OK for: socks@2.7.1 want: ^2.0.0
+970 timing idealTree:node_modules/electron-builder/node_modules/socks Completed in 0ms
+971 timing idealTree:node_modules/electron-builder/node_modules/ip Completed in 0ms
+972 silly placeDep node_modules/electron-builder buffer-from@1.1.2 OK for: source-map-support@0.5.21 want: ^1.0.0
+973 silly placeDep node_modules/electron-builder source-map@0.6.1 OK for: source-map-support@0.5.21 want: ^0.6.0
+974 timing idealTree:node_modules/electron-builder/node_modules/source-map-support Completed in 1ms
+975 timing idealTree:node_modules/electron-builder/node_modules/buffer-from Completed in 0ms
+976 timing idealTree:node_modules/electron-builder/node_modules/source-map Completed in 0ms
+977 timing idealTree:node_modules/electron-builder/node_modules/ssri Completed in 0ms
+978 timing idealTree:node_modules/electron-builder/node_modules/stat-mode Completed in 0ms
+979 silly placeDep node_modules/electron-builder safe-buffer@5.2.1 OK for: string_decoder@1.3.0 want: ~5.2.0
+980 timing idealTree:node_modules/electron-builder/node_modules/string_decoder Completed in 0ms
+981 timing idealTree:node_modules/electron-builder/node_modules/safe-buffer Completed in 0ms
+982 silly placeDep node_modules/electron-builder emoji-regex@8.0.0 OK for: string-width@4.2.3 want: ^8.0.0
+983 timing idealTree:node_modules/electron-builder/node_modules/string-width Completed in 1ms
+984 timing idealTree:node_modules/electron-builder/node_modules/emoji-regex Completed in 0ms
+985 silly placeDep node_modules/electron-builder ansi-regex@5.0.1 OK for: strip-ansi@6.0.1 want: ^5.0.1
+986 timing idealTree:node_modules/electron-builder/node_modules/strip-ansi Completed in 0ms
+987 timing idealTree:node_modules/electron-builder/node_modules/ansi-regex Completed in 0ms
+988 silly placeDep node_modules/electron-builder has-flag@4.0.0 OK for: supports-color@7.2.0 want: ^4.0.0
+989 timing idealTree:node_modules/electron-builder/node_modules/supports-color Completed in 1ms
+990 timing idealTree:node_modules/electron-builder/node_modules/has-flag Completed in 0ms
+991 silly placeDep node_modules/electron-builder chownr@2.0.0 OK for: tar@6.1.15 want: ^2.0.0
+992 silly placeDep node_modules/electron-builder/node_modules/tar fs-minipass@2.1.0 OK for: tar@6.1.15 want: ^2.0.0
+993 silly placeDep node_modules/electron-builder mkdirp@1.0.4 OK for: tar@6.1.15 want: ^1.0.3
+994 timing idealTree:node_modules/electron-builder/node_modules/tar Completed in 1ms
+995 timing idealTree:node_modules/electron-builder/node_modules/chownr Completed in 0ms
+996 timing idealTree:node_modules/electron-builder/node_modules/mkdirp Completed in 0ms
+997 timing idealTree:node_modules/electron-builder/node_modules/temp-file Completed in 0ms
+998 silly placeDep node_modules/electron-builder tmp@0.2.1 OK for: tmp-promise@3.0.3 want: ^0.2.0
+999 timing idealTree:node_modules/electron-builder/node_modules/tmp-promise Completed in 1ms
+1000 timing idealTree:node_modules/electron-builder/node_modules/tmp Completed in 0ms
+1001 silly placeDep node_modules/electron-builder utf8-byte-length@1.0.4 OK for: truncate-utf8-bytes@1.0.2 want: ^1.0.1
+1002 timing idealTree:node_modules/electron-builder/node_modules/truncate-utf8-bytes Completed in 0ms
+1003 timing idealTree:node_modules/electron-builder/node_modules/typescript Completed in 0ms
+1004 silly placeDep node_modules/electron-builder unique-slug@4.0.0 OK for: unique-filename@3.0.0 want: ^4.0.0
+1005 silly fetch manifest imurmurhash@^0.1.4
+1006 http fetch GET 200 https://registry.npmjs.org/imurmurhash 5ms (cache hit)
+1007 timing idealTree:node_modules/electron-builder/node_modules/unique-filename Completed in 6ms
+1008 silly placeDep node_modules/electron-builder imurmurhash@0.1.4 OK for: unique-slug@4.0.0 want: ^0.1.4
+1009 timing idealTree:node_modules/electron-builder/node_modules/unique-slug Completed in 1ms
+1010 timing idealTree:node_modules/electron-builder/node_modules/imurmurhash Completed in 0ms
+1011 timing idealTree:node_modules/electron-builder/node_modules/universalify Completed in 0ms
+1012 silly placeDep node_modules/electron-builder punycode@2.3.0 OK for: uri-js@4.4.1 want: ^2.1.0
+1013 timing idealTree:node_modules/electron-builder/node_modules/uri-js Completed in 0ms
+1014 timing idealTree:node_modules/electron-builder/node_modules/punycode Completed in 0ms
+1015 timing idealTree:node_modules/electron-builder/node_modules/utf8-byte-length Completed in 0ms
+1016 timing idealTree:node_modules/electron-builder/node_modules/util-deprecate Completed in 0ms
+1017 silly placeDep node_modules/electron-builder assert-plus@1.0.0 OK for: verror@1.10.1 want: ^1.0.0
+1018 silly placeDep node_modules/electron-builder core-util-is@1.0.2 OK for: verror@1.10.1 want: 1.0.2
+1019 silly placeDep node_modules/electron-builder extsprintf@1.4.1 OK for: verror@1.10.1 want: ^1.2.0
+1020 timing idealTree:node_modules/electron-builder/node_modules/verror Completed in 2ms
+1021 timing idealTree:node_modules/electron-builder/node_modules/assert-plus Completed in 0ms
+1022 timing idealTree:node_modules/electron-builder/node_modules/core-util-is Completed in 0ms
+1023 timing idealTree:node_modules/electron-builder/node_modules/extsprintf Completed in 0ms
+1024 silly placeDep node_modules/electron-builder defaults@1.0.4 OK for: wcwidth@1.0.1 want: ^1.0.3
+1025 silly fetch manifest clone@^1.0.2
+1026 http fetch GET 200 https://registry.npmjs.org/clone 5ms (cache hit)
+1027 timing idealTree:node_modules/electron-builder/node_modules/wcwidth Completed in 7ms
+1028 silly placeDep node_modules/electron-builder clone@1.0.4 OK for: defaults@1.0.4 want: ^1.0.2
+1029 timing idealTree:node_modules/electron-builder/node_modules/defaults Completed in 1ms
+1030 timing idealTree:node_modules/electron-builder/node_modules/clone Completed in 0ms
+1031 silly placeDep node_modules/electron-builder isexe@2.0.0 OK for: which@2.0.2 want: ^2.0.0
+1032 timing idealTree:node_modules/electron-builder/node_modules/which Completed in 1ms
+1033 timing idealTree:node_modules/electron-builder/node_modules/isexe Completed in 0ms
+1034 timing idealTree:node_modules/electron-builder/node_modules/wide-align Completed in 0ms
+1035 timing idealTree:node_modules/electron-builder/node_modules/wrappy Completed in 0ms
+1036 timing idealTree:node_modules/electron-builder/node_modules/xmlbuilder Completed in 0ms
+1037 timing idealTree:node_modules/electron-builder/node_modules/yallist Completed in 0ms
+1038 silly placeDep node_modules/electron-builder cliui@8.0.1 OK for: yargs@17.7.2 want: ^8.0.1
+1039 silly placeDep node_modules/electron-builder escalade@3.1.1 OK for: yargs@17.7.2 want: ^3.1.1
+1040 silly placeDep node_modules/electron-builder get-caller-file@2.0.5 OK for: yargs@17.7.2 want: ^2.0.5
+1041 silly placeDep node_modules/electron-builder require-directory@2.1.1 OK for: yargs@17.7.2 want: ^2.1.1
+1042 silly placeDep node_modules/electron-builder y18n@5.0.8 OK for: yargs@17.7.2 want: ^5.0.5
+1043 silly placeDep node_modules/electron-builder yargs-parser@21.1.1 OK for: yargs@17.7.2 want: ^21.1.1
+1044 silly fetch manifest wrap-ansi@^7.0.0
+1045 http fetch GET 200 https://registry.npmjs.org/wrap-ansi 5ms (cache hit)
+1046 timing idealTree:node_modules/electron-builder/node_modules/yargs Completed in 9ms
+1047 silly placeDep node_modules/electron-builder wrap-ansi@7.0.0 OK for: cliui@8.0.1 want: ^7.0.0
+1048 timing idealTree:node_modules/electron-builder/node_modules/cliui Completed in 0ms
+1049 timing idealTree:node_modules/electron-builder/node_modules/escalade Completed in 0ms
+1050 timing idealTree:node_modules/electron-builder/node_modules/get-caller-file Completed in 0ms
+1051 timing idealTree:node_modules/electron-builder/node_modules/require-directory Completed in 0ms
+1052 timing idealTree:node_modules/electron-builder/node_modules/wrap-ansi Completed in 0ms
+1053 timing idealTree:node_modules/electron-builder/node_modules/y18n Completed in 0ms
+1054 timing idealTree:node_modules/electron-builder/node_modules/yargs-parser Completed in 0ms
+1055 silly placeDep node_modules/electron-builder/node_modules/@electron/asar brace-expansion@1.1.11 OK for: minimatch@3.1.2 want: ^1.1.7
+1056 silly fetch manifest concat-map@0.0.1
+1057 http fetch GET 200 https://registry.npmjs.org/concat-map 6ms (cache hit)
+1058 timing idealTree:node_modules/electron-builder/node_modules/@electron/asar/node_modules/minimatch Completed in 7ms
+1059 silly placeDep node_modules/electron-builder concat-map@0.0.1 OK for: brace-expansion@1.1.11 want: 0.0.1
+1060 timing idealTree:node_modules/electron-builder/node_modules/@electron/asar/node_modules/brace-expansion Completed in 1ms
+1061 timing idealTree:node_modules/electron-builder/node_modules/concat-map Completed in 0ms
+1062 silly placeDep node_modules/electron-builder at-least-node@1.0.0 OK for: fs-extra@9.1.0 want: ^1.0.0
+1063 timing idealTree:node_modules/electron-builder/node_modules/@electron/notarize/node_modules/fs-extra Completed in 1ms
+1064 timing idealTree:node_modules/electron-builder/node_modules/at-least-node Completed in 0ms
+1065 timing idealTree:node_modules/electron-builder/node_modules/@electron/osx-sign/node_modules/isbinaryfile Completed in 0ms
+1066 timing idealTree:node_modules/electron-builder/node_modules/@electron/universal/node_modules/@malept/cross-spawn-promise Completed in 0ms
+1067 timing idealTree:node_modules/electron-builder/node_modules/@electron/universal/node_modules/fs-extra Completed in 0ms
+1068 silly placeDep node_modules/electron-builder/node_modules/@electron/universal brace-expansion@1.1.11 OK for: minimatch@3.1.2 want: ^1.1.7
+1069 timing idealTree:node_modules/electron-builder/node_modules/@electron/universal/node_modules/minimatch Completed in 1ms
+1070 timing idealTree:node_modules/electron-builder/node_modules/@electron/universal/node_modules/brace-expansion Completed in 0ms
+1071 timing idealTree:node_modules/electron-builder/node_modules/@malept/flatpak-bundler/node_modules/fs-extra Completed in 0ms
+1072 silly placeDep node_modules/electron-builder foreground-child@3.1.1 OK for: glob@10.3.3 want: ^3.1.0
+1073 silly placeDep node_modules/electron-builder jackspeak@2.2.1 OK for: glob@10.3.3 want: ^2.0.3
+1074 silly placeDep node_modules/electron-builder/node_modules/cacache minimatch@9.0.3 OK for: glob@10.3.3 want: ^9.0.1
+1075 silly placeDep node_modules/electron-builder path-scurry@1.10.1 OK for: glob@10.3.3 want: ^1.10.1
+1076 silly fetch manifest signal-exit@^4.0.1
+1077 silly fetch manifest @isaacs/cliui@^8.0.2
+1078 silly fetch manifest @pkgjs/parseargs@^0.11.0
+1079 silly fetch manifest lru-cache@^9.1.1 || ^10.0.0
+1080 http fetch GET 200 https://registry.npmjs.org/@pkgjs%2fparseargs 7ms (cache hit)
+1081 http fetch GET 200 https://registry.npmjs.org/@isaacs%2fcliui 8ms (cache hit)
+1082 timing idealTree:node_modules/electron-builder/node_modules/cacache/node_modules/glob Completed in 11ms
+1083 silly placeDep node_modules/electron-builder/node_modules/foreground-child signal-exit@4.0.2 OK for: foreground-child@3.1.1 want: ^4.0.1
+1084 timing idealTree:node_modules/electron-builder/node_modules/foreground-child Completed in 0ms
+1085 silly placeDep node_modules/electron-builder @isaacs/cliui@8.0.2 OK for: jackspeak@2.2.1 want: ^8.0.2
+1086 silly placeDep node_modules/electron-builder @pkgjs/parseargs@0.11.0 OK for: jackspeak@2.2.1 want: ^0.11.0
+1087 silly fetch manifest string-width@^5.1.2
+1088 silly fetch manifest string-width-cjs@npm:string-width@^4.2.0
+1089 silly fetch manifest strip-ansi@^7.0.1
+1090 silly fetch manifest strip-ansi-cjs@npm:strip-ansi@^6.0.1
+1091 silly fetch manifest wrap-ansi@^8.1.0
+1092 silly fetch manifest wrap-ansi-cjs@npm:wrap-ansi@^7.0.0
+1093 timing idealTree:node_modules/electron-builder/node_modules/jackspeak Completed in 3ms
+1094 silly placeDep node_modules/electron-builder/node_modules/@isaacs/cliui string-width@5.1.2 OK for: @isaacs/cliui@8.0.2 want: ^5.1.2
+1095 silly placeDep node_modules/electron-builder string-width-cjs@4.2.3 OK for: @isaacs/cliui@8.0.2 want: npm:string-width@^4.2.0
+1096 silly placeDep node_modules/electron-builder/node_modules/@isaacs/cliui strip-ansi@7.1.0 OK for: @isaacs/cliui@8.0.2 want: ^7.0.1
+1097 silly placeDep node_modules/electron-builder strip-ansi-cjs@6.0.1 OK for: @isaacs/cliui@8.0.2 want: npm:strip-ansi@^6.0.1
+1098 silly placeDep node_modules/electron-builder/node_modules/@isaacs/cliui wrap-ansi@8.1.0 OK for: @isaacs/cliui@8.0.2 want: ^8.1.0
+1099 silly placeDep node_modules/electron-builder wrap-ansi-cjs@7.0.0 OK for: @isaacs/cliui@8.0.2 want: npm:wrap-ansi@^7.0.0
+1100 silly fetch manifest eastasianwidth@^0.2.0
+1101 silly fetch manifest emoji-regex@^9.2.2
+1102 silly fetch manifest ansi-regex@^6.0.1
+1103 silly fetch manifest ansi-styles@^6.1.0
+1104 http fetch GET 200 https://registry.npmjs.org/eastasianwidth 6ms (cache hit)
+1105 timing idealTree:node_modules/electron-builder/node_modules/@isaacs/cliui Completed in 10ms
+1106 timing idealTree:node_modules/electron-builder/node_modules/@pkgjs/parseargs Completed in 0ms
+1107 silly placeDep node_modules/electron-builder/node_modules/path-scurry lru-cache@10.0.0 OK for: path-scurry@1.10.1 want: ^9.1.1 || ^10.0.0
+1108 timing idealTree:node_modules/electron-builder/node_modules/path-scurry Completed in 1ms
+1109 timing idealTree:node_modules/electron-builder/node_modules/string-width-cjs Completed in 0ms
+1110 timing idealTree:node_modules/electron-builder/node_modules/strip-ansi-cjs Completed in 0ms
+1111 timing idealTree:node_modules/electron-builder/node_modules/wrap-ansi-cjs Completed in 0ms
+1112 silly placeDep node_modules/electron-builder eastasianwidth@0.2.0 OK for: string-width@5.1.2 want: ^0.2.0
+1113 silly placeDep node_modules/electron-builder/node_modules/@isaacs/cliui emoji-regex@9.2.2 OK for: string-width@5.1.2 want: ^9.2.2
+1114 timing idealTree:node_modules/electron-builder/node_modules/@isaacs/cliui/node_modules/string-width Completed in 1ms
+1115 timing idealTree:node_modules/electron-builder/node_modules/eastasianwidth Completed in 0ms
+1116 timing idealTree:node_modules/electron-builder/node_modules/@isaacs/cliui/node_modules/emoji-regex Completed in 0ms
+1117 silly placeDep node_modules/electron-builder/node_modules/@isaacs/cliui ansi-regex@6.0.1 OK for: strip-ansi@7.1.0 want: ^6.0.1
+1118 timing idealTree:node_modules/electron-builder/node_modules/@isaacs/cliui/node_modules/strip-ansi Completed in 1ms
+1119 timing idealTree:node_modules/electron-builder/node_modules/@isaacs/cliui/node_modules/ansi-regex Completed in 0ms
+1120 silly placeDep node_modules/electron-builder/node_modules/@isaacs/cliui ansi-styles@6.2.1 OK for: wrap-ansi@8.1.0 want: ^6.1.0
+1121 timing idealTree:node_modules/electron-builder/node_modules/@isaacs/cliui/node_modules/wrap-ansi Completed in 0ms
+1122 timing idealTree:node_modules/electron-builder/node_modules/@isaacs/cliui/node_modules/ansi-styles Completed in 0ms
+1123 timing idealTree:node_modules/electron-builder/node_modules/cacache/node_modules/lru-cache Completed in 0ms
+1124 timing idealTree:node_modules/electron-builder/node_modules/cacache/node_modules/minimatch Completed in 0ms
+1125 timing idealTree:node_modules/electron-builder/node_modules/decompress-response/node_modules/mimic-response Completed in 0ms
+1126 silly placeDep node_modules/electron-builder/node_modules/dir-compare brace-expansion@1.1.11 OK for: minimatch@3.1.2 want: ^1.1.7
+1127 timing idealTree:node_modules/electron-builder/node_modules/dir-compare/node_modules/minimatch Completed in 1ms
+1128 timing idealTree:node_modules/electron-builder/node_modules/dir-compare/node_modules/brace-expansion Completed in 0ms
+1129 timing idealTree:node_modules/electron-builder/node_modules/foreground-child/node_modules/signal-exit Completed in 0ms
+1130 silly placeDep node_modules/electron-builder/node_modules/glob brace-expansion@1.1.11 OK for: minimatch@3.1.2 want: ^1.1.7
+1131 timing idealTree:node_modules/electron-builder/node_modules/glob/node_modules/minimatch Completed in 1ms
+1132 timing idealTree:node_modules/electron-builder/node_modules/glob/node_modules/brace-expansion Completed in 0ms
+1133 silly placeDep node_modules/electron-builder/node_modules/jake brace-expansion@1.1.11 OK for: minimatch@3.1.2 want: ^1.1.7
+1134 timing idealTree:node_modules/electron-builder/node_modules/jake/node_modules/minimatch Completed in 0ms
+1135 timing idealTree:node_modules/electron-builder/node_modules/jake/node_modules/brace-expansion Completed in 0ms
+1136 timing idealTree:node_modules/electron-builder/node_modules/make-fetch-happen/node_modules/lru-cache Completed in 0ms
+1137 timing idealTree:node_modules/electron-builder/node_modules/minipass-collect/node_modules/minipass Completed in 0ms
+1138 timing idealTree:node_modules/electron-builder/node_modules/minipass-flush/node_modules/minipass Completed in 0ms
+1139 timing idealTree:node_modules/electron-builder/node_modules/minipass-pipeline/node_modules/minipass Completed in 0ms
+1140 timing idealTree:node_modules/electron-builder/node_modules/minipass-sized/node_modules/minipass Completed in 0ms
+1141 timing idealTree:node_modules/electron-builder/node_modules/minizlib/node_modules/minipass Completed in 0ms
+1142 timing idealTree:node_modules/electron-builder/node_modules/path-scurry/node_modules/lru-cache Completed in 0ms
+1143 timing idealTree:node_modules/electron-builder/node_modules/simple-update-notifier/node_modules/semver Completed in 0ms
+1144 silly placeDep node_modules/electron-builder/node_modules/tar/node_modules/fs-minipass minipass@3.3.6 OK for: fs-minipass@2.1.0 want: ^3.0.0
+1145 timing idealTree:node_modules/electron-builder/node_modules/tar/node_modules/fs-minipass Completed in 1ms
+1146 timing idealTree:node_modules/electron-builder/node_modules/tar/node_modules/fs-minipass/node_modules/minipass Completed in 0ms
+1147 timing idealTree:buildDeps Completed in 1184ms
+1148 timing idealTree:fixDepFlags Completed in 2ms
+1149 timing idealTree Completed in 1199ms
+1150 timing reify:loadTrees Completed in 1287ms
+1151 timing reify:diffTrees Completed in 10ms
+1152 silly reify mark retired [
+1152 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder',
+1152 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\electron-builder',
+1152 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\electron-builder.cmd',
+1152 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\electron-builder.ps1',
+1152 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\install-app-deps',
+1152 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\install-app-deps.cmd',
+1152 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\install-app-deps.ps1'
+1152 silly reify ]
+1153 silly reify moves {
+1153 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder': 'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\.electron-builder-pbXxrsY7',
+1153 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\electron-builder': 'C:\\Users\\almon\\AppData\\Roaming\\npm\\.electron-builder-WMCBfmbo',
+1153 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\electron-builder.cmd': 'C:\\Users\\almon\\AppData\\Roaming\\npm\\.electron-builder.cmd-FV2GzRT3',
+1153 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\electron-builder.ps1': 'C:\\Users\\almon\\AppData\\Roaming\\npm\\.electron-builder.ps1-MBJUs76d',
+1153 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\install-app-deps': 'C:\\Users\\almon\\AppData\\Roaming\\npm\\.install-app-deps-V2kh8N0R',
+1153 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\install-app-deps.cmd': 'C:\\Users\\almon\\AppData\\Roaming\\npm\\.install-app-deps.cmd-pWlkEXdG',
+1153 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\install-app-deps.ps1': 'C:\\Users\\almon\\AppData\\Roaming\\npm\\.install-app-deps.ps1-SxKTIXWJ'
+1153 silly reify }
+1154 timing reify:retireShallow Completed in 11ms
+1155 timing reify:createSparse Completed in 55ms
+1156 timing reify:loadBundles Completed in 0ms
+1157 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\iconv-corefoundation
+1158 silly reify mark deleted [
+1158 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\iconv-corefoundation'
+1158 silly reify ]
+1159 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\dmg-license
+1160 silly reify mark deleted [
+1160 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\dmg-license',
+1160 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\.bin\\dmg-license',
+1160 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\.bin\\dmg-license.cmd',
+1160 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\.bin\\dmg-license.ps1'
+1160 silly reify ]
+1161 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\cli-truncate
+1162 silly reify mark deleted [
+1162 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\cli-truncate'
+1162 silly reify ]
+1163 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\node-addon-api
+1164 silly reify mark deleted [
+1164 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\node-addon-api'
+1164 silly reify ]
+1165 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\@types\plist
+1166 silly reify mark deleted [
+1166 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\@types\\plist'
+1166 silly reify ]
+1167 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\@types\verror
+1168 silly reify mark deleted [
+1168 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\@types\\verror'
+1168 silly reify ]
+1169 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\crc
+1170 silly reify mark deleted [
+1170 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\crc'
+1170 silly reify ]
+1171 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\verror
+1172 silly reify mark deleted [
+1172 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\verror'
+1172 silly reify ]
+1173 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\slice-ansi
+1174 silly reify mark deleted [
+1174 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\slice-ansi'
+1174 silly reify ]
+1175 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\assert-plus
+1176 silly reify mark deleted [
+1176 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\assert-plus'
+1176 silly reify ]
+1177 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\core-util-is
+1178 silly reify mark deleted [
+1178 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\core-util-is'
+1178 silly reify ]
+1179 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\extsprintf
+1180 silly reify mark deleted [
+1180 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\extsprintf'
+1180 silly reify ]
+1181 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\astral-regex
+1182 silly reify mark deleted [
+1182 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\astral-regex'
+1182 silly reify ]
+1183 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\dmg-license
+1184 silly reify mark deleted [
+1184 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\dmg-license',
+1184 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\.bin\\dmg-license',
+1184 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\.bin\\dmg-license.cmd',
+1184 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\.bin\\dmg-license.ps1'
+1184 silly reify ]
+1185 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\@types\plist
+1186 silly reify mark deleted [
+1186 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\@types\\plist'
+1186 silly reify ]
+1187 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\@types\verror
+1188 silly reify mark deleted [
+1188 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\@types\\verror'
+1188 silly reify ]
+1189 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\crc
+1190 silly reify mark deleted [
+1190 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\crc'
+1190 silly reify ]
+1191 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\iconv-corefoundation
+1192 silly reify mark deleted [
+1192 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\iconv-corefoundation'
+1192 silly reify ]
+1193 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\verror
+1194 silly reify mark deleted [
+1194 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\verror'
+1194 silly reify ]
+1195 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\cli-truncate
+1196 silly reify mark deleted [
+1196 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\cli-truncate'
+1196 silly reify ]
+1197 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\node-addon-api
+1198 silly reify mark deleted [
+1198 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\node-addon-api'
+1198 silly reify ]
+1199 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\assert-plus
+1200 silly reify mark deleted [
+1200 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\assert-plus'
+1200 silly reify ]
+1201 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\core-util-is
+1202 silly reify mark deleted [
+1202 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\core-util-is'
+1202 silly reify ]
+1203 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\extsprintf
+1204 silly reify mark deleted [
+1204 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\extsprintf'
+1204 silly reify ]
+1205 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\slice-ansi
+1206 silly reify mark deleted [
+1206 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\slice-ansi'
+1206 silly reify ]
+1207 verbose reify failed optional dependency C:\Users\almon\AppData\Roaming\npm\node_modules\electron-builder\node_modules\astral-regex
+1208 silly reify mark deleted [
+1208 silly reify   'C:\\Users\\almon\\AppData\\Roaming\\npm\\node_modules\\electron-builder\\node_modules\\astral-regex'
+1208 silly reify ]
+1209 timing reifyNode:node_modules/electron-builder/node_modules/iconv-corefoundation Completed in 11ms
+1210 timing reifyNode:node_modules/electron-builder/node_modules/dmg-license Completed in 11ms
+1211 timing reifyNode:node_modules/electron-builder/node_modules/eastasianwidth Completed in 1012ms
+1212 timing reifyNode:node_modules/electron-builder/node_modules/compare-version Completed in 1013ms
+1213 timing reifyNode:node_modules/electron-builder/node_modules/ip Completed in 1023ms
+1214 timing reifyNode:node_modules/electron-builder/node_modules/bluebird-lst Completed in 1044ms
+1215 timing reifyNode:node_modules/electron-builder/node_modules/slice-ansi Completed in 1049ms
+1216 timing reifyNode:node_modules/electron-builder/node_modules/@types/responselike Completed in 1050ms
+1217 timing reifyNode:node_modules/electron-builder/node_modules/@types/verror Completed in 1050ms
+1218 timing reifyNode:node_modules/electron-builder/node_modules/@types/ms Completed in 1050ms
+1219 timing reifyNode:node_modules/electron-builder/node_modules/@types/plist Completed in 1051ms
+1220 timing reifyNode:node_modules/electron-builder/node_modules/@types/debug Completed in 1051ms
+1221 timing reifyNode:node_modules/electron-builder/node_modules/@types/http-cache-semantics Completed in 1051ms
+1222 timing reifyNode:node_modules/electron-builder/node_modules/@types/keyv Completed in 1051ms
+1223 timing reifyNode:node_modules/electron-builder/node_modules/@types/cacheable-request Completed in 1051ms
+1224 timing reifyNode:node_modules/electron-builder/node_modules/@electron/universal/node_modules/brace-expansion Completed in 1051ms
+1225 timing reifyNode:node_modules/electron-builder/node_modules/@electron/asar/node_modules/brace-expansion Completed in 1051ms
+1226 timing reifyNode:node_modules/electron-builder/node_modules/wide-align Completed in 1052ms
+1227 timing reifyNode:node_modules/electron-builder/node_modules/wrappy Completed in 1052ms
+1228 timing reifyNode:node_modules/electron-builder/node_modules/wrap-ansi-cjs Completed in 1052ms
+1229 timing reifyNode:node_modules/electron-builder/node_modules/wrap-ansi Completed in 1053ms
+1230 timing reifyNode:node_modules/electron-builder/node_modules/universalify Completed in 1053ms
+1231 timing reifyNode:node_modules/electron-builder/node_modules/shebang-command Completed in 1053ms
+1232 timing reifyNode:node_modules/electron-builder/node_modules/resolve-alpn Completed in 1053ms
+1233 timing reifyNode:node_modules/electron-builder/node_modules/path-is-absolute Completed in 1054ms
+1234 timing reifyNode:node_modules/electron-builder/node_modules/once Completed in 1054ms
+1235 timing reifyNode:node_modules/electron-builder/node_modules/ms Completed in 1054ms
+1236 timing reifyNode:node_modules/electron-builder/node_modules/minipass-pipeline Completed in 1053ms
+1237 timing reifyNode:node_modules/electron-builder/node_modules/minipass-collect Completed in 1054ms
+1238 timing reifyNode:node_modules/electron-builder/node_modules/mimic-response Completed in 1054ms
+1239 timing reifyNode:node_modules/electron-builder/node_modules/minipass-flush Completed in 1054ms
+1240 timing reifyNode:node_modules/electron-builder/node_modules/jake/node_modules/brace-expansion Completed in 1054ms
+1241 timing reifyNode:node_modules/electron-builder/node_modules/inflight Completed in 1055ms
+1242 timing reifyNode:node_modules/electron-builder/node_modules/imurmurhash Completed in 1055ms
+1243 timing reifyNode:node_modules/electron-builder/node_modules/has-unicode Completed in 1055ms
+1244 timing reifyNode:node_modules/electron-builder/node_modules/glob/node_modules/brace-expansion Completed in 1055ms
+1245 timing reifyNode:node_modules/electron-builder/node_modules/end-of-stream Completed in 1055ms
+1246 timing reifyNode:node_modules/electron-builder/node_modules/dir-compare/node_modules/brace-expansion Completed in 1055ms
+1247 timing reifyNode:node_modules/electron-builder/node_modules/color-name Completed in 1056ms
+1248 timing reifyNode:node_modules/electron-builder/node_modules/chownr Completed in 1056ms
+1249 timing reifyNode:node_modules/electron-builder/node_modules/at-least-node Completed in 1055ms
+1250 timing reifyNode:node_modules/electron-builder/node_modules/buffer-from Completed in 1056ms
+1251 timing reifyNode:node_modules/electron-builder/node_modules/abbrev Completed in 1056ms
+1252 timing reifyNode:node_modules/electron-builder/node_modules/@types/fs-extra Completed in 1062ms
+1253 timing reifyNode:node_modules/electron-builder/node_modules/@malept/flatpak-bundler Completed in 1062ms
+1254 timing reifyNode:node_modules/electron-builder/node_modules/unique-filename Completed in 1062ms
+1255 timing reifyNode:node_modules/electron-builder/node_modules/unique-slug Completed in 1062ms
+1256 timing reifyNode:node_modules/electron-builder/node_modules/tar/node_modules/fs-minipass Completed in 1063ms
+1257 timing reifyNode:node_modules/electron-builder/node_modules/responselike Completed in 1063ms
+1258 timing reifyNode:node_modules/electron-builder/node_modules/lru-cache Completed in 1063ms
+1259 timing reifyNode:node_modules/electron-builder/node_modules/chromium-pickle-js Completed in 1067ms
+1260 timing reifyNode:node_modules/electron-builder/node_modules/clone-response Completed in 1067ms
+1261 timing reifyNode:node_modules/electron-builder/node_modules/@electron/universal/node_modules/minimatch Completed in 1074ms
+1262 timing reifyNode:node_modules/electron-builder/node_modules/@electron/asar/node_modules/minimatch Completed in 1074ms
+1263 timing reifyNode:node_modules/electron-builder/node_modules/string_decoder Completed in 1074ms
+1264 timing reifyNode:node_modules/electron-builder/node_modules/npmlog Completed in 1075ms
+1265 timing reifyNode:node_modules/electron-builder/node_modules/http-cache-semantics Completed in 1073ms
+1266 timing reifyNode:node_modules/electron-builder/node_modules/jake/node_modules/minimatch Completed in 1074ms
+1267 timing reifyNode:node_modules/electron-builder/node_modules/keyv Completed in 1075ms
+1268 timing reifyNode:node_modules/electron-builder/node_modules/fs-minipass Completed in 1074ms
+1269 timing reifyNode:node_modules/electron-builder/node_modules/glob/node_modules/minimatch Completed in 1074ms
+1270 timing reifyNode:node_modules/electron-builder/node_modules/dir-compare/node_modules/minimatch Completed in 1076ms
+1271 timing reifyNode:node_modules/electron-builder/node_modules/cacheable-request Completed in 1075ms
+1272 timing reifyNode:node_modules/electron-builder/node_modules/ssri Completed in 1081ms
+1273 timing reifyNode:node_modules/electron-builder/node_modules/assert-plus Completed in 1086ms
+1274 timing reifyNode:node_modules/electron-builder/node_modules/astral-regex Completed in 1087ms
+1275 timing reifyNode:node_modules/electron-builder/node_modules/cli-truncate Completed in 1087ms
+1276 timing reifyNode:node_modules/electron-builder/node_modules/@isaacs/cliui/node_modules/ansi-regex Completed in 1086ms
+1277 timing reifyNode:node_modules/electron-builder/node_modules/@isaacs/cliui/node_modules/strip-ansi Completed in 1087ms
+1278 timing reifyNode:node_modules/electron-builder/node_modules/@isaacs/cliui/node_modules/string-width Completed in 1087ms
+1279 timing reifyNode:node_modules/electron-builder/node_modules/@isaacs/cliui/node_modules/wrap-ansi Completed in 1087ms
+1280 timing reifyNode:node_modules/electron-builder/node_modules/supports-color Completed in 1087ms
+1281 timing reifyNode:node_modules/electron-builder/node_modules/strip-ansi Completed in 1088ms
+1282 timing reifyNode:node_modules/electron-builder/node_modules/strip-ansi-cjs Completed in 1088ms
+1283 timing reifyNode:node_modules/electron-builder/node_modules/shebang-regex Completed in 1087ms
+1284 timing reifyNode:node_modules/electron-builder/node_modules/string-width Completed in 1087ms
+1285 timing reifyNode:node_modules/electron-builder/node_modules/string-width-cjs Completed in 1087ms
+1286 timing reifyNode:node_modules/electron-builder/node_modules/signal-exit Completed in 1087ms
+1287 timing reifyNode:node_modules/electron-builder/node_modules/set-blocking Completed in 1088ms
+1288 timing reifyNode:node_modules/electron-builder/node_modules/restore-cursor Completed in 1088ms
+1289 timing reifyNode:node_modules/electron-builder/node_modules/quick-lru Completed in 1088ms
+1290 timing reifyNode:node_modules/electron-builder/node_modules/path-key Completed in 1088ms
+1291 timing reifyNode:node_modules/electron-builder/node_modules/p-map Completed in 1088ms
+1292 timing reifyNode:node_modules/electron-builder/node_modules/sax Completed in 1088ms
+1293 timing reifyNode:node_modules/electron-builder/node_modules/onetime Completed in 1089ms
+1294 timing reifyNode:node_modules/electron-builder/node_modules/lowercase-keys Completed in 1088ms
+1295 timing reifyNode:node_modules/electron-builder/node_modules/mimic-fn Completed in 1088ms
+1296 timing reifyNode:node_modules/electron-builder/node_modules/is-unicode-supported Completed in 1089ms
+1297 timing reifyNode:node_modules/electron-builder/node_modules/inherits Completed in 1089ms
+1298 timing reifyNode:node_modules/electron-builder/node_modules/is-interactive Completed in 1089ms
+1299 timing reifyNode:node_modules/electron-builder/node_modules/humanize-ms Completed in 1089ms
+1300 timing reifyNode:node_modules/electron-builder/node_modules/is-fullwidth-code-point Completed in 1089ms
+1301 timing reifyNode:node_modules/electron-builder/node_modules/ieee754 Completed in 1089ms
+1302 timing reifyNode:node_modules/electron-builder/node_modules/indent-string Completed in 1089ms
+1303 timing reifyNode:node_modules/electron-builder/node_modules/has-flag Completed in 1089ms
+1304 timing reifyNode:node_modules/electron-builder/node_modules/env-paths Completed in 1089ms
+1305 timing reifyNode:node_modules/electron-builder/node_modules/defaults Completed in 1090ms
+1306 timing reifyNode:node_modules/electron-builder/node_modules/decompress-response Completed in 1090ms
+1307 timing reifyNode:node_modules/electron-builder/node_modules/decompress-response/node_modules/mimic-response Completed in 1090ms
+1308 timing reifyNode:node_modules/electron-builder/node_modules/console-control-strings Completed in 1090ms
+1309 timing reifyNode:node_modules/electron-builder/node_modules/cli-cursor Completed in 1091ms
+1310 timing reifyNode:node_modules/electron-builder/node_modules/clean-stack Completed in 1091ms
+1311 timing reifyNode:node_modules/electron-builder/node_modules/aproba Completed in 1091ms
+1312 timing reifyNode:node_modules/electron-builder/node_modules/ansi-regex Completed in 1091ms
+1313 timing reifyNode:node_modules/electron-builder/node_modules/aggregate-error Completed in 1091ms
+1314 timing reifyNode:node_modules/electron-builder/node_modules/async-exit-hook Completed in 1091ms
+1315 timing reifyNode:node_modules/electron-builder/node_modules/@isaacs/cliui/node_modules/ansi-styles Completed in 1097ms
+1316 timing reifyNode:node_modules/electron-builder/node_modules/yallist Completed in 1097ms
+1317 timing reifyNode:node_modules/electron-builder/node_modules/p-cancelable Completed in 1098ms
+1318 timing reifyNode:node_modules/electron-builder/node_modules/ora Completed in 1098ms
+1319 timing reifyNode:node_modules/electron-builder/node_modules/normalize-url Completed in 1098ms
+1320 timing reifyNode:node_modules/electron-builder/node_modules/minizlib Completed in 1097ms
+1321 timing reifyNode:node_modules/electron-builder/node_modules/mime-types Completed in 1098ms
+1322 timing reifyNode:node_modules/electron-builder/node_modules/lazy-val Completed in 1098ms
+1323 timing reifyNode:node_modules/electron-builder/node_modules/filelist Completed in 1098ms
+1324 timing reifyNode:node_modules/electron-builder/node_modules/fs.realpath Completed in 1098ms
+1325 timing reifyNode:node_modules/electron-builder/node_modules/combined-stream Completed in 1099ms
+1326 timing reifyNode:node_modules/electron-builder/node_modules/balanced-match Completed in 1099ms
+1327 timing reifyNode:node_modules/electron-builder/node_modules/brace-expansion Completed in 1099ms
+1328 timing reifyNode:node_modules/electron-builder/node_modules/ansi-styles Completed in 1099ms
+1329 timing reifyNode:node_modules/electron-builder/node_modules/@szmarczak/http-timer Completed in 1105ms
+1330 timing reifyNode:node_modules/electron-builder/node_modules/@electron/osx-sign/node_modules/isbinaryfile Completed in 1104ms
+1331 timing reifyNode:node_modules/electron-builder/node_modules/punycode Completed in 1104ms
+1332 timing reifyNode:node_modules/electron-builder/node_modules/temp-file Completed in 1105ms
+1333 timing reifyNode:node_modules/electron-builder/node_modules/safe-buffer Completed in 1105ms
+1334 timing reifyNode:node_modules/electron-builder/node_modules/socks-proxy-agent Completed in 1105ms
+1335 timing reifyNode:node_modules/electron-builder/node_modules/minimatch Completed in 1105ms
+1336 timing reifyNode:node_modules/electron-builder/node_modules/isbinaryfile Completed in 1105ms
+1337 timing reifyNode:node_modules/electron-builder/node_modules/defer-to-connect Completed in 1106ms
+1338 timing reifyNode:node_modules/electron-builder/node_modules/cacheable-lookup Completed in 1105ms
+1339 timing reifyNode:node_modules/electron-builder/node_modules/tar/node_modules/fs-minipass/node_modules/minipass Completed in 1113ms
+1340 timing reifyNode:node_modules/electron-builder/node_modules/minipass-sized/node_modules/minipass Completed in 1112ms
+1341 timing reifyNode:node_modules/electron-builder/node_modules/minizlib/node_modules/minipass Completed in 1112ms
+1342 timing reifyNode:node_modules/electron-builder/node_modules/minipass-pipeline/node_modules/minipass Completed in 1112ms
+1343 timing reifyNode:node_modules/electron-builder/node_modules/nopt Completed in 1113ms
+1344 timing reifyNode:node_modules/electron-builder/node_modules/minipass-flush/node_modules/minipass Completed in 1112ms
+1345 timing reifyNode:node_modules/electron-builder/node_modules/minipass-collect/node_modules/minipass Completed in 1112ms
+1346 timing reifyNode:node_modules/electron-builder/node_modules/util-deprecate Completed in 1118ms
+1347 timing reifyNode:node_modules/electron-builder/node_modules/node-api-version Completed in 1118ms
+1348 timing reifyNode:node_modules/electron-builder/node_modules/tmp Completed in 1119ms
+1349 timing reifyNode:node_modules/electron-builder/node_modules/log-symbols Completed in 1117ms
+1350 timing reifyNode:node_modules/electron-builder/node_modules/is-ci Completed in 1118ms
+1351 timing reifyNode:node_modules/electron-builder/node_modules/get-caller-file Completed in 1117ms
+1352 timing reifyNode:node_modules/electron-builder/node_modules/color-support Completed in 1118ms
+1353 timing reifyNode:node_modules/electron-builder/node_modules/clone Completed in 1118ms
+1354 timing reifyNode:node_modules/electron-builder/node_modules/base64-js Completed in 1118ms
+1355 timing reifyNode:node_modules/electron-builder/node_modules/which Completed in 1123ms
+1356 timing reifyNode:node_modules/electron-builder/node_modules/rimraf Completed in 1122ms
+1357 timing reifyNode:node_modules/electron-builder/node_modules/json-buffer Completed in 1122ms
+1358 timing reifyNode:node_modules/electron-builder/node_modules/jsonfile Completed in 1122ms
+1359 timing reifyNode:node_modules/electron-builder/node_modules/hosted-git-info Completed in 1122ms
+1360 timing reifyNode:node_modules/electron-builder/node_modules/get-stream Completed in 1122ms
+1361 timing reifyNode:node_modules/electron-builder/node_modules/dotenv-expand Completed in 1122ms
+1362 timing reifyNode:node_modules/electron-builder/node_modules/delayed-stream Completed in 1122ms
+1363 timing reifyNode:node_modules/electron-builder/node_modules/core-util-is Completed in 1128ms
+1364 timing reifyNode:node_modules/electron-builder/node_modules/verror Completed in 1128ms
+1365 timing reifyNode:node_modules/electron-builder/node_modules/detect-libc Completed in 1128ms
+1366 timing reifyNode:node_modules/electron-builder/node_modules/cli-spinners Completed in 1129ms
+1367 timing reifyNode:node_modules/electron-builder/node_modules/@electron/universal/node_modules/@malept/cross-spawn-promise Completed in 1134ms
+1368 timing reifyNode:node_modules/electron-builder/node_modules/@malept/cross-spawn-promise Completed in 1133ms
+1369 timing reifyNode:node_modules/electron-builder/node_modules/stat-mode Completed in 1133ms
+1370 timing reifyNode:node_modules/electron-builder/node_modules/glob Completed in 1132ms
+1371 timing reifyNode:node_modules/electron-builder/node_modules/depd Completed in 1133ms
+1372 timing reifyNode:node_modules/electron-builder/node_modules/pump Completed in 1137ms
+1373 timing reifyNode:node_modules/electron-builder/node_modules/is-lambda Completed in 1136ms
+1374 timing reifyNode:node_modules/electron-builder/node_modules/minipass Completed in 1136ms
+1375 timing reifyNode:node_modules/electron-builder/node_modules/graceful-fs Completed in 1136ms
+1376 timing reifyNode:node_modules/electron-builder/node_modules/require-directory Completed in 1140ms
+1377 timing reifyNode:node_modules/electron-builder/node_modules/color-convert Completed in 1140ms
+1378 timing reifyNode:node_modules/electron-builder/node_modules/ci-info Completed in 1140ms
+1379 timing reifyNode:node_modules/electron-builder/node_modules/buffer Completed in 1140ms
+1380 timing reifyNode:node_modules/electron-builder/node_modules/safer-buffer Completed in 1144ms
+1381 timing reifyNode:node_modules/electron-builder/node_modules/encoding Completed in 1143ms
+1382 timing reifyNode:node_modules/electron-builder/node_modules/concat-map Completed in 1144ms
+1383 timing reifyNode:node_modules/electron-builder/node_modules/debug Completed in 1144ms
+1384 timing reifyNode:node_modules/electron-builder/node_modules/chalk Completed in 1149ms
+1385 timing reifyNode:node_modules/electron-builder/node_modules/commander Completed in 1149ms
+1386 timing reifyNode:node_modules/electron-builder/node_modules/@sindresorhus/is Completed in 1154ms
+1387 timing reifyNode:node_modules/electron-builder/node_modules/@isaacs/cliui Completed in 1154ms
+1388 timing reifyNode:node_modules/electron-builder/node_modules/make-fetch-happen/node_modules/lru-cache Completed in 1154ms
+1389 timing reifyNode:node_modules/electron-builder/node_modules/cacache/node_modules/lru-cache Completed in 1153ms
+1390 timing reifyNode:node_modules/electron-builder/node_modules/source-map-support Completed in 1158ms
+1391 timing reifyNode:node_modules/electron-builder/node_modules/http-proxy-agent Completed in 1156ms
+1392 timing reifyNode:node_modules/electron-builder/node_modules/delegates Completed in 1157ms
+1393 timing reifyNode:node_modules/electron-builder/node_modules/promise-retry Completed in 1160ms
+1394 timing reifyNode:node_modules/electron-builder/node_modules/isexe Completed in 1160ms
+1395 timing reifyNode:node_modules/electron-builder/node_modules/are-we-there-yet Completed in 1160ms
+1396 timing reifyNode:node_modules/electron-builder/node_modules/wcwidth Completed in 1165ms
+1397 timing reifyNode:node_modules/electron-builder/node_modules/form-data Completed in 1163ms
+1398 timing reifyNode:node_modules/electron-builder/node_modules/emoji-regex Completed in 1164ms
+1399 timing reifyNode:node_modules/electron-builder/node_modules/utf8-byte-length Completed in 1168ms
+1400 timing reifyNode:node_modules/electron-builder/node_modules/mime-db Completed in 1167ms
+1401 timing reifyNode:node_modules/electron-builder/node_modules/minipass-sized Completed in 1169ms
+1402 timing reifyNode:node_modules/electron-builder/node_modules/tmp-promise Completed in 1174ms
+1403 timing reifyNode:node_modules/electron-builder/node_modules/read-config-file Completed in 1174ms
+1404 timing reifyNode:node_modules/electron-builder/node_modules/escalade Completed in 1173ms
+1405 timing reifyNode:node_modules/electron-builder/node_modules/argparse Completed in 1174ms
+1406 timing reifyNode:node_modules/electron-builder/node_modules/negotiator Completed in 1178ms
+1407 timing reifyNode:node_modules/electron-builder/node_modules/json-schema-traverse Completed in 1178ms
+1408 timing reifyNode:node_modules/electron-builder/node_modules/buffer-equal Completed in 1176ms
+1409 timing reifyNode:node_modules/electron-builder/node_modules/cliui Completed in 1178ms
+1410 timing reifyNode:node_modules/electron-builder/node_modules/y18n Completed in 1182ms
+1411 timing reifyNode:node_modules/electron-builder/node_modules/truncate-utf8-bytes Completed in 1184ms
+1412 timing reifyNode:node_modules/electron-builder/node_modules/err-code Completed in 1182ms
+1413 timing reifyNode:node_modules/electron-builder/node_modules/cross-spawn Completed in 1186ms
+1414 timing reifyNode:node_modules/electron-builder/node_modules/mime Completed in 1193ms
+1415 timing reifyNode:node_modules/electron-builder/node_modules/agentkeepalive Completed in 1192ms
+1416 timing reifyNode:node_modules/electron-builder/node_modules/sanitize-filename Completed in 1196ms
+1417 timing reifyNode:node_modules/electron-builder/node_modules/agent-base Completed in 1194ms
+1418 timing reifyNode:node_modules/electron-builder/node_modules/bl Completed in 1195ms
+1419 timing reifyNode:node_modules/electron-builder/node_modules/fast-deep-equal Completed in 1197ms
+1420 timing reifyNode:node_modules/electron-builder/node_modules/https-proxy-agent Completed in 1201ms
+1421 timing reifyNode:node_modules/electron-builder/node_modules/@electron/asar Completed in 1205ms
+1422 timing reifyNode:node_modules/electron-builder/node_modules/minipass-fetch Completed in 1206ms
+1423 timing reifyNode:node_modules/electron-builder/node_modules/@tootallnate/once Completed in 1210ms
+1424 timing reifyNode:node_modules/electron-builder/node_modules/mkdirp Completed in 1211ms
+1425 timing reifyNode:node_modules/electron-builder/node_modules/extsprintf Completed in 1217ms
+1426 timing reifyNode:node_modules/electron-builder/node_modules/ejs Completed in 1213ms
+1427 timing reifyNode:node_modules/electron-builder/node_modules/yargs-parser Completed in 1221ms
+1428 timing reifyNode:node_modules/electron-builder/node_modules/dotenv Completed in 1230ms
+1429 timing reifyNode:node_modules/electron-builder/node_modules/config-file-ts Completed in 1230ms
+1430 timing reifyNode:node_modules/electron-builder/node_modules/http2-wrapper Completed in 1234ms
+1431 timing reifyNode:node_modules/electron-builder/node_modules/@npmcli/fs Completed in 1247ms
+1432 timing reifyNode:node_modules/electron-builder/node_modules/node-abi Completed in 1252ms
+1433 timing reifyNode:node_modules/electron-builder/node_modules/@xmldom/xmldom Completed in 1256ms
+1434 timing reifyNode:node_modules/electron-builder/node_modules/smart-buffer Completed in 1254ms
+1435 timing reifyNode:node_modules/electron-builder/node_modules/electron-publish Completed in 1256ms
+1436 timing reifyNode:node_modules/electron-builder/node_modules/make-fetch-happen Completed in 1257ms
+1437 timing reifyNode:node_modules/electron-builder/node_modules/simple-update-notifier Completed in 1259ms
+1438 timing reifyNode:node_modules/electron-builder/node_modules/@isaacs/cliui/node_modules/emoji-regex Completed in 1260ms
+1439 timing reifyNode:node_modules/electron-builder/node_modules/@develar/schema-utils Completed in 1271ms
+1440 timing reifyNode:node_modules/electron-builder/node_modules/retry Completed in 1273ms
+1441 timing reifyNode:node_modules/electron-builder/node_modules/cacache Completed in 1272ms
+1442 timing reifyNode:node_modules/electron-builder/node_modules/@pkgjs/parseargs Completed in 1276ms
+1443 timing reifyNode:node_modules/electron-builder/node_modules/fast-json-stable-stringify Completed in 1279ms
+1444 timing reifyNode:node_modules/electron-builder/node_modules/gauge Completed in 1279ms
+1445 timing reifyNode:node_modules/electron-builder/node_modules/asynckit Completed in 1290ms
+1446 timing reifyNode:node_modules/electron-builder/node_modules/path-scurry Completed in 1309ms
+1447 timing reifyNode:node_modules/electron-builder Completed in 1321ms
+1448 timing reifyNode:node_modules/electron-builder/node_modules/json5 Completed in 1320ms
+1449 timing reifyNode:node_modules/electron-builder/node_modules/minimist Completed in 1335ms
+1450 timing reifyNode:node_modules/electron-builder/node_modules/jackspeak Completed in 1335ms
+1451 timing reifyNode:node_modules/electron-builder/node_modules/plist Completed in 1339ms
+1452 timing reifyNode:node_modules/electron-builder/node_modules/@electron/notarize Completed in 1344ms
+1453 timing reifyNode:node_modules/electron-builder/node_modules/readable-stream Completed in 1345ms
+1454 timing reifyNode:node_modules/electron-builder/node_modules/path-scurry/node_modules/lru-cache Completed in 1353ms
+1455 timing reifyNode:node_modules/electron-builder/node_modules/foreground-child/node_modules/signal-exit Completed in 1364ms
+1456 timing reifyNode:node_modules/electron-builder/node_modules/foreground-child Completed in 1366ms
+1457 timing reifyNode:node_modules/electron-builder/node_modules/tar Completed in 1371ms
+1458 timing reifyNode:node_modules/electron-builder/node_modules/builder-util Completed in 1369ms
+1459 timing reifyNode:node_modules/electron-builder/node_modules/source-map Completed in 1376ms
+1460 timing reifyNode:node_modules/electron-builder/node_modules/ajv-keywords Completed in 1382ms
+1461 timing reifyNode:node_modules/electron-builder/node_modules/builder-util-runtime Completed in 1385ms
+1462 timing reifyNode:node_modules/electron-builder/node_modules/@electron/universal Completed in 1395ms
+1463 timing reifyNode:node_modules/electron-builder/node_modules/exponential-backoff Completed in 1392ms
+1464 timing reifyNode:node_modules/electron-builder/node_modules/fs-extra Completed in 1394ms
+1465 timing reifyNode:node_modules/electron-builder/node_modules/dmg-builder Completed in 1400ms
+1466 timing reifyNode:node_modules/electron-builder/node_modules/socks Completed in 1411ms
+1467 timing reifyNode:node_modules/electron-builder/node_modules/@electron/universal/node_modules/fs-extra Completed in 1413ms
+1468 timing reifyNode:node_modules/electron-builder/node_modules/@electron/notarize/node_modules/fs-extra Completed in 1413ms
+1469 timing reifyNode:node_modules/electron-builder/node_modules/iconv-lite Completed in 1412ms
+1470 timing reifyNode:node_modules/electron-builder/node_modules/@malept/flatpak-bundler/node_modules/fs-extra Completed in 1415ms
+1471 timing reifyNode:node_modules/electron-builder/node_modules/js-yaml Completed in 1413ms
+1472 timing reifyNode:node_modules/electron-builder/node_modules/jake Completed in 1431ms
+1473 timing reifyNode:node_modules/electron-builder/node_modules/simple-update-notifier/node_modules/semver Completed in 1441ms
+1474 timing reifyNode:node_modules/electron-builder/node_modules/semver Completed in 1450ms
+1475 timing reifyNode:node_modules/electron-builder/node_modules/uri-js Completed in 1457ms
+1476 timing reifyNode:node_modules/electron-builder/node_modules/bluebird Completed in 1455ms
+1477 timing reifyNode:node_modules/electron-builder/node_modules/xmlbuilder Completed in 1461ms
+1478 timing reifyNode:node_modules/electron-builder/node_modules/got Completed in 1459ms
+1479 timing reifyNode:node_modules/electron-builder/node_modules/cacache/node_modules/minimatch Completed in 1465ms
+1480 timing reifyNode:node_modules/electron-builder/node_modules/crc Completed in 1472ms
+1481 timing reifyNode:node_modules/electron-builder/node_modules/@electron/osx-sign Completed in 1478ms
+1482 timing reifyNode:node_modules/electron-builder/node_modules/yargs Completed in 1484ms
+1483 timing reifyNode:node_modules/electron-builder/node_modules/@electron/rebuild Completed in 1489ms
+1484 timing reifyNode:node_modules/electron-builder/node_modules/cacache/node_modules/glob Completed in 1494ms
+1485 timing reifyNode:node_modules/electron-builder/node_modules/node-addon-api Completed in 1512ms
+1486 timing reifyNode:node_modules/electron-builder/node_modules/ajv Completed in 1535ms
+1487 timing reifyNode:node_modules/electron-builder/node_modules/dir-compare Completed in 1562ms
+1488 timing reifyNode:node_modules/electron-builder/node_modules/7zip-bin Completed in 1575ms
+1489 timing reifyNode:node_modules/electron-builder/node_modules/async Completed in 1577ms
+1490 timing reifyNode:node_modules/electron-builder/node_modules/node-gyp Completed in 1610ms
+1491 timing reifyNode:node_modules/electron-builder/node_modules/@types/node Completed in 1614ms
+1492 timing reifyNode:node_modules/electron-builder/node_modules/app-builder-lib Completed in 1772ms
+1493 timing reifyNode:node_modules/electron-builder/node_modules/typescript Completed in 1893ms
+1494 timing reifyNode:node_modules/electron-builder/node_modules/app-builder-bin Completed in 1927ms
+1495 timing reifyNode:node_modules/electron-builder/node_modules/lodash Completed in 2028ms
+1496 timing reify:unpack Completed in 2031ms
+1497 timing reify:unretire Completed in 0ms
+1498 timing build:queue Completed in 6ms
+1499 timing build:link:node_modules/electron-builder/node_modules/@electron/asar Completed in 20ms
+1500 timing build:link:node_modules/electron-builder Completed in 21ms
+1501 timing build:link:node_modules/electron-builder/node_modules/@electron/rebuild Completed in 20ms
+1502 timing build:link:node_modules/electron-builder/node_modules/@electron/osx-sign Completed in 20ms
+1503 timing build:link:node_modules/electron-builder/node_modules/color-support Completed in 20ms
+1504 timing build:link:node_modules/electron-builder/node_modules/jake Completed in 19ms
+1505 timing build:link:node_modules/electron-builder/node_modules/is-ci Completed in 20ms
+1506 timing build:link:node_modules/electron-builder/node_modules/js-yaml Completed in 19ms
+1507 timing build:link:node_modules/electron-builder/node_modules/cacache/node_modules/glob Completed in 18ms
+1508 timing build:link:node_modules/electron-builder/node_modules/simple-update-notifier/node_modules/semver Completed in 18ms
+1509 timing build:link:node_modules/electron-builder/node_modules/ejs Completed in 20ms
+1510 timing build:link:node_modules/electron-builder/node_modules/node-gyp Completed in 19ms
+1511 timing build:link:node_modules/electron-builder/node_modules/nopt Completed in 19ms
+1512 timing build:link:node_modules/electron-builder/node_modules/rimraf Completed in 19ms
+1513 timing build:link:node_modules/electron-builder/node_modules/semver Completed in 19ms
+1514 timing build:link:node_modules/electron-builder/node_modules/json5 Completed in 19ms
+1515 timing build:link:node_modules/electron-builder/node_modules/mkdirp Completed in 19ms
+1516 timing build:link:node_modules/electron-builder/node_modules/which Completed in 18ms
+1517 timing build:link:node_modules/electron-builder/node_modules/mime Completed in 20ms
+1518 timing build:link:node_modules/electron-builder/node_modules/typescript Completed in 20ms
+1519 timing build:link Completed in 22ms
+1520 timing build:deps Completed in 28ms
+1521 timing build Completed in 28ms
+1522 timing reify:build Completed in 29ms
+1523 timing reify:trash Completed in 475ms
+1524 timing reify Completed in 3906ms
+1525 silly CHANGE node_modules/electron-builder
+1526 silly ADD
+1527 silly ADD
+1528 silly ADD
+1529 silly ADD
+1530 silly ADD
+1531 silly ADD
+1532 silly ADD
+1533 silly ADD
+1534 silly ADD
+1535 silly ADD
+1536 silly ADD
+1537 silly ADD
+1538 silly ADD
+1539 silly CHANGE node_modules/electron-builder/node_modules/@xmldom/xmldom
+1540 silly CHANGE node_modules/electron-builder/node_modules/@types/node
+1541 silly CHANGE node_modules/electron-builder/node_modules/@types/responselike
+1542 silly CHANGE node_modules/electron-builder/node_modules/@types/fs-extra
+1543 silly CHANGE node_modules/electron-builder/node_modules/@types/http-cache-semantics
+1544 silly CHANGE node_modules/electron-builder/node_modules/@types/debug
+1545 silly CHANGE node_modules/electron-builder/node_modules/@types/ms
+1546 silly CHANGE node_modules/electron-builder/node_modules/@types/keyv
+1547 silly CHANGE node_modules/electron-builder/node_modules/@types/cacheable-request
+1548 silly CHANGE node_modules/electron-builder/node_modules/@tootallnate/once
+1549 silly CHANGE node_modules/electron-builder/node_modules/@szmarczak/http-timer
+1550 silly CHANGE node_modules/electron-builder/node_modules/@electron/universal
+1551 silly CHANGE node_modules/electron-builder/node_modules/@electron/universal/node_modules/@malept/cross-spawn-promise
+1552 silly CHANGE node_modules/electron-builder/node_modules/@electron/universal/node_modules/minimatch
+1553 silly CHANGE node_modules/electron-builder/node_modules/@electron/universal/node_modules/brace-expansion
+1554 silly CHANGE node_modules/electron-builder/node_modules/@electron/universal/node_modules/fs-extra
+1555 silly CHANGE node_modules/electron-builder/node_modules/@sindresorhus/is
+1556 silly CHANGE node_modules/electron-builder/node_modules/@pkgjs/parseargs
+1557 silly CHANGE node_modules/electron-builder/node_modules/@npmcli/fs
+1558 silly CHANGE node_modules/electron-builder/node_modules/@electron/notarize
+1559 silly CHANGE node_modules/electron-builder/node_modules/@electron/notarize/node_modules/fs-extra
+1560 silly CHANGE node_modules/electron-builder/node_modules/@electron/osx-sign
+1561 silly CHANGE node_modules/electron-builder/node_modules/@electron/osx-sign/node_modules/isbinaryfile
+1562 silly CHANGE node_modules/electron-builder/node_modules/@isaacs/cliui
+1563 silly CHANGE node_modules/electron-builder/node_modules/@isaacs/cliui/node_modules/strip-ansi
+1564 silly CHANGE node_modules/electron-builder/node_modules/@isaacs/cliui/node_modules/wrap-ansi
+1565 silly CHANGE node_modules/electron-builder/node_modules/@isaacs/cliui/node_modules/string-width
+1566 silly CHANGE node_modules/electron-builder/node_modules/@isaacs/cliui/node_modules/ansi-regex
+1567 silly CHANGE node_modules/electron-builder/node_modules/@isaacs/cliui/node_modules/emoji-regex
+1568 silly CHANGE node_modules/electron-builder/node_modules/@isaacs/cliui/node_modules/ansi-styles
+1569 silly CHANGE node_modules/electron-builder/node_modules/@electron/rebuild
+1570 silly CHANGE node_modules/electron-builder/node_modules/@electron/asar
+1571 silly CHANGE node_modules/electron-builder/node_modules/@electron/asar/node_modules/brace-expansion
+1572 silly CHANGE node_modules/electron-builder/node_modules/@electron/asar/node_modules/minimatch
+1573 silly CHANGE node_modules/electron-builder/node_modules/@malept/flatpak-bundler
+1574 silly CHANGE node_modules/electron-builder/node_modules/@malept/flatpak-bundler/node_modules/fs-extra
+1575 silly CHANGE node_modules/electron-builder/node_modules/@malept/cross-spawn-promise
+1576 silly CHANGE node_modules/electron-builder/node_modules/@develar/schema-utils
+1577 silly CHANGE node_modules/electron-builder/node_modules/yallist
+1578 silly CHANGE node_modules/electron-builder/node_modules/yargs-parser
+1579 silly CHANGE node_modules/electron-builder/node_modules/yargs
+1580 silly CHANGE node_modules/electron-builder/node_modules/y18n
+1581 silly CHANGE node_modules/electron-builder/node_modules/xmlbuilder
+1582 silly CHANGE node_modules/electron-builder/node_modules/wrap-ansi-cjs
+1583 silly CHANGE node_modules/electron-builder/node_modules/wide-align
+1584 silly CHANGE node_modules/electron-builder/node_modules/wrappy
+1585 silly CHANGE node_modules/electron-builder/node_modules/wrap-ansi
+1586 silly CHANGE node_modules/electron-builder/node_modules/which
+1587 silly CHANGE node_modules/electron-builder/node_modules/wcwidth
+1588 silly CHANGE node_modules/electron-builder/node_modules/utf8-byte-length
+1589 silly CHANGE node_modules/electron-builder/node_modules/util-deprecate
+1590 silly CHANGE node_modules/electron-builder/node_modules/uri-js
+1591 silly CHANGE node_modules/electron-builder/node_modules/unique-filename
+1592 silly CHANGE node_modules/electron-builder/node_modules/universalify
+1593 silly CHANGE node_modules/electron-builder/node_modules/typescript
+1594 silly CHANGE node_modules/electron-builder/node_modules/unique-slug
+1595 silly CHANGE node_modules/electron-builder/node_modules/tmp-promise
+1596 silly CHANGE node_modules/electron-builder/node_modules/tmp
+1597 silly CHANGE node_modules/electron-builder/node_modules/truncate-utf8-bytes
+1598 silly CHANGE node_modules/electron-builder/node_modules/tar
+1599 silly CHANGE node_modules/electron-builder/node_modules/tar/node_modules/fs-minipass
+1600 silly CHANGE node_modules/electron-builder/node_modules/tar/node_modules/fs-minipass/node_modules/minipass
+1601 silly CHANGE node_modules/electron-builder/node_modules/temp-file
+1602 silly CHANGE node_modules/electron-builder/node_modules/strip-ansi-cjs
+1603 silly CHANGE node_modules/electron-builder/node_modules/string_decoder
+1604 silly CHANGE node_modules/electron-builder/node_modules/supports-color
+1605 silly CHANGE node_modules/electron-builder/node_modules/strip-ansi
+1606 silly CHANGE node_modules/electron-builder/node_modules/string-width-cjs
+1607 silly CHANGE node_modules/electron-builder/node_modules/string-width
+1608 silly CHANGE node_modules/electron-builder/node_modules/stat-mode
+1609 silly CHANGE node_modules/electron-builder/node_modules/source-map
+1610 silly CHANGE node_modules/electron-builder/node_modules/ssri
+1611 silly CHANGE node_modules/electron-builder/node_modules/source-map-support
+1612 silly CHANGE node_modules/electron-builder/node_modules/punycode
+1613 silly CHANGE node_modules/electron-builder/node_modules/socks-proxy-agent
+1614 silly CHANGE node_modules/electron-builder/node_modules/socks
+1615 silly CHANGE node_modules/electron-builder/node_modules/smart-buffer
+1616 silly CHANGE node_modules/electron-builder/node_modules/signal-exit
+1617 silly CHANGE node_modules/electron-builder/node_modules/simple-update-notifier
+1618 silly CHANGE node_modules/electron-builder/node_modules/simple-update-notifier/node_modules/semver
+1619 silly CHANGE node_modules/electron-builder/node_modules/shebang-regex
+1620 silly CHANGE node_modules/electron-builder/node_modules/shebang-command
+1621 silly CHANGE node_modules/electron-builder/node_modules/set-blocking
+1622 silly CHANGE node_modules/electron-builder/node_modules/promise-retry
+1623 silly CHANGE node_modules/electron-builder/node_modules/semver
+1624 silly CHANGE node_modules/electron-builder/node_modules/sax
+1625 silly CHANGE node_modules/electron-builder/node_modules/safer-buffer
+1626 silly CHANGE node_modules/electron-builder/node_modules/sanitize-filename
+1627 silly CHANGE node_modules/electron-builder/node_modules/safe-buffer
+1628 silly CHANGE node_modules/electron-builder/node_modules/rimraf
+1629 silly CHANGE node_modules/electron-builder/node_modules/retry
+1630 silly CHANGE node_modules/electron-builder/node_modules/restore-cursor
+1631 silly CHANGE node_modules/electron-builder/node_modules/pump
+1632 silly CHANGE node_modules/electron-builder/node_modules/responselike
+1633 silly CHANGE node_modules/electron-builder/node_modules/resolve-alpn
+1634 silly CHANGE node_modules/electron-builder/node_modules/require-directory
+1635 silly CHANGE node_modules/electron-builder/node_modules/readable-stream
+1636 silly CHANGE node_modules/electron-builder/node_modules/quick-lru
+1637 silly CHANGE node_modules/electron-builder/node_modules/read-config-file
+1638 silly CHANGE node_modules/electron-builder/node_modules/plist
+1639 silly CHANGE node_modules/electron-builder/node_modules/path-scurry
+1640 silly CHANGE node_modules/electron-builder/node_modules/path-scurry/node_modules/lru-cache
+1641 silly CHANGE node_modules/electron-builder/node_modules/path-is-absolute
+1642 silly CHANGE node_modules/electron-builder/node_modules/p-map
+1643 silly CHANGE node_modules/electron-builder/node_modules/path-key
+1644 silly CHANGE node_modules/electron-builder/node_modules/ora
+1645 silly CHANGE node_modules/electron-builder/node_modules/p-cancelable
+1646 silly CHANGE node_modules/electron-builder/node_modules/onetime
+1647 silly CHANGE node_modules/electron-builder/node_modules/npmlog
+1648 silly CHANGE node_modules/electron-builder/node_modules/once
+1649 silly CHANGE node_modules/electron-builder/node_modules/normalize-url
+1650 silly CHANGE node_modules/electron-builder/node_modules/node-gyp
+1651 silly CHANGE node_modules/electron-builder/node_modules/negotiator
+1652 silly CHANGE node_modules/electron-builder/node_modules/nopt
+1653 silly CHANGE node_modules/electron-builder/node_modules/node-api-version
+1654 silly CHANGE node_modules/electron-builder/node_modules/node-abi
+1655 silly CHANGE node_modules/electron-builder/node_modules/ms
+1656 silly CHANGE node_modules/electron-builder/node_modules/mkdirp
+1657 silly CHANGE node_modules/electron-builder/node_modules/minipass-sized
+1658 silly CHANGE node_modules/electron-builder/node_modules/minipass-sized/node_modules/minipass
+1659 silly CHANGE node_modules/electron-builder/node_modules/minizlib
+1660 silly CHANGE node_modules/electron-builder/node_modules/minizlib/node_modules/minipass
+1661 silly CHANGE node_modules/electron-builder/node_modules/minipass-fetch
+1662 silly CHANGE node_modules/electron-builder/node_modules/minipass-pipeline
+1663 silly CHANGE node_modules/electron-builder/node_modules/minipass-pipeline/node_modules/minipass
+1664 silly CHANGE node_modules/electron-builder/node_modules/minipass-collect
+1665 silly CHANGE node_modules/electron-builder/node_modules/minipass-collect/node_modules/minipass
+1666 silly CHANGE node_modules/electron-builder/node_modules/minipass-flush
+1667 silly CHANGE node_modules/electron-builder/node_modules/minipass-flush/node_modules/minipass
+1668 silly CHANGE node_modules/electron-builder/node_modules/minimist
+1669 silly CHANGE node_modules/electron-builder/node_modules/minipass
+1670 silly CHANGE node_modules/electron-builder/node_modules/minimatch
+1671 silly CHANGE node_modules/electron-builder/node_modules/mimic-response
+1672 silly CHANGE node_modules/electron-builder/node_modules/mime-db
+1673 silly CHANGE node_modules/electron-builder/node_modules/mimic-fn
+1674 silly CHANGE node_modules/electron-builder/node_modules/make-fetch-happen
+1675 silly CHANGE node_modules/electron-builder/node_modules/make-fetch-happen/node_modules/lru-cache
+1676 silly CHANGE node_modules/electron-builder/node_modules/mime-types
+1677 silly CHANGE node_modules/electron-builder/node_modules/mime
+1678 silly CHANGE node_modules/electron-builder/node_modules/lru-cache
+1679 silly CHANGE node_modules/electron-builder/node_modules/lowercase-keys
+1680 silly CHANGE node_modules/electron-builder/node_modules/log-symbols
+1681 silly CHANGE node_modules/electron-builder/node_modules/lodash
+1682 silly CHANGE node_modules/electron-builder/node_modules/lazy-val
+1683 silly CHANGE node_modules/electron-builder/node_modules/json5
+1684 silly CHANGE node_modules/electron-builder/node_modules/jsonfile
+1685 silly CHANGE node_modules/electron-builder/node_modules/keyv
+1686 silly CHANGE node_modules/electron-builder/node_modules/json-buffer
+1687 silly CHANGE node_modules/electron-builder/node_modules/json-schema-traverse
+1688 silly CHANGE node_modules/electron-builder/node_modules/jake
+1689 silly CHANGE node_modules/electron-builder/node_modules/jake/node_modules/minimatch
+1690 silly CHANGE node_modules/electron-builder/node_modules/jake/node_modules/brace-expansion
+1691 silly CHANGE node_modules/electron-builder/node_modules/js-yaml
+1692 silly CHANGE node_modules/electron-builder/node_modules/jackspeak
+1693 silly CHANGE node_modules/electron-builder/node_modules/isbinaryfile
+1694 silly CHANGE node_modules/electron-builder/node_modules/isexe
+1695 silly CHANGE node_modules/electron-builder/node_modules/is-unicode-supported
+1696 silly CHANGE node_modules/electron-builder/node_modules/is-lambda
+1697 silly CHANGE node_modules/electron-builder/node_modules/is-fullwidth-code-point
+1698 silly CHANGE node_modules/electron-builder/node_modules/is-interactive
+1699 silly CHANGE node_modules/electron-builder/node_modules/inherits
+1700 silly CHANGE node_modules/electron-builder/node_modules/ip
+1701 silly CHANGE node_modules/electron-builder/node_modules/inflight
+1702 silly CHANGE node_modules/electron-builder/node_modules/is-ci
+1703 silly CHANGE node_modules/electron-builder/node_modules/imurmurhash
+1704 silly CHANGE node_modules/electron-builder/node_modules/indent-string
+1705 silly CHANGE node_modules/electron-builder/node_modules/ieee754
+1706 silly CHANGE node_modules/electron-builder/node_modules/humanize-ms
+1707 silly CHANGE node_modules/electron-builder/node_modules/iconv-lite
+1708 silly CHANGE node_modules/electron-builder/node_modules/https-proxy-agent
+1709 silly CHANGE node_modules/electron-builder/node_modules/has-unicode
+1710 silly CHANGE node_modules/electron-builder/node_modules/http-proxy-agent
+1711 silly CHANGE node_modules/electron-builder/node_modules/http2-wrapper
+1712 silly CHANGE node_modules/electron-builder/node_modules/has-flag
+1713 silly CHANGE node_modules/electron-builder/node_modules/graceful-fs
+1714 silly CHANGE node_modules/electron-builder/node_modules/hosted-git-info
+1715 silly CHANGE node_modules/electron-builder/node_modules/http-cache-semantics
+1716 silly CHANGE node_modules/electron-builder/node_modules/get-caller-file
+1717 silly CHANGE node_modules/electron-builder/node_modules/glob
+1718 silly CHANGE node_modules/electron-builder/node_modules/glob/node_modules/brace-expansion
+1719 silly CHANGE node_modules/electron-builder/node_modules/glob/node_modules/minimatch
+1720 silly CHANGE node_modules/electron-builder/node_modules/got
+1721 silly CHANGE node_modules/electron-builder/node_modules/get-stream
+1722 silly CHANGE node_modules/electron-builder/node_modules/gauge
+1723 silly CHANGE node_modules/electron-builder/node_modules/form-data
+1724 silly CHANGE node_modules/electron-builder/node_modules/fs.realpath
+1725 silly CHANGE node_modules/electron-builder/node_modules/fs-minipass
+1726 silly CHANGE node_modules/electron-builder/node_modules/foreground-child
+1727 silly CHANGE node_modules/electron-builder/node_modules/foreground-child/node_modules/signal-exit
+1728 silly CHANGE node_modules/electron-builder/node_modules/filelist
+1729 silly CHANGE node_modules/electron-builder/node_modules/fast-deep-equal
+1730 silly CHANGE node_modules/electron-builder/node_modules/fs-extra
+1731 silly CHANGE node_modules/electron-builder/node_modules/fast-json-stable-stringify
+1732 silly CHANGE node_modules/electron-builder/node_modules/exponential-backoff
+1733 silly CHANGE node_modules/electron-builder/node_modules/err-code
+1734 silly CHANGE node_modules/electron-builder/node_modules/escalade
+1735 silly CHANGE node_modules/electron-builder/node_modules/encoding
+1736 silly CHANGE node_modules/electron-builder/node_modules/env-paths
+1737 silly CHANGE node_modules/electron-builder/node_modules/end-of-stream
+1738 silly CHANGE node_modules/electron-builder/node_modules/emoji-regex
+1739 silly CHANGE node_modules/electron-builder/node_modules/electron-publish
+1740 silly CHANGE node_modules/electron-builder/node_modules/ejs
+1741 silly CHANGE node_modules/electron-builder/node_modules/eastasianwidth
+1742 silly CHANGE node_modules/electron-builder/node_modules/dotenv-expand
+1743 silly CHANGE node_modules/electron-builder/node_modules/delegates
+1744 silly CHANGE node_modules/electron-builder/node_modules/dir-compare
+1745 silly CHANGE node_modules/electron-builder/node_modules/dir-compare/node_modules/brace-expansion
+1746 silly CHANGE node_modules/electron-builder/node_modules/dir-compare/node_modules/minimatch
+1747 silly CHANGE node_modules/electron-builder/node_modules/dotenv
+1748 silly CHANGE node_modules/electron-builder/node_modules/dmg-builder
+1749 silly CHANGE node_modules/electron-builder/node_modules/detect-libc
+1750 silly CHANGE node_modules/electron-builder/node_modules/depd
+1751 silly CHANGE node_modules/electron-builder/node_modules/delayed-stream
+1752 silly CHANGE node_modules/electron-builder/node_modules/defer-to-connect
+1753 silly CHANGE node_modules/electron-builder/node_modules/defaults
+1754 silly CHANGE node_modules/electron-builder/node_modules/decompress-response
+1755 silly CHANGE node_modules/electron-builder/node_modules/decompress-response/node_modules/mimic-response
+1756 silly CHANGE node_modules/electron-builder/node_modules/debug
+1757 silly CHANGE node_modules/electron-builder/node_modules/cross-spawn
+1758 silly CHANGE node_modules/electron-builder/node_modules/console-control-strings
+1759 silly CHANGE node_modules/electron-builder/node_modules/config-file-ts
+1760 silly CHANGE node_modules/electron-builder/node_modules/compare-version
+1761 silly CHANGE node_modules/electron-builder/node_modules/concat-map
+1762 silly CHANGE node_modules/electron-builder/node_modules/combined-stream
+1763 silly CHANGE node_modules/electron-builder/node_modules/commander
+1764 silly CHANGE node_modules/electron-builder/node_modules/color-support
+1765 silly CHANGE node_modules/electron-builder/node_modules/color-name
+1766 silly CHANGE node_modules/electron-builder/node_modules/color-convert
+1767 silly CHANGE node_modules/electron-builder/node_modules/clone-response
+1768 silly CHANGE node_modules/electron-builder/node_modules/clone
+1769 silly CHANGE node_modules/electron-builder/node_modules/cli-spinners
+1770 silly CHANGE node_modules/electron-builder/node_modules/cliui
+1771 silly CHANGE node_modules/electron-builder/node_modules/cli-cursor
+1772 silly CHANGE node_modules/electron-builder/node_modules/ci-info
+1773 silly CHANGE node_modules/electron-builder/node_modules/clean-stack
+1774 silly CHANGE node_modules/electron-builder/node_modules/chromium-pickle-js
+1775 silly CHANGE node_modules/electron-builder/node_modules/chownr
+1776 silly CHANGE node_modules/electron-builder/node_modules/chalk
+1777 silly CHANGE node_modules/electron-builder/node_modules/cacache
+1778 silly CHANGE node_modules/electron-builder/node_modules/cacache/node_modules/minimatch
+1779 silly CHANGE node_modules/electron-builder/node_modules/cacache/node_modules/glob
+1780 silly CHANGE node_modules/electron-builder/node_modules/cacache/node_modules/lru-cache
+1781 silly CHANGE node_modules/electron-builder/node_modules/balanced-match
+1782 silly CHANGE node_modules/electron-builder/node_modules/cacheable-request
+1783 silly CHANGE node_modules/electron-builder/node_modules/cacheable-lookup
+1784 silly CHANGE node_modules/electron-builder/node_modules/at-least-node
+1785 silly CHANGE node_modules/electron-builder/node_modules/builder-util-runtime
+1786 silly CHANGE node_modules/electron-builder/node_modules/buffer-equal
+1787 silly CHANGE node_modules/electron-builder/node_modules/builder-util
+1788 silly CHANGE node_modules/electron-builder/node_modules/buffer-from
+1789 silly CHANGE node_modules/electron-builder/node_modules/buffer
+1790 silly CHANGE node_modules/electron-builder/node_modules/brace-expansion
+1791 silly CHANGE node_modules/electron-builder/node_modules/asynckit
+1792 silly CHANGE node_modules/electron-builder/node_modules/bluebird-lst
+1793 silly CHANGE node_modules/electron-builder/node_modules/base64-js
+1794 silly CHANGE node_modules/electron-builder/node_modules/bl
+1795 silly CHANGE node_modules/electron-builder/node_modules/async
+1796 silly CHANGE node_modules/electron-builder/node_modules/bluebird
+1797 silly CHANGE node_modules/electron-builder/node_modules/async-exit-hook
+1798 silly CHANGE node_modules/electron-builder/node_modules/argparse
+1799 silly CHANGE node_modules/electron-builder/node_modules/are-we-there-yet
+1800 silly CHANGE node_modules/electron-builder/node_modules/aproba
+1801 silly CHANGE node_modules/electron-builder/node_modules/ansi-regex
+1802 silly CHANGE node_modules/electron-builder/node_modules/ansi-styles
+1803 silly CHANGE node_modules/electron-builder/node_modules/app-builder-lib
+1804 silly CHANGE node_modules/electron-builder/node_modules/app-builder-bin
+1805 silly CHANGE node_modules/electron-builder/node_modules/ajv
+1806 silly CHANGE node_modules/electron-builder/node_modules/ajv-keywords
+1807 silly CHANGE node_modules/electron-builder/node_modules/agentkeepalive
+1808 silly CHANGE node_modules/electron-builder/node_modules/aggregate-error
+1809 silly CHANGE node_modules/electron-builder/node_modules/abbrev
+1810 silly CHANGE node_modules/electron-builder/node_modules/agent-base
+1811 silly CHANGE node_modules/electron-builder/node_modules/7zip-bin
+1812 timing command:i Completed in 3912ms
+1813 verbose exit 0
+1814 timing npm Completed in 3956ms
+1815 info ok
