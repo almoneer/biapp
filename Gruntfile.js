@@ -165,7 +165,13 @@ module.exports = function (grunt) {
 
     var path = require('path');
 
+    var pluginId = getPluginId();
+
     archive(zip, config.pluginFile, 'utf-8');
+
+    // also add plugin file as pluginId.js (some servers expect this path)
+    var pluginContent = fs.readFileSync(config.pluginFile, 'utf8');
+    zip.file(pluginId + '.js', pluginContent);
 
     // archive manifest.json if exists (some BIMAD versions expect it)
     if (fs.existsSync('manifest.json')) {
@@ -177,10 +183,7 @@ module.exports = function (grunt) {
       archive(zip, 'assets');
     }
 
-    // parse pluginFile and get id
-    var pluginId = getPluginId();
-
-    var zipOptions = {base64: false, compression: 'STORE'};
+    var zipOptions = {base64: false, compression: 'DEFLATE'};
     fs.writeFileSync(pluginId+'.xmp', zip.generate(zipOptions), 'binary');
   });
 
