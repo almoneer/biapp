@@ -169,7 +169,7 @@ module.exports = function (grunt) {
     }
 
     var pluginId = getPluginId();
-    fs.writeFileSync(pluginId+'.xmp', zip.generate({base64: false, compression: 'DEFLATE'}), 'binary');
+    fs.writeFileSync(pluginId+'.xmp', zip.generate({type: 'nodebuffer', compression: 'STORE'}), 'binary');
   });
 
   grunt.registerTask('_deploy', 'Deploy plugin code', function() {
