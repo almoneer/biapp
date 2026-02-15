@@ -160,19 +160,18 @@ module.exports = function (grunt) {
   */
 
   grunt.registerTask('archive', 'Archive Files for deploy', function() {
-    // create zip - match structure from server's bimadplugin.zip
     var zip = new require('node-zip')();
-
     var path = require('path');
+    var pluginId = getPluginId();
 
-    archive(zip, config.pluginFile, 'utf-8');
+    // Server expects main plugin file as pluginId.js (e.g. 19564dc1da7d.test.js)
+    var pluginContent = fs.readFileSync(config.pluginFile, 'utf8');
+    zip.file(pluginId + '.js', pluginContent);
 
-    // archive assets if exists
     if (fs.existsSync('assets')) {
       archive(zip, 'assets');
     }
 
-    var pluginId = getPluginId();
     fs.writeFileSync(pluginId+'.xmp', zip.generate({base64: false, compression: 'DEFLATE'}), 'binary');
   });
 
