@@ -190,7 +190,7 @@ module.exports = function (grunt) {
     var Buffer = require('buffer').Buffer;
 
     var pluginId = getPluginId();
-    var data = new Buffer(fs.readFileSync(pluginId+'.xmp', {encoding: null})).toString('base64');
+    var data = Buffer.from(fs.readFileSync(pluginId+'.xmp', {encoding: null})).toString('base64');
 
     var pluginService = new PluginService(config.baseURL);
     pluginService.on('success', function() {
