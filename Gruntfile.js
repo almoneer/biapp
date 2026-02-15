@@ -167,6 +167,11 @@ module.exports = function (grunt) {
 
     archive(zip, config.pluginFile, 'utf-8');
 
+    // archive manifest.json if exists (some BIMAD versions expect it)
+    if (fs.existsSync('manifest.json')) {
+      archive(zip, 'manifest.json', 'utf-8');
+    }
+
     // archive assets if exists
     if (fs.existsSync('assets')) {
       archive(zip, 'assets');
