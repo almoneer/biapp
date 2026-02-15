@@ -1,5 +1,5 @@
 {
-  id: 'com.bop.test',
+  id: '19564dc1da7d.test',
   component: {
     'name': 'test',
     'tooltip': 'Insert test'

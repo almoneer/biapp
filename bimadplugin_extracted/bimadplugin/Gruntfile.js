@@ -160,7 +160,7 @@ module.exports = function (grunt) {
   */
 
   grunt.registerTask('archive', 'Archive Files for deploy', function() {
-    // create zip - match structure from server's bimadplugin.zip
+    // create zip
     var zip = new require('node-zip')();
 
     var path = require('path');
@@ -172,7 +172,11 @@ module.exports = function (grunt) {
       archive(zip, 'assets');
     }
 
+    // parse pluginFile and get id
     var pluginId = getPluginId();
+
+    var dum = zip.generate({base64: false, compression: 'DEFLATE'});
+
     fs.writeFileSync(pluginId+'.xmp', zip.generate({base64: false, compression: 'DEFLATE'}), 'binary');
   });
 
@@ -186,7 +190,7 @@ module.exports = function (grunt) {
     var Buffer = require('buffer').Buffer;
 
     var pluginId = getPluginId();
-    var data = Buffer.from(fs.readFileSync(pluginId+'.xmp', {encoding: null})).toString('base64');
+    var data = new Buffer(fs.readFileSync(pluginId+'.xmp', {encoding: null})).toString('base64');
 
     var pluginService = new PluginService(config.baseURL);
     pluginService.on('success', function() {
