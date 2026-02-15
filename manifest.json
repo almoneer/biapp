@@ -1,0 +1,9 @@
+{
+    "id": "19564dc1da7d.test",
+    "name": "test",
+    "description": "Test plugin",
+    "version": "1.0.0",
+    "js": ["test.js"],
+    "css": []
+  }
+  
