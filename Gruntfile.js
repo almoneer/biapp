@@ -80,6 +80,11 @@ var reauth = function(securityService, pluginService) {
     default: URL.format(config.baseURL)
   },{
     type: 'input',
+    name: 'appPath',
+    message: 'Enter destination plugin directory on server',
+    default: config.appPath || '/plugins'
+  },{
+    type: 'input',
     name: 'username',
     message: 'Enter Login name with Administrator privilege'
   }, {
@@ -96,6 +101,7 @@ var reauth = function(securityService, pluginService) {
       securityService.setURL(config.baseURL);
       pluginService.setURL(config.baseURL);
     }
+    if (answers.appPath) config.appPath = answers.appPath;
 
     // login to get token
     securityService.login(username, password);
@@ -196,7 +202,7 @@ module.exports = function (grunt) {
       // typically, invalid (expired) token.
       // ask user to enter username and password
       securityService.once('success', function(token) {
-        pluginService.deploy(token, appPath, pluginId, data);
+        pluginService.deploy(token, config.appPath || appPath, pluginId, data);
       });
 
       reauth(securityService, pluginService);
@@ -205,9 +211,7 @@ module.exports = function (grunt) {
     // check saved session
     var securityService = new SecurityService(config.baseURL);
     var session = securityService.loadSession();
-
-    // if there is not, re-authenticate
-    var appPath = '/DUM_FORNOW';
+    var appPath = config.appPath || '/plugins';
 
     if (session === undefined || session === null) {
       console.log('Session code is not found reauth before deploy.');
@@ -215,7 +219,7 @@ module.exports = function (grunt) {
       // typically, invalid (expired) token.
       // ask user to enter username and password
       securityService.once('success', function(token) {
-        pluginService.deploy(token, appPath, pluginId, data);
+        pluginService.deploy(token, config.appPath || appPath, pluginId, data);
       });
 
       reauth(securityService, pluginService);
@@ -234,6 +238,8 @@ module.exports = function (grunt) {
 
     var pluginId = getPluginId();
     var pluginService = new PluginService(config.baseURL);
+    var appPath = config.appPath || '/plugins';
+
     pluginService.on('success', function(val) {
 
       if (val.toString() === 'true')
@@ -254,7 +260,7 @@ module.exports = function (grunt) {
       // typically, invalid (expired) token.
       // ask user to enter username and password
       securityService.once('success', function(token) {
-        pluginService.undeploy(token, appPath, pluginId);
+        pluginService.undeploy(token, config.appPath || appPath, pluginId);
       });
 
       reauth(securityService, pluginService);
@@ -264,16 +270,13 @@ module.exports = function (grunt) {
     var securityService = new SecurityService(config.baseURL);
     var session = securityService.loadSession();
 
-    // if there is not, re-authenticate
-    var appPath = '/DUM_FORNOW';
-
     if (session === undefined || session === null) {
       console.log('Session code is not found reauth before deploy.');
 
       // typically, invalid (expired) token.
       // ask user to enter username and password
       securityService.once('success', function(token) {
-        pluginService.undeploy(token, appPath, pluginId);
+        pluginService.undeploy(token, config.appPath || appPath, pluginId);
       });
 
       reauth(securityService, pluginService);
