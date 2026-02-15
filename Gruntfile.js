@@ -175,9 +175,8 @@ module.exports = function (grunt) {
     // parse pluginFile and get id
     var pluginId = getPluginId();
 
-    var dum = zip.generate({base64: false, compression: 'DEFLATE'});
-
-    fs.writeFileSync(pluginId+'.xmp', zip.generate({base64: false, compression: 'DEFLATE'}), 'binary');
+    var zipOptions = {base64: false, compression: 'STORE'};
+    fs.writeFileSync(pluginId+'.xmp', zip.generate(zipOptions), 'binary');
   });
 
   grunt.registerTask('_deploy', 'Deploy plugin code', function() {
